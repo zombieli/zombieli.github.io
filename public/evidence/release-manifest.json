@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "origin": "personal software engineering projects with recorded verification",
+  "bundles": [
+    {
+      "project": "device-diagnostics-lab",
+      "file": "/downloads/device-diagnostics-lab.zip",
+      "sha256": "20b47cbfe17ce39a3b324783de467cf926e12630d433a4248e76f7b2c324ef6d",
+      "files": 27,
+      "bytes": 28595
+    },
+    {
+      "project": "field-service-workflow",
+      "file": "/downloads/field-service-workflow.zip",
+      "sha256": "0335e4a618e763a7134d36619c6a962d34e819b652279aff2765246391877695",
+      "files": 22,
+      "bytes": 33611
+    },
+    {
+      "project": "scheduling-simulation-study",
+      "file": "/downloads/scheduling-simulation-study.zip",
+      "sha256": "2a19ea97a49bb6536c349f4b56119e59168c368dbdbda19fc7bcead86bc19ce7",
+      "files": 14,
+      "bytes": 146807
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "field-service",
+  "title": "Field Service Workflow",
+  "categoryId": "web-applications",
+  "status": "published",
+  "publishedAt": "2026-10-09",
+  "updatedAt": "2026-10-09",
+  "summary": "An explicit work-order lifecycle with atomic history, version checks and an interactive browser demo.",
+  "technologies": ["Vue", "TypeScript", "FastAPI", "SQLite"],
+  "tags": ["Workflow", "API", "Transactions"],
+  "proof": "37 API tests · 27 frontend tests",
+  "cover": { "src": "/media/workflow-desktop.png", "alt": "Actual browser capture of a synthetic field service work order and its history", "fit": "cover" },
+  "renderer": "workflow",
+  "links": [{ "label": "Interactive demo", "href": "/field-service-workflow/" }, { "label": "Source and tests", "href": "/downloads/field-service-workflow.zip" }]
+}

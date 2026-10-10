@@ -1,0 +1,44 @@
+[
+  {
+    "id": "devices-testing",
+    "label": "Devices & testing",
+    "description": "Device communication, fault handling and repeatable verification.",
+    "featuredProjectId": "device-diagnostics",
+    "ideas": ["Serial protocol test harness", "Hardware-in-the-loop fault testing"]
+  },
+  {
+    "id": "web-applications",
+    "label": "Web applications",
+    "description": "Useful interfaces, dependable APIs and clear operational workflows.",
+    "featuredProjectId": "field-service",
+    "ideas": ["Offline field inspection workflow", "Equipment maintenance dashboard"]
+  },
+  {
+    "id": "data-simulation",
+    "label": "Data & simulation",
+    "description": "Reproducible experiments, useful comparisons and visible trade-offs.",
+    "featuredProjectId": "scheduling",
+    "ideas": ["Sensor data quality study", "Maintenance scheduling experiments"]
+  },
+  {
+    "id": "mobile-applications",
+    "label": "Mobile applications",
+    "description": "Practical applications for work away from a desk.",
+    "featuredProjectId": null,
+    "ideas": ["Android inspection notebook with offline storage", "QR equipment check-in prototype"]
+  },
+  {
+    "id": "cloud-developer-tools",
+    "label": "Cloud & developer tools",
+    "description": "Delivery pipelines, observability and tools that support other developers.",
+    "featuredProjectId": null,
+    "ideas": ["Reproducible release and rollback lab", "Test report comparison CLI"]
+  },
+  {
+    "id": "automation-search",
+    "label": "Automation & search",
+    "description": "Practical automation and information retrieval with repeatable evaluation.",
+    "featuredProjectId": null,
+    "ideas": ["Technical manual search with source references", "Rule-based maintenance report classification"]
+  }
+]

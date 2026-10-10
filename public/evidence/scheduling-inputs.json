@@ -1,0 +1,3354 @@
+[
+  {
+    "name": "mixed-00",
+    "seed": 0,
+    "jobs": [
+      {
+        "id": "J000",
+        "release": 108,
+        "duration": 14
+      },
+      {
+        "id": "J001",
+        "release": 97,
+        "duration": 15
+      },
+      {
+        "id": "J002",
+        "release": 5,
+        "duration": 10
+      },
+      {
+        "id": "J003",
+        "release": 65,
+        "duration": 17
+      },
+      {
+        "id": "J004",
+        "release": 51,
+        "duration": 11
+      },
+      {
+        "id": "J005",
+        "release": 61,
+        "duration": 13
+      },
+      {
+        "id": "J006",
+        "release": 74,
+        "duration": 8
+      },
+      {
+        "id": "J007",
+        "release": 64,
+        "duration": 6
+      },
+      {
+        "id": "J008",
+        "release": 36,
+        "duration": 6
+      },
+      {
+        "id": "J009",
+        "release": 96,
+        "duration": 5
+      },
+      {
+        "id": "J010",
+        "release": 79,
+        "duration": 10
+      },
+      {
+        "id": "J011",
+        "release": 116,
+        "duration": 19
+      },
+      {
+        "id": "J012",
+        "release": 90,
+        "duration": 21
+      },
+      {
+        "id": "J013",
+        "release": 115,
+        "duration": 6
+      },
+      {
+        "id": "J014",
+        "release": 39,
+        "duration": 5
+      },
+      {
+        "id": "J015",
+        "release": 93,
+        "duration": 4
+      },
+      {
+        "id": "J016",
+        "release": 115,
+        "duration": 23
+      },
+      {
+        "id": "J017",
+        "release": 42,
+        "duration": 17
+      },
+      {
+        "id": "J018",
+        "release": 71,
+        "duration": 5
+      },
+      {
+        "id": "J019",
+        "release": 45,
+        "duration": 15
+      },
+      {
+        "id": "J020",
+        "release": 40,
+        "duration": 21
+      },
+      {
+        "id": "J021",
+        "release": 81,
+        "duration": 8
+      },
+      {
+        "id": "J022",
+        "release": 70,
+        "duration": 17
+      },
+      {
+        "id": "J023",
+        "release": 56,
+        "duration": 18
+      },
+      {
+        "id": "J024",
+        "release": 33,
+        "duration": 3
+      },
+      {
+        "id": "J025",
+        "release": 103,
+        "duration": 19
+      },
+      {
+        "id": "J026",
+        "release": 117,
+        "duration": 2
+      },
+      {
+        "id": "J027",
+        "release": 11,
+        "duration": 25
+      },
+      {
+        "id": "J028",
+        "release": 107,
+        "duration": 14
+      },
+      {
+        "id": "J029",
+        "release": 90,
+        "duration": 23
+      }
+    ]
+  },
+  {
+    "name": "mixed-01",
+    "seed": 1,
+    "jobs": [
+      {
+        "id": "J000",
+        "release": 17,
+        "duration": 20
+      },
+      {
+        "id": "J001",
+        "release": 108,
+        "duration": 4
+      },
+      {
+        "id": "J002",
+        "release": 32,
+        "duration": 5
+      },
+      {
+        "id": "J003",
+        "release": 63,
+        "duration": 16
+      },
+      {
+        "id": "J004",
+        "release": 60,
+        "duration": 22
+      },
+      {
+        "id": "J005",
+        "release": 48,
+        "duration": 8
+      },
+      {
+        "id": "J006",
+        "release": 12,
+        "duration": 17
+      },
+      {
+        "id": "J007",
+        "release": 3,
+        "duration": 14
+      },
+      {
+        "id": "J008",
+        "release": 55,
+        "duration": 21
+      },
+      {
+        "id": "J009",
+        "release": 97,
+        "duration": 2
+      },
+      {
+        "id": "J010",
+        "release": 89,
+        "duration": 16
+      },
+      {
+        "id": "J011",
+        "release": 34,
+        "duration": 25
+      },
+      {
+        "id": "J012",
+        "release": 102,
+        "duration": 9
+      },
+      {
+        "id": "J013",
+        "release": 75,
+        "duration": 5
+      },
+      {
+        "id": "J014",
+        "release": 115,
+        "duration": 12
+      },
+      {
+        "id": "J015",
+        "release": 3,
+        "duration": 2
+      },
+      {
+        "id": "J016",
+        "release": 3,
+        "duration": 22
+      },
+      {
+        "id": "J017",
+        "release": 69,
+        "duration": 2
+      },
+      {
+        "id": "J018",
+        "release": 120,
+        "duration": 14
+      },
+      {
+        "id": "J019",
+        "release": 87,
+        "duration": 8
+      },
+      {
+        "id": "J020",
+        "release": 54,
+        "duration": 25
+      },
+      {
+        "id": "J021",
+        "release": 3,
+        "duration": 18
+      },
+      {
+        "id": "J022",
+        "release": 28,
+        "duration": 16
+      },
+      {
+        "id": "J023",
+        "release": 120,
+        "duration": 17
+      },
+      {
+        "id": "J024",
+        "release": 70,
+        "duration": 9
+      },
+      {
+        "id": "J025",
+        "release": 44,
+        "duration": 9
+      },
+      {
+        "id": "J026",
+        "release": 86,
+        "duration": 9
+      },
+      {
+        "id": "J027",
+        "release": 97,
+        "duration": 16
+      },
+      {
+        "id": "J028",
+        "release": 37,
+        "duration": 2
+      },
+      {
+        "id": "J029",
+        "release": 53,
+        "duration": 19
+      }
+    ]
+  },
+  {
+    "name": "mixed-02",
+    "seed": 2,
+    "jobs": [
+      {
+        "id": "J000",
+        "release": 110,
+        "duration": 3
+      },
+      {
+        "id": "J001",
+        "release": 11,
+        "duration": 4
+      },
+      {
+        "id": "J002",
+        "release": 46,
+        "duration": 7
+      },
+      {
+        "id": "J003",
+        "release": 94,
+        "duration": 23
+      },
+      {
+        "id": "J004",
+        "release": 109,
+        "duration": 11
+      },
+      {
+        "id": "J005",
+        "release": 32,
+        "duration": 21
+      },
+      {
+        "id": "J006",
+        "release": 27,
+        "duration": 21
+      },
+      {
+        "id": "J007",
+        "release": 4,
+        "duration": 20
+      },
+      {
+        "id": "J008",
+        "release": 87,
+        "duration": 7
+      },
+      {
+        "id": "J009",
+        "release": 55,
+        "duration": 22
+      },
+      {
+        "id": "J010",
+        "release": 50,
+        "duration": 25
+      },
+      {
+        "id": "J011",
+        "release": 110,
+        "duration": 18
+      },
+      {
+        "id": "J012",
+        "release": 47,
+        "duration": 19
+      },
+      {
+        "id": "J013",
+        "release": 119,
+        "duration": 16
+      },
+      {
+        "id": "J014",
+        "release": 64,
+        "duration": 10
+      },
+      {
+        "id": "J015",
+        "release": 115,
+        "duration": 3
+      },
+      {
+        "id": "J016",
+        "release": 111,
+        "duration": 2
+      },
+      {
+        "id": "J017",
+        "release": 46,
+        "duration": 16
+      },
+      {
+        "id": "J018",
+        "release": 119,
+        "duration": 12
+      },
+      {
+        "id": "J019",
+        "release": 116,
+        "duration": 14
+      },
+      {
+        "id": "J020",
+        "release": 54,
+        "duration": 18
+      },
+      {
+        "id": "J021",
+        "release": 21,
+        "duration": 19
+      },
+      {
+        "id": "J022",
+        "release": 22,
+        "duration": 9
+      },
+      {
+        "id": "J023",
+        "release": 29,
+        "duration": 2
+      },
+      {
+        "id": "J024",
+        "release": 22,
+        "duration": 12
+      },
+      {
+        "id": "J025",
+        "release": 22,
+        "duration": 6
+      },
+      {
+        "id": "J026",
+        "release": 65,
+        "duration": 18
+      },
+      {
+        "id": "J027",
+        "release": 46,
+        "duration": 18
+      },
+      {
+        "id": "J028",
+        "release": 86,
+        "duration": 19
+      },
+      {
+        "id": "J029",
+        "release": 23,
+        "duration": 16
+      }
+    ]
+  },
+  {
+    "name": "mixed-03",
+    "seed": 3,
+    "jobs": [
+      {
+        "id": "J000",
+        "release": 30,
+        "duration": 20
+      },
+      {
+        "id": "J001",
+        "release": 69,
+        "duration": 6
+      },
+      {
+        "id": "J002",
+        "release": 47,
+        "duration": 21
+      },
+      {
+        "id": "J003",
+        "release": 60,
+        "duration": 22
+      },
+      {
+        "id": "J004",
+        "release": 74,
+        "duration": 4
+      },
+      {
+        "id": "J005",
+        "release": 77,
+        "duration": 2
+      },
+      {
+        "id": "J006",
+        "release": 116,
+        "duration": 17
+      },
+      {
+        "id": "J007",
+        "release": 33,
+        "duration": 19
+      },
+      {
+        "id": "J008",
+        "release": 29,
+        "duration": 8
+      },
+      {
+        "id": "J009",
+        "release": 91,
+        "duration": 17
+      },
+      {
+        "id": "J010",
+        "release": 69,
+        "duration": 19
+      },
+      {
+        "id": "J011",
+        "release": 60,
+        "duration": 14
+      },
+      {
+        "id": "J012",
+        "release": 81,
+        "duration": 6
+      },
+      {
+        "id": "J013",
+        "release": 29,
+        "duration": 22
+      },
+      {
+        "id": "J014",
+        "release": 19,
+        "duration": 18
+      },
+      {
+        "id": "J015",
+        "release": 49,
+        "duration": 25
+      },
+      {
+        "id": "J016",
+        "release": 1,
+        "duration": 23
+      },
+      {
+        "id": "J017",
+        "release": 99,
+        "duration": 4
+      },
+      {
+        "id": "J018",
+        "release": 20,
+        "duration": 20
+      },
+      {
+        "id": "J019",
+        "release": 5,
+        "duration": 11
+      },
+      {
+        "id": "J020",
+        "release": 99,
+        "duration": 2
+      },
+      {
+        "id": "J021",
+        "release": 105,
+        "duration": 10
+      },
+      {
+        "id": "J022",
+        "release": 60,
+        "duration": 21
+      },
+      {
+        "id": "J023",
+        "release": 92,
+        "duration": 14
+      },
+      {
+        "id": "J024",
+        "release": 91,
+        "duration": 15
+      },
+      {
+        "id": "J025",
+        "release": 50,
+        "duration": 25
+      },
+      {
+        "id": "J026",
+        "release": 102,
+        "duration": 20
+      },
+      {
+        "id": "J027",
+        "release": 56,
+        "duration": 6
+      },
+      {
+        "id": "J028",
+        "release": 112,
+        "duration": 13
+      },
+      {
+        "id": "J029",
+        "release": 12,
+        "duration": 3
+      }
+    ]
+  },
+  {
+    "name": "mixed-04",
+    "seed": 4,
+    "jobs": [
+      {
+        "id": "J000",
+        "release": 30,
+        "duration": 11
+      },
+      {
+        "id": "J001",
+        "release": 13,
+        "duration": 25
+      },
+      {
+        "id": "J002",
+        "release": 50,
+        "duration": 17
+      },
+      {
+        "id": "J003",
+        "release": 19,
+        "duration": 4
+      },
+      {
+        "id": "J004",
+        "release": 8,
+        "duration": 2
+      },
+      {
+        "id": "J005",
+        "release": 51,
+        "duration": 19
+      },
+      {
+        "id": "J006",
+        "release": 117,
+        "duration": 11
+      },
+      {
+        "id": "J007",
+        "release": 102,
+        "duration": 3
+      },
+      {
+        "id": "J008",
+        "release": 28,
+        "duration": 18
+      },
+      {
+        "id": "J009",
+        "release": 68,
+        "duration": 13
+      },
+      {
+        "id": "J010",
+        "release": 35,
+        "duration": 7
+      },
+      {
+        "id": "J011",
+        "release": 105,
+        "duration": 5
+      },
+      {
+        "id": "J012",
+        "release": 33,
+        "duration": 8
+      },
+      {
+        "id": "J013",
+        "release": 120,
+        "duration": 2
+      },
+      {
+        "id": "J014",
+        "release": 106,
+        "duration": 22
+      },
+      {
+        "id": "J015",
+        "release": 103,
+        "duration": 10
+      },
+      {
+        "id": "J016",
+        "release": 102,
+        "duration": 10
+      },
+      {
+        "id": "J017",
+        "release": 24,
+        "duration": 7
+      },
+      {
+        "id": "J018",
+        "release": 39,
+        "duration": 11
+      },
+      {
+        "id": "J019",
+        "release": 80,
+        "duration": 25
+      },
+      {
+        "id": "J020",
+        "release": 109,
+        "duration": 13
+      },
+      {
+        "id": "J021",
+        "release": 11,
+        "duration": 21
+      },
+      {
+        "id": "J022",
+        "release": 43,
+        "duration": 23
+      },
+      {
+        "id": "J023",
+        "release": 49,
+        "duration": 18
+      },
+      {
+        "id": "J024",
+        "release": 31,
+        "duration": 7
+      },
+      {
+        "id": "J025",
+        "release": 31,
+        "duration": 17
+      },
+      {
+        "id": "J026",
+        "release": 35,
+        "duration": 4
+      },
+      {
+        "id": "J027",
+        "release": 120,
+        "duration": 19
+      },
+      {
+        "id": "J028",
+        "release": 107,
+        "duration": 11
+      },
+      {
+        "id": "J029",
+        "release": 0,
+        "duration": 11
+      }
+    ]
+  },
+  {
+    "name": "mixed-05",
+    "seed": 5,
+    "jobs": [
+      {
+        "id": "J000",
+        "release": 79,
+        "duration": 10
+      },
+      {
+        "id": "J001",
+        "release": 94,
+        "duration": 13
+      },
+      {
+        "id": "J002",
+        "release": 101,
+        "duration": 24
+      },
+      {
+        "id": "J003",
+        "release": 120,
+        "duration": 25
+      },
+      {
+        "id": "J004",
+        "release": 83,
+        "duration": 18
+      },
+      {
+        "id": "J005",
+        "release": 3,
+        "duration": 16
+      },
+      {
+        "id": "J006",
+        "release": 99,
+        "duration": 9
+      },
+      {
+        "id": "J007",
+        "release": 83,
+        "duration": 3
+      },
+      {
+        "id": "J008",
+        "release": 115,
+        "duration": 7
+      },
+      {
+        "id": "J009",
+        "release": 14,
+        "duration": 13
+      },
+      {
+        "id": "J010",
+        "release": 60,
+        "duration": 9
+      },
+      {
+        "id": "J011",
+        "release": 48,
+        "duration": 19
+      },
+      {
+        "id": "J012",
+        "release": 13,
+        "duration": 20
+      },
+      {
+        "id": "J013",
+        "release": 31,
+        "duration": 2
+      },
+      {
+        "id": "J014",
+        "release": 93,
+        "duration": 8
+      },
+      {
+        "id": "J015",
+        "release": 52,
+        "duration": 10
+      },
+      {
+        "id": "J016",
+        "release": 23,
+        "duration": 14
+      },
+      {
+        "id": "J017",
+        "release": 20,
+        "duration": 4
+      },
+      {
+        "id": "J018",
+        "release": 17,
+        "duration": 21
+      },
+      {
+        "id": "J019",
+        "release": 79,
+        "duration": 16
+      },
+      {
+        "id": "J020",
+        "release": 16,
+        "duration": 6
+      },
+      {
+        "id": "J021",
+        "release": 0,
+        "duration": 2
+      },
+      {
+        "id": "J022",
+        "release": 26,
+        "duration": 8
+      },
+      {
+        "id": "J023",
+        "release": 21,
+        "duration": 7
+      },
+      {
+        "id": "J024",
+        "release": 37,
+        "duration": 12
+      },
+      {
+        "id": "J025",
+        "release": 25,
+        "duration": 19
+      },
+      {
+        "id": "J026",
+        "release": 112,
+        "duration": 23
+      },
+      {
+        "id": "J027",
+        "release": 80,
+        "duration": 8
+      },
+      {
+        "id": "J028",
+        "release": 23,
+        "duration": 24
+      },
+      {
+        "id": "J029",
+        "release": 25,
+        "duration": 14
+      }
+    ]
+  },
+  {
+    "name": "mixed-06",
+    "seed": 6,
+    "jobs": [
+      {
+        "id": "J000",
+        "release": 101,
+        "duration": 20
+      },
+      {
+        "id": "J001",
+        "release": 105,
+        "duration": 4
+      },
+      {
+        "id": "J002",
+        "release": 62,
+        "duration": 10
+      },
+      {
+        "id": "J003",
+        "release": 4,
+        "duration": 2
+      },
+      {
+        "id": "J004",
+        "release": 18,
+        "duration": 23
+      },
+      {
+        "id": "J005",
+        "release": 75,
+        "duration": 17
+      },
+      {
+        "id": "J006",
+        "release": 97,
+        "duration": 25
+      },
+      {
+        "id": "J007",
+        "release": 47,
+        "duration": 12
+      },
+      {
+        "id": "J008",
+        "release": 98,
+        "duration": 2
+      },
+      {
+        "id": "J009",
+        "release": 34,
+        "duration": 17
+      },
+      {
+        "id": "J010",
+        "release": 102,
+        "duration": 8
+      },
+      {
+        "id": "J011",
+        "release": 93,
+        "duration": 15
+      },
+      {
+        "id": "J012",
+        "release": 116,
+        "duration": 19
+      },
+      {
+        "id": "J013",
+        "release": 69,
+        "duration": 23
+      },
+      {
+        "id": "J014",
+        "release": 12,
+        "duration": 8
+      },
+      {
+        "id": "J015",
+        "release": 72,
+        "duration": 19
+      },
+      {
+        "id": "J016",
+        "release": 89,
+        "duration": 25
+      },
+      {
+        "id": "J017",
+        "release": 33,
+        "duration": 23
+      },
+      {
+        "id": "J018",
+        "release": 102,
+        "duration": 21
+      },
+      {
+        "id": "J019",
+        "release": 87,
+        "duration": 4
+      },
+      {
+        "id": "J020",
+        "release": 108,
+        "duration": 15
+      },
+      {
+        "id": "J021",
+        "release": 42,
+        "duration": 4
+      },
+      {
+        "id": "J022",
+        "release": 46,
+        "duration": 15
+      },
+      {
+        "id": "J023",
+        "release": 103,
+        "duration": 10
+      },
+      {
+        "id": "J024",
+        "release": 56,
+        "duration": 24
+      },
+      {
+        "id": "J025",
+        "release": 12,
+        "duration": 8
+      },
+      {
+        "id": "J026",
+        "release": 89,
+        "duration": 22
+      },
+      {
+        "id": "J027",
+        "release": 101,
+        "duration": 11
+      },
+      {
+        "id": "J028",
+        "release": 12,
+        "duration": 3
+      },
+      {
+        "id": "J029",
+        "release": 75,
+        "duration": 8
+      }
+    ]
+  },
+  {
+    "name": "mixed-07",
+    "seed": 7,
+    "jobs": [
+      {
+        "id": "J000",
+        "release": 41,
+        "duration": 6
+      },
+      {
+        "id": "J001",
+        "release": 50,
+        "duration": 22
+      },
+      {
+        "id": "J002",
+        "release": 6,
+        "duration": 4
+      },
+      {
+        "id": "J003",
+        "release": 105,
+        "duration": 19
+      },
+      {
+        "id": "J004",
+        "release": 12,
+        "duration": 13
+      },
+      {
+        "id": "J005",
+        "release": 74,
+        "duration": 3
+      },
+      {
+        "id": "J006",
+        "release": 116,
+        "duration": 18
+      },
+      {
+        "id": "J007",
+        "release": 27,
+        "duration": 3
+      },
+      {
+        "id": "J008",
+        "release": 11,
+        "duration": 15
+      },
+      {
+        "id": "J009",
+        "release": 53,
+        "duration": 4
+      },
+      {
+        "id": "J010",
+        "release": 30,
+        "duration": 4
+      },
+      {
+        "id": "J011",
+        "release": 70,
+        "duration": 15
+      },
+      {
+        "id": "J012",
+        "release": 7,
+        "duration": 20
+      },
+      {
+        "id": "J013",
+        "release": 15,
+        "duration": 9
+      },
+      {
+        "id": "J014",
+        "release": 80,
+        "duration": 22
+      },
+      {
+        "id": "J015",
+        "release": 74,
+        "duration": 3
+      },
+      {
+        "id": "J016",
+        "release": 73,
+        "duration": 20
+      },
+      {
+        "id": "J017",
+        "release": 50,
+        "duration": 3
+      },
+      {
+        "id": "J018",
+        "release": 28,
+        "duration": 3
+      },
+      {
+        "id": "J019",
+        "release": 71,
+        "duration": 6
+      },
+      {
+        "id": "J020",
+        "release": 37,
+        "duration": 15
+      },
+      {
+        "id": "J021",
+        "release": 18,
+        "duration": 19
+      },
+      {
+        "id": "J022",
+        "release": 15,
+        "duration": 20
+      },
+      {
+        "id": "J023",
+        "release": 39,
+        "duration": 19
+      },
+      {
+        "id": "J024",
+        "release": 104,
+        "duration": 23
+      },
+      {
+        "id": "J025",
+        "release": 23,
+        "duration": 5
+      },
+      {
+        "id": "J026",
+        "release": 74,
+        "duration": 20
+      },
+      {
+        "id": "J027",
+        "release": 81,
+        "duration": 8
+      },
+      {
+        "id": "J028",
+        "release": 47,
+        "duration": 5
+      },
+      {
+        "id": "J029",
+        "release": 70,
+        "duration": 24
+      }
+    ]
+  },
+  {
+    "name": "mixed-08",
+    "seed": 8,
+    "jobs": [
+      {
+        "id": "J000",
+        "release": 29,
+        "duration": 13
+      },
+      {
+        "id": "J001",
+        "release": 48,
+        "duration": 6
+      },
+      {
+        "id": "J002",
+        "release": 24,
+        "duration": 24
+      },
+      {
+        "id": "J003",
+        "release": 5,
+        "duration": 4
+      },
+      {
+        "id": "J004",
+        "release": 17,
+        "duration": 9
+      },
+      {
+        "id": "J005",
+        "release": 103,
+        "duration": 18
+      },
+      {
+        "id": "J006",
+        "release": 26,
+        "duration": 14
+      },
+      {
+        "id": "J007",
+        "release": 82,
+        "duration": 2
+      },
+      {
+        "id": "J008",
+        "release": 58,
+        "duration": 17
+      },
+      {
+        "id": "J009",
+        "release": 58,
+        "duration": 14
+      },
+      {
+        "id": "J010",
+        "release": 63,
+        "duration": 20
+      },
+      {
+        "id": "J011",
+        "release": 24,
+        "duration": 14
+      },
+      {
+        "id": "J012",
+        "release": 11,
+        "duration": 17
+      },
+      {
+        "id": "J013",
+        "release": 29,
+        "duration": 2
+      },
+      {
+        "id": "J014",
+        "release": 89,
+        "duration": 10
+      },
+      {
+        "id": "J015",
+        "release": 66,
+        "duration": 15
+      },
+      {
+        "id": "J016",
+        "release": 60,
+        "duration": 14
+      },
+      {
+        "id": "J017",
+        "release": 92,
+        "duration": 5
+      },
+      {
+        "id": "J018",
+        "release": 84,
+        "duration": 10
+      },
+      {
+        "id": "J019",
+        "release": 12,
+        "duration": 4
+      },
+      {
+        "id": "J020",
+        "release": 49,
+        "duration": 21
+      },
+      {
+        "id": "J021",
+        "release": 106,
+        "duration": 14
+      },
+      {
+        "id": "J022",
+        "release": 13,
+        "duration": 23
+      },
+      {
+        "id": "J023",
+        "release": 7,
+        "duration": 12
+      },
+      {
+        "id": "J024",
+        "release": 30,
+        "duration": 24
+      },
+      {
+        "id": "J025",
+        "release": 11,
+        "duration": 17
+      },
+      {
+        "id": "J026",
+        "release": 115,
+        "duration": 22
+      },
+      {
+        "id": "J027",
+        "release": 66,
+        "duration": 8
+      },
+      {
+        "id": "J028",
+        "release": 74,
+        "duration": 6
+      },
+      {
+        "id": "J029",
+        "release": 77,
+        "duration": 4
+      }
+    ]
+  },
+  {
+    "name": "mixed-09",
+    "seed": 9,
+    "jobs": [
+      {
+        "id": "J000",
+        "release": 59,
+        "duration": 21
+      },
+      {
+        "id": "J001",
+        "release": 47,
+        "duration": 10
+      },
+      {
+        "id": "J002",
+        "release": 17,
+        "duration": 7
+      },
+      {
+        "id": "J003",
+        "release": 110,
+        "duration": 23
+      },
+      {
+        "id": "J004",
+        "release": 0,
+        "duration": 12
+      },
+      {
+        "id": "J005",
+        "release": 64,
+        "duration": 16
+      },
+      {
+        "id": "J006",
+        "release": 114,
+        "duration": 21
+      },
+      {
+        "id": "J007",
+        "release": 10,
+        "duration": 12
+      },
+      {
+        "id": "J008",
+        "release": 70,
+        "duration": 21
+      },
+      {
+        "id": "J009",
+        "release": 89,
+        "duration": 3
+      },
+      {
+        "id": "J010",
+        "release": 93,
+        "duration": 14
+      },
+      {
+        "id": "J011",
+        "release": 21,
+        "duration": 24
+      },
+      {
+        "id": "J012",
+        "release": 57,
+        "duration": 25
+      },
+      {
+        "id": "J013",
+        "release": 54,
+        "duration": 7
+      },
+      {
+        "id": "J014",
+        "release": 21,
+        "duration": 9
+      },
+      {
+        "id": "J015",
+        "release": 6,
+        "duration": 5
+      },
+      {
+        "id": "J016",
+        "release": 16,
+        "duration": 18
+      },
+      {
+        "id": "J017",
+        "release": 111,
+        "duration": 20
+      },
+      {
+        "id": "J018",
+        "release": 8,
+        "duration": 24
+      },
+      {
+        "id": "J019",
+        "release": 49,
+        "duration": 25
+      },
+      {
+        "id": "J020",
+        "release": 113,
+        "duration": 5
+      },
+      {
+        "id": "J021",
+        "release": 117,
+        "duration": 11
+      },
+      {
+        "id": "J022",
+        "release": 26,
+        "duration": 23
+      },
+      {
+        "id": "J023",
+        "release": 28,
+        "duration": 25
+      },
+      {
+        "id": "J024",
+        "release": 101,
+        "duration": 15
+      },
+      {
+        "id": "J025",
+        "release": 113,
+        "duration": 4
+      },
+      {
+        "id": "J026",
+        "release": 98,
+        "duration": 10
+      },
+      {
+        "id": "J027",
+        "release": 116,
+        "duration": 8
+      },
+      {
+        "id": "J028",
+        "release": 50,
+        "duration": 10
+      },
+      {
+        "id": "J029",
+        "release": 43,
+        "duration": 3
+      }
+    ]
+  },
+  {
+    "name": "mixed-10",
+    "seed": 10,
+    "jobs": [
+      {
+        "id": "J000",
+        "release": 73,
+        "duration": 3
+      },
+      {
+        "id": "J001",
+        "release": 54,
+        "duration": 17
+      },
+      {
+        "id": "J002",
+        "release": 73,
+        "duration": 2
+      },
+      {
+        "id": "J003",
+        "release": 26,
+        "duration": 16
+      },
+      {
+        "id": "J004",
+        "release": 104,
+        "duration": 17
+      },
+      {
+        "id": "J005",
+        "release": 105,
+        "duration": 10
+      },
+      {
+        "id": "J006",
+        "release": 83,
+        "duration": 7
+      },
+      {
+        "id": "J007",
+        "release": 4,
+        "duration": 18
+      },
+      {
+        "id": "J008",
+        "release": 62,
+        "duration": 12
+      },
+      {
+        "id": "J009",
+        "release": 9,
+        "duration": 9
+      },
+      {
+        "id": "J010",
+        "release": 95,
+        "duration": 13
+      },
+      {
+        "id": "J011",
+        "release": 5,
+        "duration": 15
+      },
+      {
+        "id": "J012",
+        "release": 110,
+        "duration": 6
+      },
+      {
+        "id": "J013",
+        "release": 77,
+        "duration": 13
+      },
+      {
+        "id": "J014",
+        "release": 48,
+        "duration": 15
+      },
+      {
+        "id": "J015",
+        "release": 36,
+        "duration": 23
+      },
+      {
+        "id": "J016",
+        "release": 33,
+        "duration": 16
+      },
+      {
+        "id": "J017",
+        "release": 22,
+        "duration": 23
+      },
+      {
+        "id": "J018",
+        "release": 38,
+        "duration": 23
+      },
+      {
+        "id": "J019",
+        "release": 46,
+        "duration": 6
+      },
+      {
+        "id": "J020",
+        "release": 58,
+        "duration": 9
+      },
+      {
+        "id": "J021",
+        "release": 56,
+        "duration": 21
+      },
+      {
+        "id": "J022",
+        "release": 48,
+        "duration": 3
+      },
+      {
+        "id": "J023",
+        "release": 74,
+        "duration": 2
+      },
+      {
+        "id": "J024",
+        "release": 30,
+        "duration": 6
+      },
+      {
+        "id": "J025",
+        "release": 24,
+        "duration": 11
+      },
+      {
+        "id": "J026",
+        "release": 68,
+        "duration": 13
+      },
+      {
+        "id": "J027",
+        "release": 98,
+        "duration": 9
+      },
+      {
+        "id": "J028",
+        "release": 40,
+        "duration": 23
+      },
+      {
+        "id": "J029",
+        "release": 70,
+        "duration": 16
+      }
+    ]
+  },
+  {
+    "name": "mixed-11",
+    "seed": 11,
+    "jobs": [
+      {
+        "id": "J000",
+        "release": 57,
+        "duration": 19
+      },
+      {
+        "id": "J001",
+        "release": 109,
+        "duration": 16
+      },
+      {
+        "id": "J002",
+        "release": 57,
+        "duration": 18
+      },
+      {
+        "id": "J003",
+        "release": 109,
+        "duration": 20
+      },
+      {
+        "id": "J004",
+        "release": 24,
+        "duration": 7
+      },
+      {
+        "id": "J005",
+        "release": 102,
+        "duration": 18
+      },
+      {
+        "id": "J006",
+        "release": 60,
+        "duration": 22
+      },
+      {
+        "id": "J007",
+        "release": 78,
+        "duration": 7
+      },
+      {
+        "id": "J008",
+        "release": 12,
+        "duration": 16
+      },
+      {
+        "id": "J009",
+        "release": 38,
+        "duration": 6
+      },
+      {
+        "id": "J010",
+        "release": 11,
+        "duration": 19
+      },
+      {
+        "id": "J011",
+        "release": 103,
+        "duration": 24
+      },
+      {
+        "id": "J012",
+        "release": 81,
+        "duration": 3
+      },
+      {
+        "id": "J013",
+        "release": 76,
+        "duration": 14
+      },
+      {
+        "id": "J014",
+        "release": 57,
+        "duration": 22
+      },
+      {
+        "id": "J015",
+        "release": 94,
+        "duration": 21
+      },
+      {
+        "id": "J016",
+        "release": 83,
+        "duration": 7
+      },
+      {
+        "id": "J017",
+        "release": 79,
+        "duration": 2
+      },
+      {
+        "id": "J018",
+        "release": 106,
+        "duration": 18
+      },
+      {
+        "id": "J019",
+        "release": 8,
+        "duration": 3
+      },
+      {
+        "id": "J020",
+        "release": 4,
+        "duration": 8
+      },
+      {
+        "id": "J021",
+        "release": 112,
+        "duration": 9
+      },
+      {
+        "id": "J022",
+        "release": 76,
+        "duration": 2
+      },
+      {
+        "id": "J023",
+        "release": 99,
+        "duration": 16
+      },
+      {
+        "id": "J024",
+        "release": 41,
+        "duration": 16
+      },
+      {
+        "id": "J025",
+        "release": 75,
+        "duration": 8
+      },
+      {
+        "id": "J026",
+        "release": 66,
+        "duration": 9
+      },
+      {
+        "id": "J027",
+        "release": 81,
+        "duration": 11
+      },
+      {
+        "id": "J028",
+        "release": 63,
+        "duration": 2
+      },
+      {
+        "id": "J029",
+        "release": 84,
+        "duration": 4
+      }
+    ]
+  },
+  {
+    "name": "mixed-12",
+    "seed": 12,
+    "jobs": [
+      {
+        "id": "J000",
+        "release": 60,
+        "duration": 10
+      },
+      {
+        "id": "J001",
+        "release": 84,
+        "duration": 18
+      },
+      {
+        "id": "J002",
+        "release": 85,
+        "duration": 13
+      },
+      {
+        "id": "J003",
+        "release": 18,
+        "duration": 14
+      },
+      {
+        "id": "J004",
+        "release": 1,
+        "duration": 13
+      },
+      {
+        "id": "J005",
+        "release": 61,
+        "duration": 10
+      },
+      {
+        "id": "J006",
+        "release": 82,
+        "duration": 16
+      },
+      {
+        "id": "J007",
+        "release": 88,
+        "duration": 21
+      },
+      {
+        "id": "J008",
+        "release": 29,
+        "duration": 19
+      },
+      {
+        "id": "J009",
+        "release": 0,
+        "duration": 23
+      },
+      {
+        "id": "J010",
+        "release": 79,
+        "duration": 6
+      },
+      {
+        "id": "J011",
+        "release": 56,
+        "duration": 13
+      },
+      {
+        "id": "J012",
+        "release": 20,
+        "duration": 12
+      },
+      {
+        "id": "J013",
+        "release": 115,
+        "duration": 8
+      },
+      {
+        "id": "J014",
+        "release": 7,
+        "duration": 20
+      },
+      {
+        "id": "J015",
+        "release": 104,
+        "duration": 8
+      },
+      {
+        "id": "J016",
+        "release": 9,
+        "duration": 18
+      },
+      {
+        "id": "J017",
+        "release": 87,
+        "duration": 12
+      },
+      {
+        "id": "J018",
+        "release": 87,
+        "duration": 14
+      },
+      {
+        "id": "J019",
+        "release": 102,
+        "duration": 4
+      },
+      {
+        "id": "J020",
+        "release": 2,
+        "duration": 3
+      },
+      {
+        "id": "J021",
+        "release": 104,
+        "duration": 23
+      },
+      {
+        "id": "J022",
+        "release": 65,
+        "duration": 9
+      },
+      {
+        "id": "J023",
+        "release": 11,
+        "duration": 15
+      },
+      {
+        "id": "J024",
+        "release": 56,
+        "duration": 5
+      },
+      {
+        "id": "J025",
+        "release": 84,
+        "duration": 15
+      },
+      {
+        "id": "J026",
+        "release": 17,
+        "duration": 19
+      },
+      {
+        "id": "J027",
+        "release": 40,
+        "duration": 21
+      },
+      {
+        "id": "J028",
+        "release": 71,
+        "duration": 7
+      },
+      {
+        "id": "J029",
+        "release": 89,
+        "duration": 3
+      }
+    ]
+  },
+  {
+    "name": "mixed-13",
+    "seed": 13,
+    "jobs": [
+      {
+        "id": "J000",
+        "release": 33,
+        "duration": 11
+      },
+      {
+        "id": "J001",
+        "release": 87,
+        "duration": 23
+      },
+      {
+        "id": "J002",
+        "release": 102,
+        "duration": 7
+      },
+      {
+        "id": "J003",
+        "release": 83,
+        "duration": 9
+      },
+      {
+        "id": "J004",
+        "release": 85,
+        "duration": 6
+      },
+      {
+        "id": "J005",
+        "release": 111,
+        "duration": 9
+      },
+      {
+        "id": "J006",
+        "release": 82,
+        "duration": 25
+      },
+      {
+        "id": "J007",
+        "release": 23,
+        "duration": 6
+      },
+      {
+        "id": "J008",
+        "release": 9,
+        "duration": 19
+      },
+      {
+        "id": "J009",
+        "release": 108,
+        "duration": 8
+      },
+      {
+        "id": "J010",
+        "release": 95,
+        "duration": 11
+      },
+      {
+        "id": "J011",
+        "release": 3,
+        "duration": 15
+      },
+      {
+        "id": "J012",
+        "release": 16,
+        "duration": 23
+      },
+      {
+        "id": "J013",
+        "release": 77,
+        "duration": 2
+      },
+      {
+        "id": "J014",
+        "release": 35,
+        "duration": 6
+      },
+      {
+        "id": "J015",
+        "release": 10,
+        "duration": 10
+      },
+      {
+        "id": "J016",
+        "release": 105,
+        "duration": 16
+      },
+      {
+        "id": "J017",
+        "release": 95,
+        "duration": 15
+      },
+      {
+        "id": "J018",
+        "release": 17,
+        "duration": 10
+      },
+      {
+        "id": "J019",
+        "release": 45,
+        "duration": 9
+      },
+      {
+        "id": "J020",
+        "release": 62,
+        "duration": 19
+      },
+      {
+        "id": "J021",
+        "release": 72,
+        "duration": 15
+      },
+      {
+        "id": "J022",
+        "release": 85,
+        "duration": 13
+      },
+      {
+        "id": "J023",
+        "release": 113,
+        "duration": 15
+      },
+      {
+        "id": "J024",
+        "release": 81,
+        "duration": 12
+      },
+      {
+        "id": "J025",
+        "release": 83,
+        "duration": 5
+      },
+      {
+        "id": "J026",
+        "release": 44,
+        "duration": 21
+      },
+      {
+        "id": "J027",
+        "release": 102,
+        "duration": 22
+      },
+      {
+        "id": "J028",
+        "release": 33,
+        "duration": 24
+      },
+      {
+        "id": "J029",
+        "release": 57,
+        "duration": 19
+      }
+    ]
+  },
+  {
+    "name": "mixed-14",
+    "seed": 14,
+    "jobs": [
+      {
+        "id": "J000",
+        "release": 13,
+        "duration": 21
+      },
+      {
+        "id": "J001",
+        "release": 89,
+        "duration": 22
+      },
+      {
+        "id": "J002",
+        "release": 67,
+        "duration": 9
+      },
+      {
+        "id": "J003",
+        "release": 34,
+        "duration": 25
+      },
+      {
+        "id": "J004",
+        "release": 32,
+        "duration": 11
+      },
+      {
+        "id": "J005",
+        "release": 93,
+        "duration": 4
+      },
+      {
+        "id": "J006",
+        "release": 84,
+        "duration": 16
+      },
+      {
+        "id": "J007",
+        "release": 38,
+        "duration": 16
+      },
+      {
+        "id": "J008",
+        "release": 87,
+        "duration": 14
+      },
+      {
+        "id": "J009",
+        "release": 50,
+        "duration": 5
+      },
+      {
+        "id": "J010",
+        "release": 33,
+        "duration": 9
+      },
+      {
+        "id": "J011",
+        "release": 111,
+        "duration": 12
+      },
+      {
+        "id": "J012",
+        "release": 45,
+        "duration": 10
+      },
+      {
+        "id": "J013",
+        "release": 46,
+        "duration": 22
+      },
+      {
+        "id": "J014",
+        "release": 80,
+        "duration": 18
+      },
+      {
+        "id": "J015",
+        "release": 19,
+        "duration": 7
+      },
+      {
+        "id": "J016",
+        "release": 70,
+        "duration": 23
+      },
+      {
+        "id": "J017",
+        "release": 84,
+        "duration": 10
+      },
+      {
+        "id": "J018",
+        "release": 21,
+        "duration": 2
+      },
+      {
+        "id": "J019",
+        "release": 83,
+        "duration": 4
+      },
+      {
+        "id": "J020",
+        "release": 15,
+        "duration": 21
+      },
+      {
+        "id": "J021",
+        "release": 43,
+        "duration": 2
+      },
+      {
+        "id": "J022",
+        "release": 10,
+        "duration": 10
+      },
+      {
+        "id": "J023",
+        "release": 26,
+        "duration": 14
+      },
+      {
+        "id": "J024",
+        "release": 51,
+        "duration": 20
+      },
+      {
+        "id": "J025",
+        "release": 119,
+        "duration": 16
+      },
+      {
+        "id": "J026",
+        "release": 114,
+        "duration": 21
+      },
+      {
+        "id": "J027",
+        "release": 12,
+        "duration": 22
+      },
+      {
+        "id": "J028",
+        "release": 87,
+        "duration": 5
+      },
+      {
+        "id": "J029",
+        "release": 74,
+        "duration": 20
+      }
+    ]
+  },
+  {
+    "name": "mixed-15",
+    "seed": 15,
+    "jobs": [
+      {
+        "id": "J000",
+        "release": 26,
+        "duration": 2
+      },
+      {
+        "id": "J001",
+        "release": 66,
+        "duration": 25
+      },
+      {
+        "id": "J002",
+        "release": 4,
+        "duration": 7
+      },
+      {
+        "id": "J003",
+        "release": 116,
+        "duration": 9
+      },
+      {
+        "id": "J004",
+        "release": 2,
+        "duration": 3
+      },
+      {
+        "id": "J005",
+        "release": 112,
+        "duration": 23
+      },
+      {
+        "id": "J006",
+        "release": 18,
+        "duration": 24
+      },
+      {
+        "id": "J007",
+        "release": 47,
+        "duration": 9
+      },
+      {
+        "id": "J008",
+        "release": 14,
+        "duration": 12
+      },
+      {
+        "id": "J009",
+        "release": 59,
+        "duration": 24
+      },
+      {
+        "id": "J010",
+        "release": 45,
+        "duration": 10
+      },
+      {
+        "id": "J011",
+        "release": 50,
+        "duration": 10
+      },
+      {
+        "id": "J012",
+        "release": 44,
+        "duration": 9
+      },
+      {
+        "id": "J013",
+        "release": 119,
+        "duration": 8
+      },
+      {
+        "id": "J014",
+        "release": 111,
+        "duration": 13
+      },
+      {
+        "id": "J015",
+        "release": 102,
+        "duration": 12
+      },
+      {
+        "id": "J016",
+        "release": 28,
+        "duration": 11
+      },
+      {
+        "id": "J017",
+        "release": 118,
+        "duration": 25
+      },
+      {
+        "id": "J018",
+        "release": 65,
+        "duration": 15
+      },
+      {
+        "id": "J019",
+        "release": 29,
+        "duration": 20
+      },
+      {
+        "id": "J020",
+        "release": 58,
+        "duration": 15
+      },
+      {
+        "id": "J021",
+        "release": 62,
+        "duration": 4
+      },
+      {
+        "id": "J022",
+        "release": 59,
+        "duration": 20
+      },
+      {
+        "id": "J023",
+        "release": 102,
+        "duration": 13
+      },
+      {
+        "id": "J024",
+        "release": 56,
+        "duration": 20
+      },
+      {
+        "id": "J025",
+        "release": 40,
+        "duration": 24
+      },
+      {
+        "id": "J026",
+        "release": 82,
+        "duration": 16
+      },
+      {
+        "id": "J027",
+        "release": 51,
+        "duration": 4
+      },
+      {
+        "id": "J028",
+        "release": 62,
+        "duration": 2
+      },
+      {
+        "id": "J029",
+        "release": 25,
+        "duration": 6
+      }
+    ]
+  },
+  {
+    "name": "mixed-16",
+    "seed": 16,
+    "jobs": [
+      {
+        "id": "J000",
+        "release": 46,
+        "duration": 17
+      },
+      {
+        "id": "J001",
+        "release": 61,
+        "duration": 11
+      },
+      {
+        "id": "J002",
+        "release": 53,
+        "duration": 9
+      },
+      {
+        "id": "J003",
+        "release": 57,
+        "duration": 2
+      },
+      {
+        "id": "J004",
+        "release": 52,
+        "duration": 23
+      },
+      {
+        "id": "J005",
+        "release": 91,
+        "duration": 10
+      },
+      {
+        "id": "J006",
+        "release": 30,
+        "duration": 22
+      },
+      {
+        "id": "J007",
+        "release": 28,
+        "duration": 2
+      },
+      {
+        "id": "J008",
+        "release": 37,
+        "duration": 11
+      },
+      {
+        "id": "J009",
+        "release": 104,
+        "duration": 12
+      },
+      {
+        "id": "J010",
+        "release": 85,
+        "duration": 6
+      },
+      {
+        "id": "J011",
+        "release": 95,
+        "duration": 21
+      },
+      {
+        "id": "J012",
+        "release": 39,
+        "duration": 2
+      },
+      {
+        "id": "J013",
+        "release": 101,
+        "duration": 9
+      },
+      {
+        "id": "J014",
+        "release": 77,
+        "duration": 10
+      },
+      {
+        "id": "J015",
+        "release": 2,
+        "duration": 6
+      },
+      {
+        "id": "J016",
+        "release": 103,
+        "duration": 21
+      },
+      {
+        "id": "J017",
+        "release": 85,
+        "duration": 22
+      },
+      {
+        "id": "J018",
+        "release": 3,
+        "duration": 16
+      },
+      {
+        "id": "J019",
+        "release": 58,
+        "duration": 21
+      },
+      {
+        "id": "J020",
+        "release": 80,
+        "duration": 24
+      },
+      {
+        "id": "J021",
+        "release": 37,
+        "duration": 9
+      },
+      {
+        "id": "J022",
+        "release": 100,
+        "duration": 11
+      },
+      {
+        "id": "J023",
+        "release": 46,
+        "duration": 10
+      },
+      {
+        "id": "J024",
+        "release": 53,
+        "duration": 4
+      },
+      {
+        "id": "J025",
+        "release": 44,
+        "duration": 17
+      },
+      {
+        "id": "J026",
+        "release": 54,
+        "duration": 18
+      },
+      {
+        "id": "J027",
+        "release": 82,
+        "duration": 7
+      },
+      {
+        "id": "J028",
+        "release": 72,
+        "duration": 11
+      },
+      {
+        "id": "J029",
+        "release": 74,
+        "duration": 3
+      }
+    ]
+  },
+  {
+    "name": "mixed-17",
+    "seed": 17,
+    "jobs": [
+      {
+        "id": "J000",
+        "release": 66,
+        "duration": 15
+      },
+      {
+        "id": "J001",
+        "release": 103,
+        "duration": 11
+      },
+      {
+        "id": "J002",
+        "release": 46,
+        "duration": 11
+      },
+      {
+        "id": "J003",
+        "release": 22,
+        "duration": 24
+      },
+      {
+        "id": "J004",
+        "release": 90,
+        "duration": 19
+      },
+      {
+        "id": "J005",
+        "release": 84,
+        "duration": 10
+      },
+      {
+        "id": "J006",
+        "release": 14,
+        "duration": 2
+      },
+      {
+        "id": "J007",
+        "release": 31,
+        "duration": 14
+      },
+      {
+        "id": "J008",
+        "release": 104,
+        "duration": 25
+      },
+      {
+        "id": "J009",
+        "release": 53,
+        "duration": 10
+      },
+      {
+        "id": "J010",
+        "release": 110,
+        "duration": 18
+      },
+      {
+        "id": "J011",
+        "release": 102,
+        "duration": 12
+      },
+      {
+        "id": "J012",
+        "release": 81,
+        "duration": 23
+      },
+      {
+        "id": "J013",
+        "release": 120,
+        "duration": 25
+      },
+      {
+        "id": "J014",
+        "release": 51,
+        "duration": 6
+      },
+      {
+        "id": "J015",
+        "release": 70,
+        "duration": 3
+      },
+      {
+        "id": "J016",
+        "release": 17,
+        "duration": 8
+      },
+      {
+        "id": "J017",
+        "release": 19,
+        "duration": 24
+      },
+      {
+        "id": "J018",
+        "release": 68,
+        "duration": 19
+      },
+      {
+        "id": "J019",
+        "release": 102,
+        "duration": 23
+      },
+      {
+        "id": "J020",
+        "release": 26,
+        "duration": 12
+      },
+      {
+        "id": "J021",
+        "release": 69,
+        "duration": 5
+      },
+      {
+        "id": "J022",
+        "release": 112,
+        "duration": 24
+      },
+      {
+        "id": "J023",
+        "release": 81,
+        "duration": 4
+      },
+      {
+        "id": "J024",
+        "release": 39,
+        "duration": 15
+      },
+      {
+        "id": "J025",
+        "release": 10,
+        "duration": 18
+      },
+      {
+        "id": "J026",
+        "release": 120,
+        "duration": 17
+      },
+      {
+        "id": "J027",
+        "release": 81,
+        "duration": 21
+      },
+      {
+        "id": "J028",
+        "release": 18,
+        "duration": 23
+      },
+      {
+        "id": "J029",
+        "release": 103,
+        "duration": 15
+      }
+    ]
+  },
+  {
+    "name": "mixed-18",
+    "seed": 18,
+    "jobs": [
+      {
+        "id": "J000",
+        "release": 23,
+        "duration": 5
+      },
+      {
+        "id": "J001",
+        "release": 84,
+        "duration": 16
+      },
+      {
+        "id": "J002",
+        "release": 42,
+        "duration": 9
+      },
+      {
+        "id": "J003",
+        "release": 25,
+        "duration": 17
+      },
+      {
+        "id": "J004",
+        "release": 80,
+        "duration": 17
+      },
+      {
+        "id": "J005",
+        "release": 23,
+        "duration": 17
+      },
+      {
+        "id": "J006",
+        "release": 37,
+        "duration": 16
+      },
+      {
+        "id": "J007",
+        "release": 113,
+        "duration": 10
+      },
+      {
+        "id": "J008",
+        "release": 25,
+        "duration": 10
+      },
+      {
+        "id": "J009",
+        "release": 115,
+        "duration": 24
+      },
+      {
+        "id": "J010",
+        "release": 15,
+        "duration": 12
+      },
+      {
+        "id": "J011",
+        "release": 66,
+        "duration": 23
+      },
+      {
+        "id": "J012",
+        "release": 97,
+        "duration": 7
+      },
+      {
+        "id": "J013",
+        "release": 110,
+        "duration": 9
+      },
+      {
+        "id": "J014",
+        "release": 21,
+        "duration": 9
+      },
+      {
+        "id": "J015",
+        "release": 25,
+        "duration": 25
+      },
+      {
+        "id": "J016",
+        "release": 46,
+        "duration": 20
+      },
+      {
+        "id": "J017",
+        "release": 64,
+        "duration": 8
+      },
+      {
+        "id": "J018",
+        "release": 103,
+        "duration": 23
+      },
+      {
+        "id": "J019",
+        "release": 114,
+        "duration": 17
+      },
+      {
+        "id": "J020",
+        "release": 27,
+        "duration": 24
+      },
+      {
+        "id": "J021",
+        "release": 38,
+        "duration": 10
+      },
+      {
+        "id": "J022",
+        "release": 0,
+        "duration": 12
+      },
+      {
+        "id": "J023",
+        "release": 51,
+        "duration": 9
+      },
+      {
+        "id": "J024",
+        "release": 98,
+        "duration": 25
+      },
+      {
+        "id": "J025",
+        "release": 51,
+        "duration": 19
+      },
+      {
+        "id": "J026",
+        "release": 44,
+        "duration": 20
+      },
+      {
+        "id": "J027",
+        "release": 73,
+        "duration": 18
+      },
+      {
+        "id": "J028",
+        "release": 34,
+        "duration": 10
+      },
+      {
+        "id": "J029",
+        "release": 76,
+        "duration": 24
+      }
+    ]
+  },
+  {
+    "name": "mixed-19",
+    "seed": 19,
+    "jobs": [
+      {
+        "id": "J000",
+        "release": 86,
+        "duration": 3
+      },
+      {
+        "id": "J001",
+        "release": 100,
+        "duration": 18
+      },
+      {
+        "id": "J002",
+        "release": 15,
+        "duration": 18
+      },
+      {
+        "id": "J003",
+        "release": 25,
+        "duration": 14
+      },
+      {
+        "id": "J004",
+        "release": 44,
+        "duration": 18
+      },
+      {
+        "id": "J005",
+        "release": 37,
+        "duration": 20
+      },
+      {
+        "id": "J006",
+        "release": 18,
+        "duration": 21
+      },
+      {
+        "id": "J007",
+        "release": 33,
+        "duration": 5
+      },
+      {
+        "id": "J008",
+        "release": 33,
+        "duration": 15
+      },
+      {
+        "id": "J009",
+        "release": 41,
+        "duration": 10
+      },
+      {
+        "id": "J010",
+        "release": 106,
+        "duration": 5
+      },
+      {
+        "id": "J011",
+        "release": 98,
+        "duration": 12
+      },
+      {
+        "id": "J012",
+        "release": 114,
+        "duration": 11
+      },
+      {
+        "id": "J013",
+        "release": 2,
+        "duration": 20
+      },
+      {
+        "id": "J014",
+        "release": 79,
+        "duration": 8
+      },
+      {
+        "id": "J015",
+        "release": 112,
+        "duration": 4
+      },
+      {
+        "id": "J016",
+        "release": 117,
+        "duration": 8
+      },
+      {
+        "id": "J017",
+        "release": 14,
+        "duration": 19
+      },
+      {
+        "id": "J018",
+        "release": 58,
+        "duration": 14
+      },
+      {
+        "id": "J019",
+        "release": 110,
+        "duration": 25
+      },
+      {
+        "id": "J020",
+        "release": 9,
+        "duration": 5
+      },
+      {
+        "id": "J021",
+        "release": 53,
+        "duration": 2
+      },
+      {
+        "id": "J022",
+        "release": 12,
+        "duration": 20
+      },
+      {
+        "id": "J023",
+        "release": 93,
+        "duration": 15
+      },
+      {
+        "id": "J024",
+        "release": 96,
+        "duration": 14
+      },
+      {
+        "id": "J025",
+        "release": 56,
+        "duration": 23
+      },
+      {
+        "id": "J026",
+        "release": 38,
+        "duration": 20
+      },
+      {
+        "id": "J027",
+        "release": 117,
+        "duration": 18
+      },
+      {
+        "id": "J028",
+        "release": 106,
+        "duration": 7
+      },
+      {
+        "id": "J029",
+        "release": 101,
+        "duration": 22
+      }
+    ]
+  },
+  {
+    "name": "steady-short-arrivals",
+    "seed": null,
+    "jobs": [
+      {
+        "id": "long-job",
+        "release": 0,
+        "duration": 25
+      },
+      {
+        "id": "short-00",
+        "release": 0,
+        "duration": 1
+      },
+      {
+        "id": "short-01",
+        "release": 3,
+        "duration": 1
+      },
+      {
+        "id": "short-02",
+        "release": 6,
+        "duration": 1
+      },
+      {
+        "id": "short-03",
+        "release": 9,
+        "duration": 1
+      },
+      {
+        "id": "short-04",
+        "release": 12,
+        "duration": 1
+      },
+      {
+        "id": "short-05",
+        "release": 15,
+        "duration": 1
+      },
+      {
+        "id": "short-06",
+        "release": 18,
+        "duration": 1
+      },
+      {
+        "id": "short-07",
+        "release": 21,
+        "duration": 1
+      },
+      {
+        "id": "short-08",
+        "release": 24,
+        "duration": 1
+      },
+      {
+        "id": "short-09",
+        "release": 27,
+        "duration": 1
+      },
+      {
+        "id": "short-10",
+        "release": 30,
+        "duration": 1
+      },
+      {
+        "id": "short-11",
+        "release": 33,
+        "duration": 1
+      },
+      {
+        "id": "short-12",
+        "release": 36,
+        "duration": 1
+      },
+      {
+        "id": "short-13",
+        "release": 39,
+        "duration": 1
+      },
+      {
+        "id": "short-14",
+        "release": 42,
+        "duration": 1
+      },
+      {
+        "id": "short-15",
+        "release": 45,
+        "duration": 1
+      },
+      {
+        "id": "short-16",
+        "release": 48,
+        "duration": 1
+      },
+      {
+        "id": "short-17",
+        "release": 51,
+        "duration": 1
+      },
+      {
+        "id": "short-18",
+        "release": 54,
+        "duration": 1
+      },
+      {
+        "id": "short-19",
+        "release": 57,
+        "duration": 1
+      },
+      {
+        "id": "short-20",
+        "release": 60,
+        "duration": 1
+      },
+      {
+        "id": "short-21",
+        "release": 63,
+        "duration": 1
+      },
+      {
+        "id": "short-22",
+        "release": 66,
+        "duration": 1
+      },
+      {
+        "id": "short-23",
+        "release": 69,
+        "duration": 1
+      },
+      {
+        "id": "short-24",
+        "release": 72,
+        "duration": 1
+      },
+      {
+        "id": "short-25",
+        "release": 75,
+        "duration": 1
+      },
+      {
+        "id": "short-26",
+        "release": 78,
+        "duration": 1
+      },
+      {
+        "id": "short-27",
+        "release": 81,
+        "duration": 1
+      },
+      {
+        "id": "short-28",
+        "release": 84,
+        "duration": 1
+      },
+      {
+        "id": "short-29",
+        "release": 87,
+        "duration": 1
+      },
+      {
+        "id": "short-30",
+        "release": 90,
+        "duration": 1
+      }
+    ]
+  },
+  {
+    "name": "sparse-arrivals",
+    "seed": null,
+    "jobs": [
+      {
+        "id": "J000",
+        "release": 0,
+        "duration": 10
+      },
+      {
+        "id": "J001",
+        "release": 40,
+        "duration": 10
+      },
+      {
+        "id": "J002",
+        "release": 80,
+        "duration": 10
+      },
+      {
+        "id": "J003",
+        "release": 120,
+        "duration": 10
+      },
+      {
+        "id": "J004",
+        "release": 160,
+        "duration": 10
+      },
+      {
+        "id": "J005",
+        "release": 200,
+        "duration": 10
+      },
+      {
+        "id": "J006",
+        "release": 240,
+        "duration": 10
+      },
+      {
+        "id": "J007",
+        "release": 280,
+        "duration": 10
+      },
+      {
+        "id": "J008",
+        "release": 320,
+        "duration": 10
+      },
+      {
+        "id": "J009",
+        "release": 360,
+        "duration": 10
+      },
+      {
+        "id": "J010",
+        "release": 400,
+        "duration": 10
+      },
+      {
+        "id": "J011",
+        "release": 440,
+        "duration": 10
+      }
+    ]
+  }
+]

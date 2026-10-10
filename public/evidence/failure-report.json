@@ -1,0 +1,531 @@
+{
+  "schema_version": 1,
+  "run_id": "20261008T152057Z-fa5bb5f3",
+  "started_at_utc": "2026-10-08T15:20:57.608+00:00",
+  "version": "0.1.0",
+  "source_sha256": "a34b291234de95852507ed51bb722699d5249e0585f49adedd0e2cb5533588ad",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows"
+  },
+  "adapter_type": "tcp-jsonl",
+  "evidence_origin": "simulator",
+  "device_or_simulator": "LAB-SIM-001",
+  "protocol": "diagnostics-sim/1",
+  "config": {
+    "schema_version": 1,
+    "target": {
+      "host": "127.0.0.1",
+      "port": 63818
+    },
+    "timeout_s": 0.15,
+    "max_attempts": 2,
+    "cases": [
+      {
+        "case_id": "CASE-01",
+        "requirement_id": "P1-R02",
+        "scenario": "normal",
+        "expected_error": null
+      },
+      {
+        "case_id": "CASE-02",
+        "requirement_id": "P1-R03",
+        "scenario": "timeout",
+        "expected_error": "timeout"
+      },
+      {
+        "case_id": "CASE-03",
+        "requirement_id": "P1-R01",
+        "scenario": "disconnect",
+        "expected_error": "connection_error"
+      },
+      {
+        "case_id": "CASE-04",
+        "requirement_id": "P1-R02",
+        "scenario": "malformed",
+        "expected_error": "protocol_error"
+      },
+      {
+        "case_id": "CASE-05",
+        "requirement_id": "P1-R02",
+        "scenario": "missing_field",
+        "expected_error": null
+      },
+      {
+        "case_id": "CASE-06",
+        "requirement_id": "P1-R02",
+        "scenario": "wrong_type",
+        "expected_error": "validation_error"
+      },
+      {
+        "case_id": "CASE-07",
+        "requirement_id": "P1-R02",
+        "scenario": "out_of_range",
+        "expected_error": "validation_error"
+      },
+      {
+        "case_id": "CASE-08",
+        "requirement_id": "P1-R02",
+        "scenario": "wrong_id",
+        "expected_error": "validation_error"
+      },
+      {
+        "case_id": "CASE-09",
+        "requirement_id": "P1-R02",
+        "scenario": "oversized",
+        "expected_error": "protocol_error"
+      },
+      {
+        "case_id": "CASE-10",
+        "requirement_id": "P1-R02",
+        "scenario": "no_newline",
+        "expected_error": "protocol_error"
+      },
+      {
+        "case_id": "CASE-11",
+        "requirement_id": "P1-R03",
+        "scenario": "recover_after_disconnect",
+        "expected_error": null
+      }
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "CASE-01",
+      "requirement_id": "P1-R02",
+      "scenario": "normal",
+      "expected_error": null,
+      "expected": "valid_status",
+      "actual": {
+        "protocol": "diagnostics-sim/1",
+        "request_id": "cca993a8cf2b4e61b1128dc848f8193f",
+        "device_id": "LAB-SIM-001",
+        "firmware": "simulator/0.1.0",
+        "status": "ready",
+        "temperature_c": 34.5,
+        "supply_voltage_v": 12.0
+      },
+      "diagnostic": "ok",
+      "message": null,
+      "outcome": "pass",
+      "duration_ms": 0.0,
+      "attempt_count": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-10-08T15:20:57.659+00:00",
+          "request": {
+            "protocol": "diagnostics-sim/1",
+            "request_id": "cca993a8cf2b4e61b1128dc848f8193f",
+            "run_case_id": "20261008T152057Z-fa5bb5f3:CASE-01",
+            "operation": "get_status",
+            "scenario": "normal"
+          },
+          "response": {
+            "protocol": "diagnostics-sim/1",
+            "request_id": "cca993a8cf2b4e61b1128dc848f8193f",
+            "device_id": "LAB-SIM-001",
+            "firmware": "simulator/0.1.0",
+            "status": "ready",
+            "temperature_c": 34.5,
+            "supply_voltage_v": 12.0
+          },
+          "diagnostic": "ok",
+          "duration_ms": 0.0
+        }
+      ]
+    },
+    {
+      "case_id": "CASE-02",
+      "requirement_id": "P1-R03",
+      "scenario": "timeout",
+      "expected_error": "timeout",
+      "expected": "timeout",
+      "actual": null,
+      "diagnostic": "timeout",
+      "message": "Connection or response timed out",
+      "outcome": "pass",
+      "duration_ms": 312.0,
+      "attempt_count": 2,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-10-08T15:20:57.662+00:00",
+          "request": {
+            "protocol": "diagnostics-sim/1",
+            "request_id": "e7c562c1d0dc483a94083addda57410b",
+            "run_case_id": "20261008T152057Z-fa5bb5f3:CASE-02",
+            "operation": "get_status",
+            "scenario": "timeout"
+          },
+          "diagnostic": "timeout",
+          "message": "Connection or response timed out",
+          "duration_ms": 156.0
+        },
+        {
+          "attempt": 2,
+          "started_at_utc": "2026-10-08T15:20:57.814+00:00",
+          "request": {
+            "protocol": "diagnostics-sim/1",
+            "request_id": "07a2d1b146cc409dbe2113f8757ec7f8",
+            "run_case_id": "20261008T152057Z-fa5bb5f3:CASE-02",
+            "operation": "get_status",
+            "scenario": "timeout"
+          },
+          "diagnostic": "timeout",
+          "message": "Connection or response timed out",
+          "duration_ms": 156.0
+        }
+      ]
+    },
+    {
+      "case_id": "CASE-03",
+      "requirement_id": "P1-R01",
+      "scenario": "disconnect",
+      "expected_error": "connection_error",
+      "expected": "connection_error",
+      "actual": null,
+      "diagnostic": "connection_error",
+      "message": "Peer closed before a complete response",
+      "outcome": "pass",
+      "duration_ms": 0.0,
+      "attempt_count": 2,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-10-08T15:20:57.972+00:00",
+          "request": {
+            "protocol": "diagnostics-sim/1",
+            "request_id": "ccce1e481527402595ae62994ad66292",
+            "run_case_id": "20261008T152057Z-fa5bb5f3:CASE-03",
+            "operation": "get_status",
+            "scenario": "disconnect"
+          },
+          "diagnostic": "connection_error",
+          "message": "Peer closed before a complete response",
+          "duration_ms": 0.0
+        },
+        {
+          "attempt": 2,
+          "started_at_utc": "2026-10-08T15:20:57.973+00:00",
+          "request": {
+            "protocol": "diagnostics-sim/1",
+            "request_id": "dfb38729b8ab421c9f6bac5e2deb6057",
+            "run_case_id": "20261008T152057Z-fa5bb5f3:CASE-03",
+            "operation": "get_status",
+            "scenario": "disconnect"
+          },
+          "diagnostic": "connection_error",
+          "message": "Peer closed before a complete response",
+          "duration_ms": 0.0
+        }
+      ]
+    },
+    {
+      "case_id": "CASE-04",
+      "requirement_id": "P1-R02",
+      "scenario": "malformed",
+      "expected_error": "protocol_error",
+      "expected": "protocol_error",
+      "actual": null,
+      "diagnostic": "protocol_error",
+      "message": "Response is not valid UTF-8 JSON",
+      "outcome": "pass",
+      "duration_ms": 16.0,
+      "attempt_count": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-10-08T15:20:57.973+00:00",
+          "request": {
+            "protocol": "diagnostics-sim/1",
+            "request_id": "6658e04a2c3d4f91ac4ec34341a7bc54",
+            "run_case_id": "20261008T152057Z-fa5bb5f3:CASE-04",
+            "operation": "get_status",
+            "scenario": "malformed"
+          },
+          "diagnostic": "protocol_error",
+          "message": "Response is not valid UTF-8 JSON",
+          "duration_ms": 16.0
+        }
+      ]
+    },
+    {
+      "case_id": "CASE-05",
+      "requirement_id": "P1-R02",
+      "scenario": "missing_field",
+      "expected_error": null,
+      "expected": "valid_status",
+      "actual": null,
+      "diagnostic": "validation_error",
+      "message": "temperature_c must be a finite number",
+      "outcome": "fail",
+      "duration_ms": 0.0,
+      "attempt_count": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-10-08T15:20:57.988+00:00",
+          "request": {
+            "protocol": "diagnostics-sim/1",
+            "request_id": "8a1020d1d51e40329c9b76a32e668914",
+            "run_case_id": "20261008T152057Z-fa5bb5f3:CASE-05",
+            "operation": "get_status",
+            "scenario": "missing_field"
+          },
+          "response": {
+            "protocol": "diagnostics-sim/1",
+            "request_id": "8a1020d1d51e40329c9b76a32e668914",
+            "device_id": "LAB-SIM-001",
+            "firmware": "simulator/0.1.0",
+            "status": "ready",
+            "supply_voltage_v": 12.0
+          },
+          "diagnostic": "validation_error",
+          "message": "temperature_c must be a finite number",
+          "duration_ms": 0.0
+        }
+      ]
+    },
+    {
+      "case_id": "CASE-06",
+      "requirement_id": "P1-R02",
+      "scenario": "wrong_type",
+      "expected_error": "validation_error",
+      "expected": "validation_error",
+      "actual": null,
+      "diagnostic": "validation_error",
+      "message": "temperature_c must be a finite number",
+      "outcome": "pass",
+      "duration_ms": 0.0,
+      "attempt_count": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-10-08T15:20:57.989+00:00",
+          "request": {
+            "protocol": "diagnostics-sim/1",
+            "request_id": "66d206f295e641adafdb17c5faeed91e",
+            "run_case_id": "20261008T152057Z-fa5bb5f3:CASE-06",
+            "operation": "get_status",
+            "scenario": "wrong_type"
+          },
+          "response": {
+            "protocol": "diagnostics-sim/1",
+            "request_id": "66d206f295e641adafdb17c5faeed91e",
+            "device_id": "LAB-SIM-001",
+            "firmware": "simulator/0.1.0",
+            "status": "ready",
+            "temperature_c": true,
+            "supply_voltage_v": 12.0
+          },
+          "diagnostic": "validation_error",
+          "message": "temperature_c must be a finite number",
+          "duration_ms": 0.0
+        }
+      ]
+    },
+    {
+      "case_id": "CASE-07",
+      "requirement_id": "P1-R02",
+      "scenario": "out_of_range",
+      "expected_error": "validation_error",
+      "expected": "validation_error",
+      "actual": null,
+      "diagnostic": "validation_error",
+      "message": "supply_voltage_v is outside lab protocol bounds",
+      "outcome": "pass",
+      "duration_ms": 0.0,
+      "attempt_count": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-10-08T15:20:57.989+00:00",
+          "request": {
+            "protocol": "diagnostics-sim/1",
+            "request_id": "d395bcf6be534eb48639375573a1e77d",
+            "run_case_id": "20261008T152057Z-fa5bb5f3:CASE-07",
+            "operation": "get_status",
+            "scenario": "out_of_range"
+          },
+          "response": {
+            "protocol": "diagnostics-sim/1",
+            "request_id": "d395bcf6be534eb48639375573a1e77d",
+            "device_id": "LAB-SIM-001",
+            "firmware": "simulator/0.1.0",
+            "status": "ready",
+            "temperature_c": 34.5,
+            "supply_voltage_v": 120
+          },
+          "diagnostic": "validation_error",
+          "message": "supply_voltage_v is outside lab protocol bounds",
+          "duration_ms": 0.0
+        }
+      ]
+    },
+    {
+      "case_id": "CASE-08",
+      "requirement_id": "P1-R02",
+      "scenario": "wrong_id",
+      "expected_error": "validation_error",
+      "expected": "validation_error",
+      "actual": null,
+      "diagnostic": "validation_error",
+      "message": "Protocol or request identifier does not match",
+      "outcome": "pass",
+      "duration_ms": 0.0,
+      "attempt_count": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-10-08T15:20:57.990+00:00",
+          "request": {
+            "protocol": "diagnostics-sim/1",
+            "request_id": "0b051cb76e674adca3cbcecc5d0ee0da",
+            "run_case_id": "20261008T152057Z-fa5bb5f3:CASE-08",
+            "operation": "get_status",
+            "scenario": "wrong_id"
+          },
+          "response": {
+            "protocol": "diagnostics-sim/1",
+            "request_id": "wrong-request",
+            "device_id": "LAB-SIM-001",
+            "firmware": "simulator/0.1.0",
+            "status": "ready",
+            "temperature_c": 34.5,
+            "supply_voltage_v": 12.0
+          },
+          "diagnostic": "validation_error",
+          "message": "Protocol or request identifier does not match",
+          "duration_ms": 0.0
+        }
+      ]
+    },
+    {
+      "case_id": "CASE-09",
+      "requirement_id": "P1-R02",
+      "scenario": "oversized",
+      "expected_error": "protocol_error",
+      "expected": "protocol_error",
+      "actual": null,
+      "diagnostic": "protocol_error",
+      "message": "Response exceeds frame size limit",
+      "outcome": "pass",
+      "duration_ms": 0.0,
+      "attempt_count": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-10-08T15:20:57.991+00:00",
+          "request": {
+            "protocol": "diagnostics-sim/1",
+            "request_id": "bf50eee2ac854f78ba43432e669be4e3",
+            "run_case_id": "20261008T152057Z-fa5bb5f3:CASE-09",
+            "operation": "get_status",
+            "scenario": "oversized"
+          },
+          "diagnostic": "protocol_error",
+          "message": "Response exceeds frame size limit",
+          "duration_ms": 0.0
+        }
+      ]
+    },
+    {
+      "case_id": "CASE-10",
+      "requirement_id": "P1-R02",
+      "scenario": "no_newline",
+      "expected_error": "protocol_error",
+      "expected": "protocol_error",
+      "actual": null,
+      "diagnostic": "protocol_error",
+      "message": "Peer closed before a complete response",
+      "outcome": "pass",
+      "duration_ms": 0.0,
+      "attempt_count": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-10-08T15:20:57.991+00:00",
+          "request": {
+            "protocol": "diagnostics-sim/1",
+            "request_id": "671b845980604ae9a3ef288da8699f37",
+            "run_case_id": "20261008T152057Z-fa5bb5f3:CASE-10",
+            "operation": "get_status",
+            "scenario": "no_newline"
+          },
+          "diagnostic": "protocol_error",
+          "message": "Peer closed before a complete response",
+          "duration_ms": 0.0
+        }
+      ]
+    },
+    {
+      "case_id": "CASE-11",
+      "requirement_id": "P1-R03",
+      "scenario": "recover_after_disconnect",
+      "expected_error": null,
+      "expected": "valid_status",
+      "actual": {
+        "protocol": "diagnostics-sim/1",
+        "request_id": "8b0ba944b9fc4d62b3e8a8b8da872f8d",
+        "device_id": "LAB-SIM-001",
+        "firmware": "simulator/0.1.0",
+        "status": "ready",
+        "temperature_c": 34.5,
+        "supply_voltage_v": 12.0
+      },
+      "diagnostic": "ok",
+      "message": null,
+      "outcome": "pass",
+      "duration_ms": 0.0,
+      "attempt_count": 2,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at_utc": "2026-10-08T15:20:57.992+00:00",
+          "request": {
+            "protocol": "diagnostics-sim/1",
+            "request_id": "c3bcb8d6cfba4ae3b4a9410865e47db7",
+            "run_case_id": "20261008T152057Z-fa5bb5f3:CASE-11",
+            "operation": "get_status",
+            "scenario": "recover_after_disconnect"
+          },
+          "diagnostic": "connection_error",
+          "message": "Peer closed before a complete response",
+          "duration_ms": 0.0
+        },
+        {
+          "attempt": 2,
+          "started_at_utc": "2026-10-08T15:20:57.993+00:00",
+          "request": {
+            "protocol": "diagnostics-sim/1",
+            "request_id": "8b0ba944b9fc4d62b3e8a8b8da872f8d",
+            "run_case_id": "20261008T152057Z-fa5bb5f3:CASE-11",
+            "operation": "get_status",
+            "scenario": "recover_after_disconnect"
+          },
+          "response": {
+            "protocol": "diagnostics-sim/1",
+            "request_id": "8b0ba944b9fc4d62b3e8a8b8da872f8d",
+            "device_id": "LAB-SIM-001",
+            "firmware": "simulator/0.1.0",
+            "status": "ready",
+            "temperature_c": 34.5,
+            "supply_voltage_v": 12.0
+          },
+          "diagnostic": "ok",
+          "duration_ms": 0.0
+        }
+      ]
+    }
+  ],
+  "finished_at_utc": "2026-10-08T15:20:57.993+00:00",
+  "summary": {
+    "pass": 10,
+    "fail": 1,
+    "error": 0,
+    "skipped": 0,
+    "total": 11,
+    "diagnostic_faults": 9
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "scheduling",
+  "title": "Workshop Scheduling Study",
+  "categoryId": "data-simulation",
+  "status": "published",
+  "publishedAt": "2026-10-09",
+  "updatedAt": "2026-10-09",
+  "summary": "A reproducible comparison of scheduling rules that validates constraints and exposes a fairness trade-off.",
+  "technologies": ["Python", "Simulation", "CSV / JSON"],
+  "tags": ["Experiments", "Scheduling", "Data visualisation"],
+  "proof": "36 tests · 22 scenarios · 44 feasible runs",
+  "cover": { "src": "/media/waiting-time-comparison.png", "alt": "Recorded mean and maximum waiting times for two scheduling rules", "fit": "contain" },
+  "renderer": "scheduling",
+  "links": [{ "label": "Experiment results", "href": "/evidence/scheduling-results.json" }, { "label": "Source and tests", "href": "/downloads/scheduling-simulation-study.zip" }]
+}

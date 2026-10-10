@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540" role="img" aria-labelledby="title desc">
+  <title id="title">Device Diagnostics Lab architecture</title>
+  <desc id="desc">A test runner exchanges TCP messages with a local simulator and saves JSON and CSV reports. This is an architecture illustration.</desc>
+  <rect width="900" height="540" fill="#142034"/>
+  <g font-family="Arial, sans-serif">
+    <text x="55" y="67" fill="#aec3e5" font-size="19" letter-spacing="3">DEVICE DIAGNOSTICS LAB</text>
+    <text x="55" y="120" fill="#fff" font-size="30">Make failures observable.</text>
+    <g stroke="#6582ad" stroke-width="2" fill="#1f304b"><rect x="55" y="170" width="300" height="118" rx="8"/><rect x="545" y="170" width="300" height="118" rx="8"/><rect x="260" y="366" width="380" height="105" rx="8"/></g>
+    <g fill="#edf3ff" font-size="24" text-anchor="middle"><text x="205" y="216">Test runner</text><text x="695" y="216">Local simulator</text><text x="450" y="410">Saved evidence</text></g>
+    <g fill="#aec3e5" font-size="19" text-anchor="middle"><text x="205" y="251">Expectations + retries</text><text x="695" y="251">Synthetic faults</text><text x="450" y="444">JSON · CSV · Attempt logs</text><text x="450" y="208">TCP</text></g>
+    <g stroke="#8bb3f5" stroke-width="3" fill="none"><path d="M370 233h160m-13-9 13 9-13 9M205 305v28h245v20m-9-13 9 13 9-13"/></g>
+    <text x="55" y="513" fill="#aec3e5" font-size="16">SYSTEM ILLUSTRATION · NO PHYSICAL DEVICE CONNECTED</text>
+  </g>
+</svg>

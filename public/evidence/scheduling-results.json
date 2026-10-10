@@ -1,0 +1,455 @@
+{
+  "executed_at_utc": "2026-10-08T16:21:41.960332+00:00",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows",
+    "matplotlib": "3.11.2"
+  },
+  "source_sha256": "cd35630d524d4b19494d10e56a6deb305ee3d193050137a430ff1bd3ab23485d",
+  "data_origin": "synthetic",
+  "gap_minutes": 2,
+  "timing_repetitions": 50,
+  "scenario_count": 22,
+  "rows": [
+    {
+      "scenario": "mixed-00",
+      "policy": "fcfs",
+      "job_count": 30,
+      "mean_wait_min": 143.73333333333332,
+      "max_wait_min": 324,
+      "finish_min": 443,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.0823
+    },
+    {
+      "scenario": "mixed-00",
+      "policy": "spt",
+      "job_count": 30,
+      "mean_wait_min": 103.86666666666666,
+      "max_wait_min": 309,
+      "finish_min": 443,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.07985
+    },
+    {
+      "scenario": "mixed-01",
+      "policy": "fcfs",
+      "job_count": 30,
+      "mean_wait_min": 170.83333333333334,
+      "max_wait_min": 308,
+      "finish_min": 445,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.08405
+    },
+    {
+      "scenario": "mixed-01",
+      "policy": "spt",
+      "job_count": 30,
+      "mean_wait_min": 108.06666666666666,
+      "max_wait_min": 366,
+      "finish_min": 445,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.0825
+    },
+    {
+      "scenario": "mixed-02",
+      "policy": "fcfs",
+      "job_count": 30,
+      "mean_wait_min": 174.93333333333334,
+      "max_wait_min": 342,
+      "finish_min": 473,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.0896
+    },
+    {
+      "scenario": "mixed-02",
+      "policy": "spt",
+      "job_count": 30,
+      "mean_wait_min": 123.96666666666667,
+      "max_wait_min": 398,
+      "finish_min": 473,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.086
+    },
+    {
+      "scenario": "mixed-03",
+      "policy": "fcfs",
+      "job_count": 30,
+      "mean_wait_min": 193.23333333333332,
+      "max_wait_min": 353,
+      "finish_min": 486,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.08455
+    },
+    {
+      "scenario": "mixed-03",
+      "policy": "spt",
+      "job_count": 30,
+      "mean_wait_min": 128.83333333333334,
+      "max_wait_min": 411,
+      "finish_min": 486,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.0864
+    },
+    {
+      "scenario": "mixed-04",
+      "policy": "fcfs",
+      "job_count": 30,
+      "mean_wait_min": 149.63333333333333,
+      "max_wait_min": 293,
+      "finish_min": 432,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.0806
+    },
+    {
+      "scenario": "mixed-04",
+      "policy": "spt",
+      "job_count": 30,
+      "mean_wait_min": 105.0,
+      "max_wait_min": 367,
+      "finish_min": 432,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.0813
+    },
+    {
+      "scenario": "mixed-05",
+      "policy": "fcfs",
+      "job_count": 30,
+      "mean_wait_min": 152.73333333333332,
+      "max_wait_min": 297,
+      "finish_min": 442,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.09085
+    },
+    {
+      "scenario": "mixed-05",
+      "policy": "spt",
+      "job_count": 30,
+      "mean_wait_min": 109.4,
+      "max_wait_min": 342,
+      "finish_min": 442,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.0811
+    },
+    {
+      "scenario": "mixed-06",
+      "policy": "fcfs",
+      "job_count": 30,
+      "mean_wait_min": 161.63333333333333,
+      "max_wait_min": 348,
+      "finish_min": 483,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.0866
+    },
+    {
+      "scenario": "mixed-06",
+      "policy": "spt",
+      "job_count": 30,
+      "mean_wait_min": 112.1,
+      "max_wait_min": 361,
+      "finish_min": 483,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.08415
+    },
+    {
+      "scenario": "mixed-07",
+      "policy": "fcfs",
+      "job_count": 30,
+      "mean_wait_min": 150.43333333333334,
+      "max_wait_min": 300,
+      "finish_min": 434,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.085
+    },
+    {
+      "scenario": "mixed-07",
+      "policy": "spt",
+      "job_count": 30,
+      "mean_wait_min": 104.5,
+      "max_wait_min": 340,
+      "finish_min": 434,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.076
+    },
+    {
+      "scenario": "mixed-08",
+      "policy": "fcfs",
+      "job_count": 30,
+      "mean_wait_min": 172.7,
+      "max_wait_min": 309,
+      "finish_min": 446,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.08224999999999999
+    },
+    {
+      "scenario": "mixed-08",
+      "policy": "spt",
+      "job_count": 30,
+      "mean_wait_min": 116.96666666666667,
+      "max_wait_min": 392,
+      "finish_min": 446,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.0819
+    },
+    {
+      "scenario": "mixed-09",
+      "policy": "fcfs",
+      "job_count": 30,
+      "mean_wait_min": 182.73333333333332,
+      "max_wait_min": 361,
+      "finish_min": 489,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.0806
+    },
+    {
+      "scenario": "mixed-09",
+      "policy": "spt",
+      "job_count": 30,
+      "mean_wait_min": 121.06666666666666,
+      "max_wait_min": 407,
+      "finish_min": 489,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.0798
+    },
+    {
+      "scenario": "mixed-10",
+      "policy": "fcfs",
+      "job_count": 30,
+      "mean_wait_min": 181.66666666666666,
+      "max_wait_min": 323,
+      "finish_min": 439,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.0888
+    },
+    {
+      "scenario": "mixed-10",
+      "policy": "spt",
+      "job_count": 30,
+      "mean_wait_min": 115.56666666666666,
+      "max_wait_min": 376,
+      "finish_min": 439,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.08295
+    },
+    {
+      "scenario": "mixed-11",
+      "policy": "fcfs",
+      "job_count": 30,
+      "mean_wait_min": 132.46666666666667,
+      "max_wait_min": 308,
+      "finish_min": 429,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.08335000000000001
+    },
+    {
+      "scenario": "mixed-11",
+      "policy": "spt",
+      "job_count": 30,
+      "mean_wait_min": 93.6,
+      "max_wait_min": 321,
+      "finish_min": 429,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.0855
+    },
+    {
+      "scenario": "mixed-12",
+      "policy": "fcfs",
+      "job_count": 30,
+      "mean_wait_min": 174.13333333333333,
+      "max_wait_min": 327,
+      "finish_min": 450,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.08405
+    },
+    {
+      "scenario": "mixed-12",
+      "policy": "spt",
+      "job_count": 30,
+      "mean_wait_min": 125.9,
+      "max_wait_min": 352,
+      "finish_min": 450,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.0838
+    },
+    {
+      "scenario": "mixed-13",
+      "policy": "fcfs",
+      "job_count": 30,
+      "mean_wait_min": 168.3,
+      "max_wait_min": 338,
+      "finish_min": 466,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.0866
+    },
+    {
+      "scenario": "mixed-13",
+      "policy": "spt",
+      "job_count": 30,
+      "mean_wait_min": 115.76666666666667,
+      "max_wait_min": 382,
+      "finish_min": 466,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.078
+    },
+    {
+      "scenario": "mixed-14",
+      "policy": "fcfs",
+      "job_count": 30,
+      "mean_wait_min": 181.1,
+      "max_wait_min": 344,
+      "finish_min": 479,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.0877
+    },
+    {
+      "scenario": "mixed-14",
+      "policy": "spt",
+      "job_count": 30,
+      "mean_wait_min": 124.9,
+      "max_wait_min": 420,
+      "finish_min": 479,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.0839
+    },
+    {
+      "scenario": "mixed-15",
+      "policy": "fcfs",
+      "job_count": 30,
+      "mean_wait_min": 147.46666666666667,
+      "max_wait_min": 328,
+      "finish_min": 455,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.0814
+    },
+    {
+      "scenario": "mixed-15",
+      "policy": "spt",
+      "job_count": 30,
+      "mean_wait_min": 105.2,
+      "max_wait_min": 337,
+      "finish_min": 455,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.0781
+    },
+    {
+      "scenario": "mixed-16",
+      "policy": "fcfs",
+      "job_count": 30,
+      "mean_wait_min": 137.86666666666667,
+      "max_wait_min": 311,
+      "finish_min": 427,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.0828
+    },
+    {
+      "scenario": "mixed-16",
+      "policy": "spt",
+      "job_count": 30,
+      "mean_wait_min": 103.13333333333334,
+      "max_wait_min": 326,
+      "finish_min": 427,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.0824
+    },
+    {
+      "scenario": "mixed-17",
+      "policy": "fcfs",
+      "job_count": 30,
+      "mean_wait_min": 176.3,
+      "max_wait_min": 387,
+      "finish_min": 524,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.08695
+    },
+    {
+      "scenario": "mixed-17",
+      "policy": "spt",
+      "job_count": 30,
+      "mean_wait_min": 138.9,
+      "max_wait_min": 398,
+      "finish_min": 524,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.08285000000000001
+    },
+    {
+      "scenario": "mixed-18",
+      "policy": "fcfs",
+      "job_count": 30,
+      "mean_wait_min": 183.3,
+      "max_wait_min": 385,
+      "finish_min": 524,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.08295
+    },
+    {
+      "scenario": "mixed-18",
+      "policy": "spt",
+      "job_count": 30,
+      "mean_wait_min": 147.96666666666667,
+      "max_wait_min": 447,
+      "finish_min": 524,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.0807
+    },
+    {
+      "scenario": "mixed-19",
+      "policy": "fcfs",
+      "job_count": 30,
+      "mean_wait_min": 178.63333333333333,
+      "max_wait_min": 339,
+      "finish_min": 474,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.0814
+    },
+    {
+      "scenario": "mixed-19",
+      "policy": "spt",
+      "job_count": 30,
+      "mean_wait_min": 123.9,
+      "max_wait_min": 368,
+      "finish_min": 474,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.0796
+    },
+    {
+      "scenario": "steady-short-arrivals",
+      "policy": "fcfs",
+      "job_count": 32,
+      "mean_wait_min": 26.15625,
+      "max_wait_min": 27,
+      "finish_min": 118,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.05285
+    },
+    {
+      "scenario": "steady-short-arrivals",
+      "policy": "spt",
+      "job_count": 32,
+      "mean_wait_min": 2.90625,
+      "max_wait_min": 93,
+      "finish_min": 118,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.0415
+    },
+    {
+      "scenario": "sparse-arrivals",
+      "policy": "fcfs",
+      "job_count": 12,
+      "mean_wait_min": 0.0,
+      "max_wait_min": 0,
+      "finish_min": 450,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.0175
+    },
+    {
+      "scenario": "sparse-arrivals",
+      "policy": "spt",
+      "job_count": 12,
+      "mean_wait_min": 0.0,
+      "max_wait_min": 0,
+      "finish_min": 450,
+      "constraint_violations": 0,
+      "median_compute_ms": 0.01765
+    }
+  ]
+}

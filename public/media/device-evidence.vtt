@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00.000 --> 00:07.000
+Device Diagnostics Lab. A personal project using synthetic TCP device data.
+
+00:07.000 --> 00:15.000
+This viewer shows a recorded local run. A healthy response matches the expected result.
+
+00:15.000 --> 00:24.000
+A timeout is an injected fault. PASS means the fault matched the test expectation.
+
+00:24.000 --> 00:32.000
+Inspect the request. The simulator withheld its reply. The deadline bounds each attempt.
+
+00:32.000 --> 00:42.000
+Recovery: the first connection fails and the second attempt returns a valid response.
+
+00:42.000 --> 00:52.000
+The raw response preserves the request ID, device ID and synthetic readings.
+
+00:52.000 --> 01:06.000
+44 automated tests passed. Reports include an intentional failing run. Physical hardware remains untested.

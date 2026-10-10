@@ -1,0 +1,15 @@
+{
+  "id": "device-diagnostics",
+  "title": "Device Diagnostics Lab",
+  "categoryId": "devices-testing",
+  "status": "published",
+  "publishedAt": "2026-10-09",
+  "updatedAt": "2026-10-09",
+  "summary": "A local TCP test bench that identifies communication faults, verifies recovery and preserves structured evidence.",
+  "technologies": ["Python", "TCP", "pytest"],
+  "tags": ["Fault injection", "Test automation", "Synthetic data"],
+  "proof": "44 automated tests · 11 recorded scenarios",
+  "cover": { "src": "/media/device-diagnostics-cover.svg", "alt": "Architecture illustration: test runner, TCP simulator and saved reports", "fit": "contain" },
+  "renderer": "diagnostics",
+  "links": [{ "label": "Source, tests and reports", "href": "/downloads/device-diagnostics-lab.zip" }]
+}

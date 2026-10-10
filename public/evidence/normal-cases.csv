@@ -1,0 +1,12 @@
+case_id,requirement_id,scenario,expected,diagnostic,outcome,attempt_count,duration_ms
+CASE-01,P1-R02,normal,valid_status,ok,pass,1,16.0
+CASE-02,P1-R03,timeout,timeout,timeout,pass,2,312.0
+CASE-03,P1-R01,disconnect,connection_error,connection_error,pass,2,0.0
+CASE-04,P1-R02,malformed,protocol_error,protocol_error,pass,1,0.0
+CASE-05,P1-R02,missing_field,validation_error,validation_error,pass,1,0.0
+CASE-06,P1-R02,wrong_type,validation_error,validation_error,pass,1,0.0
+CASE-07,P1-R02,out_of_range,validation_error,validation_error,pass,1,0.0
+CASE-08,P1-R02,wrong_id,validation_error,validation_error,pass,1,0.0
+CASE-09,P1-R02,oversized,protocol_error,protocol_error,pass,1,0.0
+CASE-10,P1-R02,no_newline,protocol_error,protocol_error,pass,1,0.0
+CASE-11,P1-R03,recover_after_disconnect,valid_status,ok,pass,2,0.0

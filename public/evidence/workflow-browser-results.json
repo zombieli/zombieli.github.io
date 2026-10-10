@@ -1,0 +1,32 @@
+{
+  "executed_at_utc": "2026-10-08T16:21:01.677Z",
+  "browser": "153.0.8010.53",
+  "results": [
+    {
+      "mode": "demo",
+      "result": "passed",
+      "checks": [
+        "4 viewport widths without overflow",
+        "create to assign to work to resolve to close",
+        "required resolution",
+        "5 history entries",
+        "status filtering",
+        "demo reset",
+        "no browser exceptions"
+      ]
+    },
+    {
+      "mode": "api",
+      "result": "passed",
+      "checks": [
+        "4 viewport widths without overflow",
+        "create to assign to work to resolve to close",
+        "required resolution",
+        "5 history entries",
+        "status filtering",
+        "SQLite persistence and network failure preserve input",
+        "no browser exceptions"
+      ]
+    }
+  ]
+}
