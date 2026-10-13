@@ -2,7 +2,7 @@
 
 Software engineering portfolio for internship applications in Western Australia. Built with Vue 3, TypeScript and Vite. Six implemented projects are presented with runnable demonstrations, source downloads and recorded evidence; future ideas are labelled separately.
 
-Version 1.1.0, published 13 October 2026: work in all six categories, with a mobile PWA, developer CLI and referenced manual search added to the original collection. Visit the [live portfolio](https://zombieli.github.io/) or [project collection](https://zombieli.github.io/projects/). See [CHANGELOG.md](CHANGELOG.md) for the release scope.
+Version 1.2.0: the familiar blue-and-white presentation is refined for readability, with separate case modules, validated diagnostic evidence and the current resume. Visit the [live portfolio](https://zombieli.github.io/) or [project collection](https://zombieli.github.io/projects/). See [CHANGELOG.md](CHANGELOG.md) for the release scope and [the 1.2 development log](docs/release-1.2.md) for verification.
 
 | Category | Implemented project | Try it |
 | --- | --- | --- |
@@ -43,7 +43,7 @@ This creates `content/projects/equipment-check-in.json` as a **draft**, not a co
 - `src/data/catalogue.json` and `projects/<id>/index.html` are generated; edit the content records instead. The generator refuses to overwrite unowned HTML and removes only its own stale detail entries.
 - Content editing is file based. There is no CMS or server database. Archiving does not remove historical assets from `public` or make a public source repository private.
 
-The original three specialised case views remain in `App.vue`, `WorkflowCase.vue` and `SchedulingCase.vue`; changes to their detailed claims need matching edits there and to the real evidence. Their catalogue cards and categories are now data driven.
+The original three specialised case views live in `src/cases/DiagnosticsCase.vue`, `src/WorkflowCase.vue` and `src/SchedulingCase.vue`; changes to their detailed claims need matching edits there and to the real evidence. App owns navigation and page selection, while the homepage lives in `src/pages/HomePage.vue`. Shared personal facts are maintained in `src/data/profile.json`. See [case ownership](docs/adr/0001-case-presentation.md) and the [domain glossary](GLOSSARY.md).
 
 Field reference, category roadmap, authoring and archiving guide: [Content maintenance](docs/content-maintenance.md).
 
@@ -64,7 +64,7 @@ python scripts/check-project-bundles.py --browser
 
 Set `CHROMIUM_PATH` to a local Chrome executable if using it instead of Playwright's downloaded Chromium.
 
-`qa/results.json`, `qa/authoring-results.json` and `qa/bundle-results.json` record actual verification runs. Browser checks cover four widths, category/search/sort URLs, keyboard use, history navigation, empty states, the report viewer, evidence-fetch failure, downloads, video, workflow demo and 404 responses. The lifecycle test builds an isolated copy with an extra category and new standard case, verifies rendering and archiving, then deletes its temporary copy. It does not add sample work to the real portfolio.
+`qa/results.json`, `qa/authoring-results.json` and `qa/bundle-results.json` record actual verification runs. Browser checks cover responsive layout, category/search/sort URLs, keyboard use, menu focus, history navigation, empty states, evidence failure/retry, lazy case loading, downloads, video, workflow demo and 404 responses. The lifecycle test builds an isolated copy with an extra category and new standard case, verifies rendering and archiving, then deletes its temporary copy. It does not add sample work to the real portfolio.
 
 The archive checker validates and extracts the three new source ZIPs into temporary directories, runs their real Node tests without installing project dependencies, and optionally exercises the demos at `BASE_URL` (default `http://127.0.0.1:4173`). It records evidence under `qa/bundle-verification/`. Each project includes architecture, development notes and verification reports. These functional checks are not a formal accessibility audit, real-device test or Lighthouse score. If retiring a case, update its specific regression scenario alongside the content change.
 

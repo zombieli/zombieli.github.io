@@ -1,7 +1,15 @@
 {
-  "executed_at_utc": "2026-10-13T02:22:39.264Z",
+  "executed_at_utc": "2026-10-13T03:47:14.500Z",
   "browser": "154.0.8037.98",
   "checks": [
+    "No horizontal overflow: / 320px",
+    "No horizontal overflow: /projects/ 320px",
+    "No horizontal overflow: /projects/device-diagnostics/ 320px",
+    "No horizontal overflow: /projects/field-service/ 320px",
+    "No horizontal overflow: /projects/inspection-notebook/ 320px",
+    "No horizontal overflow: /projects/scheduling/ 320px",
+    "No horizontal overflow: /projects/technical-manual-search/ 320px",
+    "No horizontal overflow: /projects/test-report-delta/ 320px",
     "No horizontal overflow: / 360px",
     "No horizontal overflow: /projects/ 360px",
     "No horizontal overflow: /projects/device-diagnostics/ 360px",
@@ -34,10 +42,13 @@
     "No horizontal overflow: /projects/scheduling/ 1440px",
     "No horizontal overflow: /projects/technical-manual-search/ 1440px",
     "No horizontal overflow: /projects/test-report-delta/ 1440px",
+    "320 CSS-pixel reflow checked on every portfolio page; this is not a literal browser zoom test",
     "Keyboard skip link; home to case; timeout and recovery evidence; raw request disclosure",
+    "Rendered profile preserves graduation, internship dates, visa conditions and confirmed contact links",
     "Homepage has exactly one representative per published category",
     "Collection shows all published work, category counts and honest future directions",
     "Populated categories keep a separately labelled future roadmap",
+    "Every category is selectable with the keyboard, retains focus and shows only its published projects",
     "Category URL survives reload and exposes selected state",
     "Keyboard category selection and browser back/forward restore filters",
     "Technology search, URL persistence, zero results and reset work together",
@@ -54,23 +65,56 @@
     "Resource loads: /evidence/scheduling-results.json",
     "Resource loads: /media/device-evidence-walkthrough.webm",
     "Resource loads: /media/device-evidence.vtt",
+    "Escape closes mobile navigation and restores focus to the Menu button",
+    "Keyboard focus can leave the open mobile navigation without a trap",
+    "Resizing to the desktop breakpoint closes mobile state and keeps desktop navigation available",
     "Mobile navigation opens, navigates and closes",
-    "Evidence fetch failure retains readable case and download links",
+    "Reduced-motion preference disables animated transitions and smooth scrolling on main interface elements",
+    "Actual request tracking confirms home, collection and other cases never fetch the diagnostics report",
+    "Malformed JSON with HTTP 200: readable case and downloads remain; explicit retry restores valid evidence without uncaught errors",
+    "Malformed report shape with HTTP 200: readable case and downloads remain; explicit retry restores valid evidence without uncaught errors",
+    "Missing attempts with HTTP 200: readable case and downloads remain; explicit retry restores valid evidence without uncaught errors",
+    "Missing source metadata with HTTP 200: readable case and downloads remain; explicit retry restores valid evidence without uncaught errors",
+    "HTTP 503: readable case and downloads remain; explicit retry restores valid evidence without uncaught errors",
+    "Network failure: readable case and downloads remain; explicit retry restores valid evidence without uncaught errors",
     "Video metadata loads and recorded duration is at least 60 seconds",
     "Portfolio opens bundled synthetic workflow demo at correct base path",
     "Scheduling counterexample table matches recorded experiment",
     "Unknown route returns real 404",
-    "No uncaught browser errors"
+    "Cold fragment navigation reaches the evidence section after a delayed diagnostics chunk loads",
+    "A failed case chunk shows collection and reload actions; reloading after recovery restores the case",
+    "No uncaught browser errors in normal pages or evidence-failure recovery"
   ],
   "assets": [
     {
-      "name": "main-DlHo--b0.css",
-      "bytes": 16510
+      "name": "DiagnosticsCase-CHa2iSrs.js",
+      "bytes": 9521
     },
     {
-      "name": "main-DWiAsEY_.js",
-      "bytes": 116613
+      "name": "main-AoCT88-9.css",
+      "bytes": 16849
+    },
+    {
+      "name": "main-Bgo0vXI_.js",
+      "bytes": 40919
+    },
+    {
+      "name": "runtime-core.esm-bundler-DHAFmOeX.js",
+      "bytes": 57752
+    },
+    {
+      "name": "SchedulingCase-BBgKyWLT.js",
+      "bytes": 11839
+    },
+    {
+      "name": "StandardCase-BC2R4eb7.js",
+      "bytes": 2248
+    },
+    {
+      "name": "WorkflowCase-BEwx3FSb.js",
+      "bytes": 4199
     }
   ],
-  "limitations": "Chromium functional checks; not a WCAG audit, Lighthouse score or public deployment verification."
+  "injected_case_chunk_errors": [],
+  "limitations": "Chromium functional checks with 320 CSS-pixel reflow, not literal browser zoom, a WCAG audit, Lighthouse score or public deployment verification."
 }

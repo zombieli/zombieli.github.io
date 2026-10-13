@@ -4,7 +4,7 @@ import { categoryHref } from '../lib/catalogue'
 defineProps<{ project: Project; category: Category }>()
 </script>
 <template>
-  <section class="case-heading wrap"><a class="back" :href="categoryHref(category)">All {{ category.label.toLowerCase() }} projects</a><p class="eyebrow">{{ category.label }}</p><h1>{{ project.title }}</h1><p class="hero-description">{{ project.summary }}</p><div class="case-facts"><div><span>MY CONTRIBUTION</span><strong>{{ project.caseStudy?.role }}</strong></div><div><span>UPDATED</span><strong>{{ project.updatedAt }}</strong></div><div><span>EVIDENCE</span><strong>{{ project.proof }}</strong></div></div></section>
+  <section class="case-heading wrap"><a class="back" :href="categoryHref(category)">All {{ category.label.toLowerCase() }} projects</a><p class="eyebrow">{{ category.label }}</p><h1>{{ project.title }}</h1><p class="hero-description">{{ project.summary }}</p><div class="case-facts"><div><span>My contribution</span><strong>{{ project.caseStudy?.role }}</strong></div><div><span>Updated</span><strong>{{ project.updatedAt }}</strong></div><div><span>Evidence</span><strong>{{ project.proof }}</strong></div></div></section>
   <div class="wrap actions"><a v-for="link in project.links" :key="link.href" class="button secondary" :href="link.href">{{ link.label }}</a></div>
   <article v-if="project.caseStudy" class="wrap section standalone-case standard-case">
     <figure><img :src="project.cover.src" :alt="project.cover.alt"><figcaption>{{ project.cover.alt }}</figcaption></figure>

@@ -1,5 +1,5 @@
 {
-  "executed_at_utc": "2026-10-13T02:17:25.179Z",
+  "executed_at_utc": "2026-10-13T03:41:34.275Z",
   "browser": "154.0.8037.98",
   "checks": [
     "Scaffold creates a hidden draft and refuses to overwrite it",

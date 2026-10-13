@@ -12,7 +12,7 @@ defineProps<{ project: Project; category: Category }>()
       <p class="card-summary">{{ project.summary }}</p>
       <ul class="technology-list" aria-label="Technologies"><li v-for="technology in project.technologies" :key="technology">{{ technology }}</li></ul>
       <p class="card-proof">{{ project.proof }}</p>
-      <div class="card-footer"><a class="text-link" :href="projectHref(project)" :aria-label="`View case study: ${project.title}`">View case study <span aria-hidden="true">↗</span></a><time :datetime="project.updatedAt">{{ project.updatedAt }}</time></div>
+      <div class="card-footer"><a class="text-link" :href="projectHref(project)" :aria-label="`View case study: ${project.title}`">View case study</a><time :datetime="project.updatedAt">Updated {{ project.updatedAt }}</time></div>
     </div>
   </article>
 </template>

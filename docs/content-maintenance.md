@@ -46,10 +46,17 @@ All six categories currently pin their corresponding project. Set a pin to `null
 | `src/components/ProjectLibrary.vue` | Filters, search, sorting, URL state and empty states |
 | `src/components/StandardCase.vue` | Standard detail template for future projects |
 | `src/lib/catalogue.ts` | Selection, search, sorting and URL rules |
-| `src/catalogue.css` | Catalogue and standard-case styles |
+| `src/catalogue.css` | Catalogue and future-direction styles |
+| `src/data/profile.json` | Confirmed contact, education, internship availability and work-rights facts |
+| `src/pages/HomePage.vue` | Homepage presentation using the profile and featured catalogue |
+| `src/cases/DiagnosticsCase.vue` | Diagnostic case, evidence request lifecycle and scenario interaction |
+| `src/lib/diagnostics-report.ts` | Validation of the evidence response consumed by the viewer |
+| `src/style.css` and `src/cases.css` | Shared frame/home styles and case-reading styles |
 | `qa/results.json` and `qa/authoring-results.json` | Recorded verification results |
 
-The original three specialised cases retain their interactive views in `src/App.vue`, `src/WorkflowCase.vue` and `src/SchedulingCase.vue`. Update their detailed claims and actual evidence together. Their cards and categories are data-driven; new projects use the standard template.
+The original three specialised cases retain their interactive views in `src/cases/DiagnosticsCase.vue`, `src/WorkflowCase.vue` and `src/SchedulingCase.vue`. Update their detailed claims and actual evidence together. Their cards and categories are data-driven; new projects use the standard template. App loads case modules on demand and owns only the shared frame and page selection.
+
+Update personal facts in `src/data/profile.json`. `validateProfile` in `scripts/validate-content.mjs` checks the confirmed availability, visa wording and contact destinations independently of presentation placement. When the candidate confirms a changed fact, update both the record and its confirmed-value check, then verify the rendered homepage and resume agree.
 
 ## Add a project
 
@@ -118,7 +125,7 @@ npm run test:authoring
 
 Browser tests require Playwright Chromium or a local Chrome executable specified by `CHROMIUM_PATH`.
 
-The build checks references, dates, required content, homepage pins, local resources, source-bundle hashes and original project evidence. The 19 rule/generation tests cover selection, filtering, drafts, routes, archiving and overwrite protection. The browser checks cover four viewport widths, shared filters, history navigation, empty states, the original cases, downloads and 404 responses. The 5 authoring lifecycle checks build an isolated copy with a temporary category and project, verify it in a browser, then remove the copy.
+The build checks references, dates, required content, homepage pins, local resources, source-bundle hashes and original project evidence. Rule/generation tests cover selection, filtering, drafts, routes, archiving and overwrite protection. Evidence tests check report metadata, identities, attempts and malformed responses; profile tests protect confirmed facts. Browser checks cover responsive layout, shared filters, history, keyboard/menu focus, evidence recovery, case loading, downloads and 404 responses. The authoring lifecycle checks build an isolated copy with a temporary category and project, verify it in a browser, then remove the copy.
 
 HTTPS link syntax is checked automatically; verify access to new external links manually. If intentionally retiring an original case, update its specialised acceptance scenario as part of the same change.
 

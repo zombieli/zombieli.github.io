@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.2.0 — 2026-10-13
+
+Refines the existing blue-and-white portfolio while preserving its homepage structure, project cards, six categories and permanent case URLs.
+
+- More readable project metadata, simpler labels, consistent case spacing and prominent workflow demo access.
+- Mobile navigation closes on Escape with focus restored, on navigation and on desktop resize.
+- Homepage and diagnostic presentation have separate ownership. Specialised cases load on demand instead of shipping in the homepage entry.
+- Diagnostic evidence is validated before display. Invalid JSON, incomplete reports, HTTP errors and stalled requests leave the case readable and provide a retry action.
+- Confirmed profile facts have one presentation source; verification no longer depends on literal text being in App.vue.
+- The downloadable resume now reflects portfolio 1.1, with three selected projects, website/GitHub links and consistent application formatting.
+
+The content-authoring workflow, source archives and implemented demo behaviour remain unchanged. Development decisions and actual verification results are recorded in [the 1.2 release log](docs/release-1.2.md).
+
 ## 1.1.0 — 2026-10-13
 
 Three runnable projects complete the first example in each of the six portfolio categories:

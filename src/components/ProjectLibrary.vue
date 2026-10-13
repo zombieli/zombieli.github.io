@@ -34,7 +34,7 @@ onUnmounted(() => window.removeEventListener('popstate', restoreFilters))
 </script>
 <template>
   <section class="library-heading wrap">
-    <p class="eyebrow">PROJECT COLLECTION</p><h1>Explore the work.</h1>
+    <h1>Explore the work.</h1>
     <p class="hero-description">Browse by the kind of problem you’re interested in. Every published project includes its decisions, evidence and limitations.</p>
     <p class="collection-meta">{{ projects.length }} published projects <span aria-hidden="true">/</span> {{ categories.length - futureCategories.length }} areas with work <span aria-hidden="true">/</span> <a href="#future-directions">Future directions</a></p>
   </section>
@@ -44,7 +44,7 @@ onUnmounted(() => window.removeEventListener('popstate', restoreFilters))
         <button :aria-pressed="filters.category === 'all'" @click="changeFilters({ category: 'all' })"><span>All projects</span><span class="category-count">{{ projects.length }}</span></button>
         <button v-for="category in categories" :key="category.id" :aria-pressed="filters.category === category.id" @click="changeFilters({ category: category.id })"><span>{{ category.label }}<small v-if="!categoryCount(projects, category.id)">Future direction</small></span><span class="category-count">{{ categoryCount(projects, category.id) }}</span></button>
       </div>
-      <p class="sidebar-note">Counts include published work only. Each project has one primary category.</p>
+      <p class="sidebar-note">Choose the kind of work you want to explore.</p>
     </aside>
     <div class="library-results">
       <div class="library-toolbar"><div class="search-field"><label for="project-search">Search projects</label><input id="project-search" type="search" :value="filters.q" placeholder="Project, technology or topic" @input="search"></div><div class="sort-field"><label for="project-sort">Sort by</label><select id="project-sort" :value="filters.sort" @change="sort"><option value="updated">Recently updated</option><option value="title">Title A–Z</option></select></div></div>
@@ -52,16 +52,15 @@ onUnmounted(() => window.removeEventListener('popstate', restoreFilters))
       <div class="results-heading"><div><h2>{{ selectedCategory?.label || 'All projects' }}</h2><p v-if="selectedCategory">{{ selectedCategory.description }}</p></div><p class="result-count" role="status" aria-live="polite" aria-atomic="true">{{ results.length }} {{ results.length === 1 ? 'project' : 'projects' }}</p></div>
       <div v-if="results.length" class="project-grid library-grid"><ProjectCard v-for="project in results" :key="project.id" :project="project" :category="categoryById[project.categoryId]!" /></div>
       <div v-else class="catalogue-empty">
-        <template v-if="selectedCategory && !categoryCount(projects, selectedCategory.id)"><p class="eyebrow">FUTURE DIRECTION</p><h3>No published projects here yet.</h3><p>This is an area I plan to explore. These ideas are not completed projects:</p><ul><li v-for="idea in selectedCategory.ideas" :key="idea">{{ idea }}</li></ul></template>
+        <template v-if="selectedCategory && !categoryCount(projects, selectedCategory.id)"><p class="eyebrow">Future direction</p><h3>No published projects here yet.</h3><p>This is an area I plan to explore. These ideas are not completed projects:</p><ul><li v-for="idea in selectedCategory.ideas" :key="idea">{{ idea }}</li></ul></template>
         <template v-else><h3>No projects match these filters.</h3><p>Try a different technology or a broader search.</p></template>
         <button class="button secondary" @click="changeFilters({ category: 'all', q: '' })">Show all projects</button>
       </div>
       <button v-if="results.length && (filters.q || filters.category !== 'all')" class="reset-filters" @click="changeFilters({ category: 'all', q: '' })">Clear search and category</button>
     </div>
   </section>
-  <section id="future-directions" class="wrap section future-section"><div class="catalogue-section-heading"><div><p class="eyebrow">LOOKING AHEAD</p><h2>Future directions.</h2></div><p>Possible next additions to the collection. The ideas below are plans, separate from the implemented projects above.</p></div>
-    <div v-if="futureCategories.length" class="future-grid"><article v-for="category in futureCategories" :key="category.id"><span class="planned-label">PLANNED AREA</span><h3>{{ category.label }}</h3><p>{{ category.description }}</p><ul><li v-for="idea in category.ideas" :key="idea">{{ idea }}</li></ul></article></div>
-    <p v-else>There is published work in every category. Future additions will deepen the existing collection.</p>
-    <div class="roadmap-grid"><article v-for="category in roadmapCategories" :key="category.id" :data-category="category.id"><span class="planned-label">POSSIBLE NEXT STEPS</span><h3>{{ category.label }}</h3><ul><li v-for="idea in category.ideas" :key="idea">{{ idea }}</li></ul></article></div>
+  <section id="future-directions" class="wrap section future-section"><div class="catalogue-section-heading"><div><h2>Future directions</h2><p>Ideas for later projects. These are plans, separate from the implemented work above.</p></div></div>
+    <div v-if="futureCategories.length" class="future-grid"><article v-for="category in futureCategories" :key="category.id"><span class="planned-label">Planned area</span><h3>{{ category.label }}</h3><p>{{ category.description }}</p><ul><li v-for="idea in category.ideas" :key="idea">{{ idea }}</li></ul></article></div>
+    <div class="roadmap-grid"><article v-for="category in roadmapCategories" :key="category.id" :data-category="category.id"><span class="planned-label">Possible next steps</span><h3>{{ category.label }}</h3><ul><li v-for="idea in category.ideas" :key="idea">{{ idea }}</li></ul></article></div>
   </section>
 </template>

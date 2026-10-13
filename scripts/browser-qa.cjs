@@ -9,9 +9,15 @@ const base = process.env.BASE_URL || 'http://127.0.0.1:4173'
   const page = await context.newPage()
   const errors=[]; const checks=[]
   const catalogue=JSON.parse(fs.readFileSync('src/data/catalogue.json','utf8'))
+  const profile=JSON.parse(fs.readFileSync('src/data/profile.json','utf8'))
+  const recordedReport=JSON.parse(fs.readFileSync('public/evidence/normal-report.json','utf8'))
   const activeCategories=catalogue.categories.filter(c=>catalogue.projects.some(p=>p.categoryId===c.id))
   page.on('pageerror', e => errors.push(e.message))
-  for (const width of [360,390,768,1440]) {
+  const reportRequests=[]
+  page.on('request',request=>{
+    if(new URL(request.url()).pathname==='/evidence/normal-report.json') reportRequests.push(request.url())
+  })
+  for (const width of [320,360,390,768,1440]) {
     await page.setViewportSize({width,height:950})
     for (const path of ['/', '/projects/', ...catalogue.projects.map(p=>`/projects/${p.id}/`)]) {
       assert.equal((await page.goto(base+path)).status(),200)
@@ -24,6 +30,7 @@ const base = process.env.BASE_URL || 'http://127.0.0.1:4173'
       checks.push(`No horizontal overflow: ${path} ${width}px`)
     }
   }
+  checks.push('320 CSS-pixel reflow checked on every portfolio page; this is not a literal browser zoom test')
   await page.goto(base)
   await page.keyboard.press('Tab')
   assert.equal(await page.locator(':focus').innerText(),'Skip to content')
@@ -39,6 +46,14 @@ const base = process.env.BASE_URL || 'http://127.0.0.1:4173'
   assert.match(await page.locator('.attempts pre').first().innerText(),/get_status/)
   checks.push('Keyboard skip link; home to case; timeout and recovery evidence; raw request disclosure')
   await page.goto(base)
+  for (const fact of [profile.location,profile.graduation,profile.internshipStart,profile.availability,profile.workRights]) {
+    assert((await page.locator('main').innerText()).includes(fact),`Confirmed profile fact not rendered: ${fact}`)
+  }
+  for (const [name,href] of [['GitHub profile',profile.github],['LinkedIn profile',profile.linkedin],['Download resume',profile.resume]]) {
+    assert.equal(await page.getByRole('link',{name,exact:true}).getAttribute('href'),href)
+  }
+  assert.equal(await page.getByRole('link',{name:profile.email,exact:true}).getAttribute('href'),`mailto:${profile.email}`)
+  checks.push('Rendered profile preserves graduation, internship dates, visa conditions and confirmed contact links')
   assert.equal(await page.locator('.featured-grid .catalogue-card').count(),activeCategories.length)
   for (const category of activeCategories) assert.equal(await page.locator(`.featured-grid [data-category="${category.id}"]`).count(),1)
   checks.push('Homepage has exactly one representative per published category')
@@ -50,9 +65,22 @@ const base = process.env.BASE_URL || 'http://127.0.0.1:4173'
   checks.push('Collection shows all published work, category counts and honest future directions')
   assert.equal(await page.locator('.roadmap-grid article').count(),activeCategories.filter(c=>c.ideas.length).length)
   for (const category of activeCategories.filter(c=>c.ideas.length)) {
-    assert.match(await page.locator(`.roadmap-grid [data-category="${category.id}"]`).innerText(),/POSSIBLE NEXT STEPS/)
+    assert.match(await page.locator(`.roadmap-grid [data-category="${category.id}"]`).innerText(),/Possible next steps/)
   }
   checks.push('Populated categories keep a separately labelled future roadmap')
+  for (const [index,category] of catalogue.categories.entries()) {
+    const button=page.locator('.category-filters button').nth(index+1)
+    await button.focus()
+    await page.keyboard.press('Enter')
+    assert.equal(new URL(page.url()).searchParams.get('category'),category.id)
+    assert.equal(await button.getAttribute('aria-pressed'),'true')
+    assert(await button.evaluate(element=>element===document.activeElement))
+    assert.notEqual(await button.evaluate(element=>getComputedStyle(element).outlineStyle),'none')
+    const expected=catalogue.projects.filter(project=>project.categoryId===category.id).map(project=>project.id).sort()
+    const actual=await page.locator('.library-grid .catalogue-card').evaluateAll(cards=>cards.map(card=>card.dataset.project).sort())
+    assert.deepEqual(actual,expected)
+  }
+  checks.push('Every category is selectable with the keyboard, retains focus and shows only its published projects')
   const webButton=page.getByRole('button',{name:/^Web applications/})
   await webButton.click()
   assert.equal(new URL(page.url()).searchParams.get('category'),'web-applications')
@@ -119,15 +147,88 @@ const base = process.env.BASE_URL || 'http://127.0.0.1:4173'
   await page.goto(base)
   const menu=page.getByRole('button',{name:'Menu',exact:true})
   await menu.click(); assert.equal(await menu.getAttribute('aria-expanded'),'true')
+  await page.getByRole('navigation').getByRole('link',{name:'Projects',exact:true}).focus()
+  await page.keyboard.press('Escape')
+  assert.equal(await menu.getAttribute('aria-expanded'),'false')
+  assert(await menu.evaluate(element=>element===document.activeElement))
+  assert.equal(await page.getByRole('navigation').isVisible(),false)
+  checks.push('Escape closes mobile navigation and restores focus to the Menu button')
+  await menu.click()
+  await page.getByRole('navigation').getByRole('link',{name:'Contact',exact:true}).focus()
+  await page.keyboard.press('Tab')
+  assert.equal(await page.locator(':focus').getAttribute('href'),'#projects')
+  checks.push('Keyboard focus can leave the open mobile navigation without a trap')
+  await page.keyboard.press('Escape')
+  await menu.click()
+  await page.setViewportSize({width:761,height:950})
+  await page.waitForFunction(()=>document.querySelector('.menu-button').getAttribute('aria-expanded')==='false')
+  assert(await page.getByRole('navigation').isVisible())
+  await page.setViewportSize({width:390,height:844})
+  assert.equal(await page.getByRole('navigation').isVisible(),false)
+  checks.push('Resizing to the desktop breakpoint closes mobile state and keeps desktop navigation available')
+  await menu.click()
   await page.getByRole('navigation').getByRole('link',{name:'About',exact:true}).click()
   assert.equal(await menu.getAttribute('aria-expanded'),'false')
   checks.push('Mobile navigation opens, navigates and closes')
-  await page.route('**/evidence/normal-report.json',route=>route.abort())
-  await page.goto(base+'/projects/device-diagnostics/')
-  await page.getByRole('alert').waitFor()
-  assert(await page.getByRole('heading',{name:'Show success. Preserve failure.'}).isVisible())
-  checks.push('Evidence fetch failure retains readable case and download links')
-  await page.unrouteAll()
+  await page.emulateMedia({reducedMotion:'reduce'})
+  await page.goto(base)
+  assert(await page.evaluate(()=>matchMedia('(prefers-reduced-motion: reduce)').matches))
+  assert.deepEqual(await page.locator('html, .button, .catalogue-card').evaluateAll(elements=>elements.filter(element=>{
+    const style=getComputedStyle(element)
+    return style.scrollBehavior!=='auto'||style.animationName!=='none'||style.transitionDuration.split(',').some(value=>Number.parseFloat(value)!==0)
+  }).map(element=>element.className||element.tagName)),[])
+  checks.push('Reduced-motion preference disables animated transitions and smooth scrolling on main interface elements')
+  await page.emulateMedia({reducedMotion:'no-preference'})
+
+  const requestCountBefore=reportRequests.length
+  for (const path of ['/', '/projects/', ...catalogue.projects.filter(project=>project.renderer!=='diagnostics').map(project=>`/projects/${project.id}/`)]) {
+    await page.goto(base+path)
+    await page.locator('h1').waitFor()
+    await page.waitForLoadState('networkidle')
+  }
+  assert.equal(reportRequests.length,requestCountBefore)
+  checks.push('Actual request tracking confirms home, collection and other cases never fetch the diagnostics report')
+
+  const missingAttempts=structuredClone(recordedReport)
+  delete missingAttempts.cases[0].attempts
+  const missingMetadata=structuredClone(recordedReport)
+  delete missingMetadata.source_sha256
+  const evidenceFailures=[
+    {name:'Malformed JSON with HTTP 200',status:200,body:'{"cases":'},
+    {name:'Malformed report shape with HTTP 200',status:200,body:JSON.stringify({cases:'not an array'})},
+    {name:'Missing attempts with HTTP 200',status:200,body:JSON.stringify(missingAttempts)},
+    {name:'Missing source metadata with HTTP 200',status:200,body:JSON.stringify(missingMetadata)},
+    {name:'HTTP 503',status:503,body:JSON.stringify({error:'Temporarily unavailable'})},
+    {name:'Network failure',abort:true},
+  ]
+  for (const [index,failure] of evidenceFailures.entries()) {
+    let requests=0
+    await page.route('**/evidence/normal-report.json',route=>{
+      requests+=1
+      if(requests>1) return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify(recordedReport)})
+      return failure.abort?route.abort():route.fulfill({status:failure.status,contentType:'application/json',body:failure.body})
+    })
+    const errorsBefore=errors.length
+    await page.goto(base+'/projects/device-diagnostics/')
+    await page.getByRole('alert').waitFor()
+    assert.match(await page.getByRole('alert').innerText(),/recorded report could not be loaded/)
+    assert(await page.getByRole('heading',{name:'Show success. Preserve failure.'}).isVisible())
+    for (const name of ['Download JSON','Download CSV','Download source, tests and reports']) {
+      assert(await page.getByRole('link',{name,exact:true}).isVisible())
+    }
+    assert.equal(await page.locator('#scenario').count(),0)
+    assert.equal(requests,1)
+    if(index===0) await page.screenshot({path:'qa/evidence-error-mobile.png',fullPage:true})
+    await page.getByRole('button',{name:'Retry loading evidence',exact:true}).click()
+    await page.locator('#scenario').waitFor()
+    assert.equal(requests,2)
+    assert.equal(await page.getByRole('alert').count(),0)
+    assert.equal(await page.locator('#scenario option').count(),recordedReport.cases.length)
+    assert.match(await page.locator('.result-grid').innerText(),/PASS.*ok.*1/s)
+    assert.equal(errors.length,errorsBefore)
+    checks.push(`${failure.name}: readable case and downloads remain; explicit retry restores valid evidence without uncaught errors`)
+    await page.unrouteAll()
+  }
   await page.goto(base+'/projects/device-diagnostics/')
   await page.locator('video').evaluate(video=>{video.preload='metadata';video.load()})
   await page.waitForFunction(()=>document.querySelector('video').readyState>=1)
@@ -145,10 +246,55 @@ const base = process.env.BASE_URL || 'http://127.0.0.1:4173'
   assert.equal((await page.goto(base+'/does-not-exist')).status(),404)
   assert.match(await page.locator('body').innerText(),/not found/i)
   checks.push('Unknown route returns real 404')
+
+  const caseChunk=fs.readdirSync('dist/assets').find(name=>/^DiagnosticsCase-.*\.js$/.test(name))
+  assert(caseChunk,'Diagnostics case must have a separately loaded JavaScript chunk')
+  const chunkUrl=base+'/assets/'+caseChunk
+  const fragmentContext=await browser.newContext({viewport:{width:390,height:844}})
+  const fragmentPage=await fragmentContext.newPage()
+  fragmentPage.on('pageerror',error=>errors.push(error.message))
+  let delayedChunkRequests=0
+  await fragmentPage.route(chunkUrl,async route=>{
+    delayedChunkRequests+=1
+    const response=await route.fetch()
+    await new Promise(resolve=>setTimeout(resolve,750))
+    await route.fulfill({response})
+  })
+  await fragmentPage.goto(base+'/projects/device-diagnostics/#demo')
+  await fragmentPage.locator('#scenario').waitFor()
+  assert.equal(delayedChunkRequests,1)
+  await fragmentPage.waitForFunction(()=>{
+    const target=document.querySelector('#demo')
+    if(!target) return false
+    const top=target.getBoundingClientRect().top
+    return scrollY>0&&top>=0&&top<innerHeight/2
+  },null,{timeout:5000})
+  checks.push('Cold fragment navigation reaches the evidence section after a delayed diagnostics chunk loads')
+  await fragmentContext.close()
+
+  const chunkContext=await browser.newContext({viewport:{width:390,height:844}})
+  const chunkPage=await chunkContext.newPage()
+  const chunkErrors=[]
+  chunkPage.on('pageerror',error=>chunkErrors.push(error.message))
+  let blockedChunkRequests=0
+  await chunkPage.route(chunkUrl,route=>{blockedChunkRequests+=1;return route.abort()})
+  await chunkPage.goto(base+'/projects/device-diagnostics/')
+  await chunkPage.getByRole('alert').waitFor()
+  assert(blockedChunkRequests>=1)
+  assert(await chunkPage.getByRole('heading',{name:'This project could not be loaded.',exact:true}).isVisible())
+  assert.equal(await chunkPage.getByRole('alert').getByRole('link',{name:'All projects',exact:true}).getAttribute('href'),'/projects/')
+  await chunkPage.screenshot({path:'qa/case-loading-error-mobile.png',fullPage:true})
+  await chunkPage.unrouteAll()
+  await chunkPage.getByRole('button',{name:'Reload page',exact:true}).click()
+  await chunkPage.locator('#scenario').waitFor()
+  assert.equal(await chunkPage.getByRole('alert').count(),0)
+  assert(chunkErrors.every(message=>/Failed to fetch dynamically imported module|Importing a module script failed|error loading dynamically imported module/i.test(message)),`Unexpected chunk failure errors: ${JSON.stringify(chunkErrors)}`)
+  checks.push('A failed case chunk shows collection and reload actions; reloading after recovery restores the case')
+  await chunkContext.close()
   assert.deepEqual(errors,[])
-  checks.push('No uncaught browser errors')
+  checks.push('No uncaught browser errors in normal pages or evidence-failure recovery')
   const assets=fs.readdirSync('dist/assets').map(name=>({name,bytes:fs.statSync('dist/assets/'+name).size}))
-  fs.writeFileSync('qa/results.json',JSON.stringify({executed_at_utc:new Date().toISOString(),browser:await browser.version(),checks,assets,limitations:'Chromium functional checks; not a WCAG audit, Lighthouse score or public deployment verification.'},null,2))
+  fs.writeFileSync('qa/results.json',JSON.stringify({executed_at_utc:new Date().toISOString(),browser:await browser.version(),checks,assets,injected_case_chunk_errors:chunkErrors,limitations:'Chromium functional checks with 320 CSS-pixel reflow, not literal browser zoom, a WCAG audit, Lighthouse score or public deployment verification.'},null,2))
   console.log(`${checks.length} browser checks passed`)
   await browser.close()
 })().catch(error=>{console.error(error);process.exit(1)})
