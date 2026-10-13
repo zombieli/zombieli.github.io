@@ -11,6 +11,7 @@ const unknownCategory = ref(initial.unknownCategory)
 const results = computed(() => filterProjects(projects, categories, filters.value))
 const selectedCategory = computed(() => categories.find(c => c.id === filters.value.category))
 const futureCategories = categories.filter(c => categoryCount(projects, c.id) === 0)
+const roadmapCategories = categories.filter(c => categoryCount(projects, c.id) > 0 && c.ideas.length)
 const categoryById = Object.fromEntries(categories.map(c => [c.id, c]))
 function changeFilters(patch: Partial<Filters>, replace = false) {
   filters.value = { ...filters.value, ...patch }
@@ -58,8 +59,9 @@ onUnmounted(() => window.removeEventListener('popstate', restoreFilters))
       <button v-if="results.length && (filters.q || filters.category !== 'all')" class="reset-filters" @click="changeFilters({ category: 'all', q: '' })">Clear search and category</button>
     </div>
   </section>
-  <section id="future-directions" class="wrap section future-section"><div class="catalogue-section-heading"><div><p class="eyebrow">LOOKING AHEAD</p><h2>Future directions.</h2></div><p>Ideas for the next additions to this collection. They represent planned areas of exploration, with no completed work claimed.</p></div>
+  <section id="future-directions" class="wrap section future-section"><div class="catalogue-section-heading"><div><p class="eyebrow">LOOKING AHEAD</p><h2>Future directions.</h2></div><p>Possible next additions to the collection. The ideas below are plans, separate from the implemented projects above.</p></div>
     <div v-if="futureCategories.length" class="future-grid"><article v-for="category in futureCategories" :key="category.id"><span class="planned-label">PLANNED AREA</span><h3>{{ category.label }}</h3><p>{{ category.description }}</p><ul><li v-for="idea in category.ideas" :key="idea">{{ idea }}</li></ul></article></div>
     <p v-else>There is published work in every category. Future additions will deepen the existing collection.</p>
+    <div class="roadmap-grid"><article v-for="category in roadmapCategories" :key="category.id" :data-category="category.id"><span class="planned-label">POSSIBLE NEXT STEPS</span><h3>{{ category.label }}</h3><ul><li v-for="idea in category.ideas" :key="idea">{{ idea }}</li></ul></article></div>
   </section>
 </template>

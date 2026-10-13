@@ -1,0 +1,57 @@
+{
+  "projectId": "inspection-notebook",
+  "version": "1.1.0",
+  "verifiedAt": "2026-10-13T02:20:10.304Z",
+  "nodeVersion": "v24.19.0",
+  "unit": {
+    "command": "node --test --test-isolation=none tests/core.test.mjs",
+    "tests": 35,
+    "passed": 35,
+    "failed": 0,
+    "output": "domain-green.txt"
+  },
+  "browser": {
+    "command": "node scripts/browser-qa.cjs",
+    "name": "Desktop Chrome",
+    "version": "154.0.8037.98",
+    "baseUrl": "http://127.0.0.1:4175/demos/inspection-notebook/",
+    "checks": 20,
+    "passed": 20,
+    "failed": 0,
+    "output": "browser-green.txt",
+    "details": "browser-results.json"
+  },
+  "layouts": [
+    360,
+    390,
+    768,
+    1440
+  ],
+  "screenshots": [
+    "notebook-1440.png",
+    "notebook-390.png"
+  ],
+  "coverage": [
+    "Draft and submitted persistence in real IndexedDB after reload",
+    "Pending save and submit lock all editor fields against typing until the actual transaction completes",
+    "Required completion fields and immutable submitted storage writes",
+    "Atomic rollback with fresh IDs before and after a duplicate conflict",
+    "Invalid JSON-record import preserves existing database",
+    "JSON download and fresh-origin-context import round trip",
+    "Offline reload after service worker activation and page control",
+    "Status filters and keyboard activation/focus",
+    "Four viewport widths with open and closed editor",
+    "Same-clock and stale-tab draft conflict handling",
+    "Manifest scope, real PNG dimensions and unrelated host route isolation",
+    "1000-record transaction capacity and worst-case backup escape size",
+    "Actionable unavailable-storage state and no uncaught page errors"
+  ],
+  "limitations": [
+    "Desktop Chrome only; no physical phone, native app or install-prompt verification.",
+    "Unavailable-storage presentation intentionally disables IndexedDB; quota exhaustion and eviction not reproduced.",
+    "Origin-local data can be cleared; no server upload, multi-user sync or cryptographic sealing.",
+    "1000-record bounded notebook; no deletion workflow.",
+    "Keyboard checks cover selected paths, not a full assistive-technology audit."
+  ],
+  "outputRedaction": "Local project path prefixes are replaced with [project] in captured text output."
+}

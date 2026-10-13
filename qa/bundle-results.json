@@ -1,0 +1,30 @@
+{
+  "executed_at_utc": "2026-10-13T02:21:19.280168+00:00",
+  "checks": [
+    {
+      "project": "inspection-notebook",
+      "sha256": "234a8224394258a290c1ca14efa8dea86c187635176c5fda6cc5c108b1fcc81e",
+      "tests_passed": 35,
+      "exit_code": 0,
+      "browser_checks_passed": 20,
+      "browser_exit_code": 0
+    },
+    {
+      "project": "test-report-delta",
+      "sha256": "a30f8308abb82197f5d1d14e45cc8f6ee863733b194b13e828cd220e80bdd2bc",
+      "tests_passed": 45,
+      "exit_code": 0,
+      "browser_checks_passed": 11,
+      "browser_exit_code": 0
+    },
+    {
+      "project": "technical-manual-search",
+      "sha256": "58e890c03def4cffe3b58cfe160d91ce6b21af11c3effb5a7033a3d1eb291aa1",
+      "tests_passed": 24,
+      "exit_code": 0,
+      "browser_checks_passed": 17,
+      "browser_exit_code": 0
+    }
+  ],
+  "scope": "Source archives extracted into temporary directories; no project dependency installation."
+}

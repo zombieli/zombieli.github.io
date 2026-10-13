@@ -16,8 +16,8 @@
       "description": "Useful interfaces, dependable APIs and clear operational workflows.",
       "featuredProjectId": "field-service",
       "ideas": [
-        "Offline field inspection workflow",
-        "Equipment maintenance dashboard"
+        "Equipment maintenance dashboard",
+        "Role-based work-order approvals"
       ]
     },
     {
@@ -34,9 +34,9 @@
       "id": "mobile-applications",
       "label": "Mobile applications",
       "description": "Practical applications for work away from a desk.",
-      "featuredProjectId": null,
+      "featuredProjectId": "inspection-notebook",
       "ideas": [
-        "Android inspection notebook with offline storage",
+        "Native Android inspection client",
         "QR equipment check-in prototype"
       ]
     },
@@ -44,19 +44,19 @@
       "id": "cloud-developer-tools",
       "label": "Cloud & developer tools",
       "description": "Delivery pipelines, observability and tools that support other developers.",
-      "featuredProjectId": null,
+      "featuredProjectId": "test-report-delta",
       "ideas": [
         "Reproducible release and rollback lab",
-        "Test report comparison CLI"
+        "JUnit report adapters and baseline storage"
       ]
     },
     {
       "id": "automation-search",
       "label": "Automation & search",
       "description": "Practical automation and information retrieval with repeatable evaluation.",
-      "featuredProjectId": null,
+      "featuredProjectId": "technical-manual-search",
       "ideas": [
-        "Technical manual search with source references",
+        "Manual revision comparison",
         "Rule-based maintenance report classification"
       ]
     }
@@ -132,6 +132,89 @@
       ]
     },
     {
+      "id": "inspection-notebook",
+      "title": "Offline Inspection Notebook",
+      "categoryId": "mobile-applications",
+      "status": "published",
+      "publishedAt": "2026-10-13",
+      "updatedAt": "2026-10-13",
+      "summary": "A mobile-first inspection PWA with offline drafts, fixed submitted records and transactional backup recovery.",
+      "technologies": [
+        "JavaScript",
+        "IndexedDB",
+        "Service Worker",
+        "Web App Manifest"
+      ],
+      "tags": [
+        "Offline",
+        "PWA",
+        "Transactions"
+      ],
+      "proof": "35 domain tests · 20 browser checks",
+      "cover": {
+        "src": "/media/inspection-notebook.png",
+        "alt": "Actual browser capture of Offline Inspection Notebook using fictional example data",
+        "fit": "cover"
+      },
+      "renderer": "standard",
+      "links": [
+        {
+          "label": "Open interactive demo",
+          "href": "/demos/inspection-notebook/"
+        },
+        {
+          "label": "Download source and tests",
+          "href": "/downloads/inspection-notebook.zip"
+        },
+        {
+          "label": "Verification record",
+          "href": "/evidence/inspection-notebook-verification.json"
+        },
+        {
+          "label": "Development log",
+          "href": "/evidence/inspection-notebook-development.md"
+        }
+      ],
+      "caseStudy": {
+        "role": "Record model, offline workflow and verification",
+        "context": "A field record should survive a page reload and remain available when connectivity disappears. This fictional inspection workflow explores those requirements in a browser that a reviewer can open immediately.",
+        "sections": [
+          {
+            "heading": "Problem",
+            "paragraphs": [
+              "An editable draft and a completed record have different rules. A backup must restore useful work without silently replacing existing records or leaving half an import behind."
+            ]
+          },
+          {
+            "heading": "Implementation and decisions",
+            "paragraphs": [
+              "A pure domain module validates record types, checklist completion, timestamps and backup envelopes. IndexedDB transactions enforce immutable submitted records, detect stale draft edits and reject an import atomically if any identifier conflicts.",
+              "A service worker caches only this demo directory. The first online visit prepares the shell for offline reload. Records stay in the browser; the interface provides explicit JSON export and import with a 1,000-record and 16 MB bound."
+            ]
+          },
+          {
+            "heading": "Verification and results",
+            "paragraphs": [
+              "35 domain tests and 20 desktop Chrome checks cover required fields, same-clock edits, persistence, pending-save input protection, stale tabs, offline reload, rollback with queued writes, round-trip backups and scoped caching. Layouts were checked at 360, 390, 768 and 1440 pixels.",
+              "Development exposed and corrected a coerced condition type, repeated abort callbacks and an export-size boundary that initially rejected valid large backups. The development log preserves the observed failures and fixes."
+            ]
+          },
+          {
+            "heading": "Reproduce the work",
+            "paragraphs": [
+              "Download and extract the source. With Node 24, run npm test, then npm run serve. The README documents the local URL and browser-check configuration. The archive includes the architecture, test output, verification record and screenshots.",
+              "In the hosted demo, create a draft or explicitly load fictional examples. Export anything you want to keep before clearing site data. Offline reload requires an initial successful online visit and an active service worker."
+            ]
+          }
+        ],
+        "limitations": [
+          "Desktop Chrome verification with resized viewports; physical phones and the installation prompt have not been tested.",
+          "No server synchronisation, real equipment integration or cryptographic record sealing. Clearing browser storage removes local records.",
+          "The notebook holds up to 1,000 records and has no deletion workflow. Quota exhaustion and storage eviction were not reproduced."
+        ]
+      }
+    },
+    {
       "id": "scheduling",
       "title": "Workshop Scheduling Study",
       "categoryId": "data-simulation",
@@ -166,6 +249,177 @@
           "href": "/downloads/scheduling-simulation-study.zip"
         }
       ]
+    },
+    {
+      "id": "technical-manual-search",
+      "title": "Technical Manual Search",
+      "categoryId": "automation-search",
+      "status": "published",
+      "publishedAt": "2026-10-13",
+      "updatedAt": "2026-10-13",
+      "summary": "A local lexical search interface with exact source paragraphs, shareable filters and a reproducible relevance evaluation.",
+      "technologies": [
+        "JavaScript",
+        "Node.js",
+        "BM25",
+        "Information retrieval"
+      ],
+      "tags": [
+        "Search",
+        "Source references",
+        "Evaluation"
+      ],
+      "proof": "24 native tests · 26 labelled queries",
+      "cover": {
+        "src": "/media/technical-manual-search.png",
+        "alt": "Actual browser capture of Technical Manual Search using fictional example data",
+        "fit": "cover"
+      },
+      "renderer": "standard",
+      "links": [
+        {
+          "label": "Open interactive demo",
+          "href": "/demos/technical-manual-search/"
+        },
+        {
+          "label": "Download source and tests",
+          "href": "/downloads/technical-manual-search.zip"
+        },
+        {
+          "label": "Verification record",
+          "href": "/evidence/technical-manual-search-verification.json"
+        },
+        {
+          "label": "Development log",
+          "href": "/evidence/technical-manual-search-development.md"
+        },
+        {
+          "label": "Retrieval evaluation",
+          "href": "/evidence/technical-manual-search-evaluation.json"
+        }
+      ],
+      "caseStudy": {
+        "role": "Retrieval core, source interface and evaluation",
+        "context": "An operational reference search should make it easy to inspect the original passage. This small project explores attributable retrieval using three fictional training manuals, without a remote service.",
+        "sections": [
+          {
+            "heading": "Problem",
+            "paragraphs": [
+              "A result can share keywords with a question without answering it. The interface must expose the actual source, while the evaluation must keep missed paraphrases and unsupported questions visible."
+            ]
+          },
+          {
+            "heading": "Implementation and decisions",
+            "paragraphs": [
+              "A shared browser/Node core applies Unicode normalisation, deduplicated tokens and BM25-style ranking across 15 manual sections. Manual/category filters retain global document statistics and deterministic tie ordering.",
+              "Each result provides the manual revision, section reference, matched terms, excerpt and complete source paragraph. Queries and filters survive reload and browser history. Source and query text are rendered safely as text, with markup used only for highlighting."
+            ]
+          },
+          {
+            "heading": "Verification and results",
+            "paragraphs": [
+              "24 native tests and 17 browser checks cover ranking, validation, real CLI behaviour, URL state, source identity, safe rendering and four viewport widths. Repeated evaluation produced byte-identical output.",
+              "The benchmark contains 18 positive queries and 8 negative queries. Positive MRR, recall@5 and hit@5 are all 0.944444: 17 positive queries retrieve the labelled section first, and one paraphrase is missed. Four of eight unsupported queries return lexical matches, a 50% negative false-positive rate. Both the miss and false positives remain in the downloadable evaluation."
+            ]
+          },
+          {
+            "heading": "Reproduce the work",
+            "paragraphs": [
+              "Extract the source and run node --test tests/*.test.mjs with Node 24, then node scripts/evaluate.mjs. Run node scripts/search.mjs \"battery replacement\" --json for the same core in the terminal.",
+              "The browser demo provides suggested searches and full source disclosures. The archive includes all 26 query labels, corpus hashes, per-query results, test output, architecture and development record."
+            ]
+          }
+        ],
+        "limitations": [
+          "Three fictional manuals and project-authored relevance labels; this is a small demonstration, not an independent or production benchmark.",
+          "Lexical matching has no synonym expansion or semantic relevance guarantee. The recorded unsupported-query false-positive rate is 50%.",
+          "No generated answers, offline cache or native mobile implementation. Fictional training references are not instructions for real equipment."
+        ]
+      }
+    },
+    {
+      "id": "test-report-delta",
+      "title": "Test Report Delta",
+      "categoryId": "cloud-developer-tools",
+      "status": "published",
+      "publishedAt": "2026-10-13",
+      "updatedAt": "2026-10-13",
+      "summary": "A shared browser and CLI comparison engine that exposes regressions, lost coverage and timing changes between test runs.",
+      "technologies": [
+        "JavaScript",
+        "Node.js",
+        "CLI",
+        "JSON"
+      ],
+      "tags": [
+        "Developer tools",
+        "CI",
+        "Test evidence"
+      ],
+      "proof": "45 native tests · 11 browser scenarios",
+      "cover": {
+        "src": "/media/test-report-delta.png",
+        "alt": "Actual browser capture of Test Report Delta using fictional example data",
+        "fit": "cover"
+      },
+      "renderer": "standard",
+      "links": [
+        {
+          "label": "Open interactive demo",
+          "href": "/demos/test-report-delta/"
+        },
+        {
+          "label": "Download source and tests",
+          "href": "/downloads/test-report-delta.zip"
+        },
+        {
+          "label": "Verification record",
+          "href": "/evidence/test-report-delta-verification.json"
+        },
+        {
+          "label": "Development log",
+          "href": "/evidence/test-report-delta-development.md"
+        }
+      ],
+      "caseStudy": {
+        "role": "Comparison policy, CLI and browser workspace",
+        "context": "A candidate run can look better simply because a failing test disappeared. This developer tool makes changed coverage visible alongside status transitions, using the same rules in the browser and terminal.",
+        "sections": [
+          {
+            "heading": "Problem",
+            "paragraphs": [
+              "Comparing only failure totals hides removed tests, newly skipped cases and persistent failures. Developers need a deterministic explanation of what changed and an exit status that a pipeline can consume."
+            ]
+          },
+          {
+            "heading": "Implementation and decisions",
+            "paragraphs": [
+              "The versioned normalised JSON schema identifies a case by its exact suite/name pair. A pure comparison core classifies regressions, recoveries, persistent failures, additions, removals and new skips. The CLI and browser both import that core.",
+              "Candidate failures fail the policy; an empty candidate or blocked coverage change remains incomplete. Explicit flags allow removed or newly skipped coverage. Duration warnings require both a relative and absolute increase and remain advisory.",
+              "Selecting a replacement report clears the previous result immediately. Per-input generation tokens prevent a delayed file read from restoring an obsolete accepted verdict. Files are processed locally."
+            ]
+          },
+          {
+            "heading": "Verification and results",
+            "paragraphs": [
+              "45 native tests include actual CLI subprocess exit codes, input validation, status transitions, coverage overrides and timing boundaries. Eleven browser scenarios check downloads, malformed replacements, delayed reads, added-failure totals, sample replacement races, safe rendering, keyboard access and four viewport widths.",
+              "The bundled sample intentionally exits with status 1: two candidate failures, one removed case and one new skip remain visible alongside a recovery. The example is designed to explain an unsuccessful comparison."
+            ]
+          },
+          {
+            "heading": "Reproduce the work",
+            "paragraphs": [
+              "Extract the source and run node --test tests/*.test.mjs with Node 24. Run node src/cli.mjs web/samples/baseline.json web/samples/candidate.json --json to inspect the sample result. The README includes policy flags and a CI example.",
+              "Open the browser demo and choose Load sample comparison, or select two files matching the documented schema. The source archive includes real test output, the complete sample comparison, architecture and development log."
+            ]
+          }
+        ],
+        "limitations": [
+          "Normalised JSON input only; no direct JUnit adapter or hosted CI service.",
+          "Sample data and timings are synthetic. One timing measurement does not establish a performance regression.",
+          "A pass means the stated comparison policy is satisfied; it does not establish overall release safety. Browser checks use desktop Chromium."
+        ]
+      }
     }
   ]
 }

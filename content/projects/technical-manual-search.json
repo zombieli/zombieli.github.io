@@ -1,0 +1,87 @@
+{
+  "id": "technical-manual-search",
+  "title": "Technical Manual Search",
+  "categoryId": "automation-search",
+  "status": "published",
+  "publishedAt": "2026-10-13",
+  "updatedAt": "2026-10-13",
+  "summary": "A local lexical search interface with exact source paragraphs, shareable filters and a reproducible relevance evaluation.",
+  "technologies": [
+    "JavaScript",
+    "Node.js",
+    "BM25",
+    "Information retrieval"
+  ],
+  "tags": [
+    "Search",
+    "Source references",
+    "Evaluation"
+  ],
+  "proof": "24 native tests · 26 labelled queries",
+  "cover": {
+    "src": "/media/technical-manual-search.png",
+    "alt": "Actual browser capture of Technical Manual Search using fictional example data",
+    "fit": "cover"
+  },
+  "renderer": "standard",
+  "links": [
+    {
+      "label": "Open interactive demo",
+      "href": "/demos/technical-manual-search/"
+    },
+    {
+      "label": "Download source and tests",
+      "href": "/downloads/technical-manual-search.zip"
+    },
+    {
+      "label": "Verification record",
+      "href": "/evidence/technical-manual-search-verification.json"
+    },
+    {
+      "label": "Development log",
+      "href": "/evidence/technical-manual-search-development.md"
+    },
+    {
+      "label": "Retrieval evaluation",
+      "href": "/evidence/technical-manual-search-evaluation.json"
+    }
+  ],
+  "caseStudy": {
+    "role": "Retrieval core, source interface and evaluation",
+    "context": "An operational reference search should make it easy to inspect the original passage. This small project explores attributable retrieval using three fictional training manuals, without a remote service.",
+    "sections": [
+      {
+        "heading": "Problem",
+        "paragraphs": [
+          "A result can share keywords with a question without answering it. The interface must expose the actual source, while the evaluation must keep missed paraphrases and unsupported questions visible."
+        ]
+      },
+      {
+        "heading": "Implementation and decisions",
+        "paragraphs": [
+          "A shared browser/Node core applies Unicode normalisation, deduplicated tokens and BM25-style ranking across 15 manual sections. Manual/category filters retain global document statistics and deterministic tie ordering.",
+          "Each result provides the manual revision, section reference, matched terms, excerpt and complete source paragraph. Queries and filters survive reload and browser history. Source and query text are rendered safely as text, with markup used only for highlighting."
+        ]
+      },
+      {
+        "heading": "Verification and results",
+        "paragraphs": [
+          "24 native tests and 17 browser checks cover ranking, validation, real CLI behaviour, URL state, source identity, safe rendering and four viewport widths. Repeated evaluation produced byte-identical output.",
+          "The benchmark contains 18 positive queries and 8 negative queries. Positive MRR, recall@5 and hit@5 are all 0.944444: 17 positive queries retrieve the labelled section first, and one paraphrase is missed. Four of eight unsupported queries return lexical matches, a 50% negative false-positive rate. Both the miss and false positives remain in the downloadable evaluation."
+        ]
+      },
+      {
+        "heading": "Reproduce the work",
+        "paragraphs": [
+          "Extract the source and run node --test tests/*.test.mjs with Node 24, then node scripts/evaluate.mjs. Run node scripts/search.mjs \"battery replacement\" --json for the same core in the terminal.",
+          "The browser demo provides suggested searches and full source disclosures. The archive includes all 26 query labels, corpus hashes, per-query results, test output, architecture and development record."
+        ]
+      }
+    ],
+    "limitations": [
+      "Three fictional manuals and project-authored relevance labels; this is a small demonstration, not an independent or production benchmark.",
+      "Lexical matching has no synonym expansion or semantic relevance guarantee. The recorded unsupported-query false-positive rate is 50%.",
+      "No generated answers, offline cache or native mobile implementation. Fictional training references are not instructions for real equipment."
+    ]
+  }
+}

@@ -1,8 +1,17 @@
 # Leon Li portfolio
 
-Software engineering portfolio for internship applications in Western Australia. Built with Vue 3, TypeScript and Vite. Three implemented projects are presented with their actual local evidence; future ideas are labelled separately.
+Software engineering portfolio for internship applications in Western Australia. Built with Vue 3, TypeScript and Vite. Six implemented projects are presented with runnable demonstrations, source downloads and recorded evidence; future ideas are labelled separately.
 
-Version 1.0.0, published 10 October 2026: a maintainable catalogue, six categories, search, sorting and one homepage representative per populated category. Visit the [live portfolio](https://zombieli.github.io/) or [project collection](https://zombieli.github.io/projects/). See [CHANGELOG.md](CHANGELOG.md) for the release scope.
+Version 1.1.0, published 13 October 2026: work in all six categories, with a mobile PWA, developer CLI and referenced manual search added to the original collection. Visit the [live portfolio](https://zombieli.github.io/) or [project collection](https://zombieli.github.io/projects/). See [CHANGELOG.md](CHANGELOG.md) for the release scope.
+
+| Category | Implemented project | Try it |
+| --- | --- | --- |
+| Devices & testing | Device Diagnostics Lab | [Case and evidence viewer](https://zombieli.github.io/projects/device-diagnostics/) |
+| Web applications | Field Service Workflow | [Interactive demo](https://zombieli.github.io/field-service-workflow/) |
+| Data & simulation | Workshop Scheduling Study | [Recorded experiments](https://zombieli.github.io/projects/scheduling/) |
+| Mobile applications | Offline Inspection Notebook | [Offline browser app](https://zombieli.github.io/demos/inspection-notebook/) |
+| Cloud & developer tools | Test Report Delta | [Report comparison](https://zombieli.github.io/demos/test-report-delta/) |
+| Automation & search | Technical Manual Search | [Search fictional training manuals](https://zombieli.github.io/demos/technical-manual-search/) |
 
 ## Run locally
 
@@ -21,10 +30,10 @@ Production preview: http://127.0.0.1:4173. The home page, `/projects/` collectio
 ## Add and maintain work
 
 ```sh
-npm run project:new -- inspection-notebook mobile-applications
+npm run project:new -- equipment-check-in mobile-applications
 ```
 
-This creates `content/projects/inspection-notebook.json` as a **draft**, not a completed project. Fill its description, technologies, cover, evidence links, contribution, case sections and limitations. Add the real assets under `public`, set accurate dates, and change the status to `published` when ready to display. Run `npm run build` and check the result. Restart `npm run dev` after editing catalogue files so newly generated routes are loaded.
+This creates `content/projects/equipment-check-in.json` as a **draft**, not a completed project. Fill its description, technologies, cover, evidence links, contribution, case sections and limitations. Add the real assets under `public`, set accurate dates, and change the status to `published` when ready to display. Run `npm run build` and check the result. Restart `npm run dev` after editing catalogue files so newly generated routes are loaded.
 
 - `content/categories.json`: category order, labels, descriptions, future ideas and optional `featuredProjectId`.
 - `content/projects/*.json`: one record per project, with one primary category. Tags capture overlapping topics.
@@ -40,7 +49,7 @@ Field reference, category roadmap, authoring and archiving guide: [Content maint
 
 ## Validation
 
-`npm run build` prepares content, checks the catalogue and original evidence, runs 19 logic/generation tests, type checks and creates production output.
+`npm run build` prepares content, checks the catalogue and evidence, runs catalogue/generation tests, type checks and creates production output. Source-archive checks additionally require Python 3.10 or newer (standard library only).
 
 ```sh
 npx playwright install chromium
@@ -48,19 +57,24 @@ npx playwright install chromium
 node scripts/browser-qa.cjs
 # Separate isolated authoring lifecycle test:
 npm run test:authoring
+# Verify downloadable source and its browser demos:
+python -m unittest discover -s tests -p 'test_*.py'
+python scripts/check-project-bundles.py --browser
 ```
 
 Set `CHROMIUM_PATH` to a local Chrome executable if using it instead of Playwright's downloaded Chromium.
 
-Latest verified results: **19 rule/generation tests, 47 browser checks and 5 authoring lifecycle checks passed**. `qa/results.json` and `qa/authoring-results.json` record the actual runs. Browser checks cover four widths, category/search/sort URLs, keyboard use, history navigation, empty states, the original report viewer, evidence-fetch failure, downloads, video, workflow demo and 404 responses. The lifecycle test builds an isolated copy with an extra test category and a new standard case, verifies the rendered page and archiving, then deletes its temporary copy. It does not add sample work to the real portfolio.
+`qa/results.json`, `qa/authoring-results.json` and `qa/bundle-results.json` record actual verification runs. Browser checks cover four widths, category/search/sort URLs, keyboard use, history navigation, empty states, the report viewer, evidence-fetch failure, downloads, video, workflow demo and 404 responses. The lifecycle test builds an isolated copy with an extra category and new standard case, verifies rendering and archiving, then deletes its temporary copy. It does not add sample work to the real portfolio.
 
-The first public deployment also passed all 47 browser checks against https://zombieli.github.io, and all three downloaded source bundles matched the recorded SHA-256 hashes. These checks are not a formal accessibility audit or Lighthouse score. New external links still need a manual availability check. If intentionally retiring one of the original three cases, update its specific browser regression scenario alongside the content change.
+The archive checker validates and extracts the three new source ZIPs into temporary directories, runs their real Node tests without installing project dependencies, and optionally exercises the demos at `BASE_URL` (default `http://127.0.0.1:4173`). It records evidence under `qa/bundle-verification/`. Each project includes architecture, development notes and verification reports. These functional checks are not a formal accessibility audit, real-device test or Lighthouse score. If retiring a case, update its specific regression scenario alongside the content change.
 
 ## Evidence and delivery
 
 Public reports use simulated readings and faults from real local test runs. The website displays saved evidence and does not operate physical devices. The public resume includes the supplied LinkedIn profile and Student visa subclass 500, without claiming unrestricted work rights.
 
-The workflow demo is an independently built static snapshot from the sibling `field-service-workflow/frontend` project. The workspace script `portfolio-docs/package_evidence.py` refreshes the original three projects' demo, evidence and allowlisted source ZIPs. The release manifest records hashes that the content checker verifies. Content-only catalogue edits do not need those projects repackaged.
+The workflow demo is a separately built static snapshot from the sibling `field-service-workflow/frontend` project. New demonstrations are standalone modules under `public/demos/`. Editable source, tests, development notes and verification evidence are distributed in `public/downloads/`. Extract a project ZIP and follow its README before changing the copied demo. The workspace packaging script refreshes all six allowlisted ZIPs with fixed archive metadata and records SHA-256 values in `public/evidence/release-manifest.json`.
+
+The notebook stores data in the current browser and origin; load it online once before using its cached app offline. Clearing site storage removes those records, so export a backup before relying on them. It is a PWA, not a native Android application or a synchronised production system. The comparator accepts its documented normalised JSON schema. Search uses fictional training documents and returns source passages rather than operating advice for real equipment.
 
 GitHub Actions includes content, build, logic, authoring and browser checks. PR checks do not have deployment permissions. Successful main-branch builds deploy to Pages using the GitHub Actions publishing source. Review [deployment workflow runs](https://github.com/zombieli/zombieli.github.io/actions) before relying on later updates. `/version.json` identifies the displayed release.
 

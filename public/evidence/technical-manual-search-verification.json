@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "project": "technical-manual-search",
+  "version": "1.1.0",
+  "verifiedAt": "2026-10-13T02:10:27.263Z",
+  "runtime": {
+    "node": "v24.19.0",
+    "runtimeDependencies": 0
+  },
+  "tests": {
+    "command": "node --test tests/*.test.mjs",
+    "total": 24,
+    "passed": 24,
+    "failed": 0,
+    "skipped": 0
+  },
+  "browser": {
+    "command": "node scripts/browser-qa.cjs",
+    "passed": 17,
+    "failed": 0,
+    "browser": "Chromium 154.0.8037.98",
+    "executedAt": "2026-10-13T02:10:22.298Z",
+    "nativeDeviceTesting": false,
+    "report": "evidence/browser-report.json",
+    "screenshots": [
+      "evidence/screenshots/manual-search-desktop.png",
+      "evidence/screenshots/manual-search-mobile.png"
+    ]
+  },
+  "evaluation": {
+    "command": "node scripts/evaluate.mjs",
+    "totalQueries": 26,
+    "positive": {
+      "count": 18,
+      "mrr": 0.9444444444444444,
+      "recallAtK": 0.9444444444444444,
+      "hitAtK": 0.9444444444444444,
+      "missesAtK": [
+        "p17"
+      ]
+    },
+    "negative": {
+      "count": 8,
+      "emptyResultCount": 4,
+      "falsePositiveCount": 4,
+      "emptyResultRate": 0.5,
+      "falsePositiveRate": 0.5
+    },
+    "k": 5,
+    "rankDepth": 50,
+    "corpus": {
+      "manuals": 3,
+      "sections": 15,
+      "sha256": "d5e8ad50884382c809e9fbd3a95264881ce1d7a6376096a757629fabe00f1a46"
+    },
+    "querySetSha256": "3bafaaf06896eac314084c8df6ea692c7e638fa8e721056f870a93bc99b95383",
+    "report": "evidence/evaluation.json",
+    "reproducedIdentically": true,
+    "reportSha256": "14c24cae83d1128d12e590fda688ac54b54c5c4e2c591e046e691ccc99148274"
+  },
+  "testFirst": {
+    "core": {
+      "total": 13,
+      "failedBeforeImplementation": 11
+    },
+    "urlState": {
+      "total": 3,
+      "failedBeforeImplementation": 3
+    },
+    "evaluation": {
+      "total": 4,
+      "failedBeforeImplementation": 3
+    },
+    "cli": {
+      "total": 4,
+      "failedBeforeImplementation": 2
+    },
+    "record": "docs/development-log.md"
+  },
+  "limitations": [
+    "Original fictional data and project-authored relevance labels; not an independent benchmark.",
+    "One positive paraphrase misses; four unsupported questions return lexical matches.",
+    "Desktop Chromium viewport checks do not establish native-phone behavior.",
+    "Local HTTP evidence; deployment checks are separate.",
+    "No offline cache, semantic search or generated answers."
+  ]
+}

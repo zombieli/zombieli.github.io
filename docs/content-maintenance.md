@@ -13,9 +13,9 @@ Filters are saved in the URL. For example, `/projects/?category=web-applications
 | `devices-testing` | Devices & testing | Device Diagnostics Lab | Serial protocol harness; hardware-in-the-loop fault testing |
 | `web-applications` | Web applications | Field Service Workflow | Offline inspection workflow; equipment maintenance dashboard |
 | `data-simulation` | Data & simulation | Workshop Scheduling Study | Sensor quality study; maintenance scheduling comparison |
-| `mobile-applications` | Mobile applications | None | Android inspection notebook; QR equipment check-in |
-| `cloud-developer-tools` | Cloud & developer tools | None | Release and rollback lab; test report comparison CLI |
-| `automation-search` | Automation & search | None | Technical manual search; rule-based report classification |
+| `mobile-applications` | Mobile applications | Offline Inspection Notebook | Native Android client; QR equipment check-in |
+| `cloud-developer-tools` | Cloud & developer tools | Test Report Delta | Release and rollback lab; report-format adapters |
+| `automation-search` | Automation & search | Technical Manual Search | Version-aware manual references; rule-based report classification |
 
 Every project has one primary category. Use tags for topics that overlap categories. Empty categories appear as labelled future directions with ideas, not completed project cards. Once the first project is published in a category, it enters the homepage and leaves the future-only section automatically.
 
@@ -27,7 +27,7 @@ Every project has one primary category. Use tags for topics that overlap categor
 4. With `featuredProjectId: null`, the most recently updated project is selected. Equal dates are resolved by project ID in English alphabetical order.
 5. Categories with no published work do not produce homepage cards.
 
-The three existing categories currently pin their corresponding project. Set a pin to `null` to let a newer project replace it automatically.
+All six categories currently pin their corresponding project. Set a pin to `null` to let a newer project replace it automatically. Populated categories retain their ideas in a separately labelled roadmap.
 
 ## File responsibilities
 
@@ -56,10 +56,10 @@ The original three specialised cases retain their interactive views in `src/App.
 Use Node 24 and install dependencies with `npm ci`. From the website directory:
 
 ```sh
-npm run project:new -- inspection-notebook mobile-applications
+npm run project:new -- equipment-check-in mobile-applications
 ```
 
-This creates `content/projects/inspection-notebook.json` with draft status. It creates a content template, not a completed application. The example ID is not an existing project.
+This creates `content/projects/equipment-check-in.json` with draft status. It creates a content template, not a completed application. The example ID is not an existing project.
 
 1. Implement the project and collect reproducible evidence.
 2. Add a suitable cover under `public/media/`. Identify illustrations and synthetic data accurately.
@@ -86,7 +86,7 @@ Restart `npm run dev` after changing content files so new routes are regenerated
 | `technologies` | Technology names, such as Kotlin, Android and SQLite |
 | `tags` | Searchable topics, such as Offline and Inspection |
 | `proof` | A short statement supported by actual evidence, not a target result |
-| `cover.src` | Absolute site path such as `/media/inspection-notebook.webp`, without the `public` prefix |
+| `cover.src` | Absolute site path such as `/media/equipment-check-in.webp`, without the `public` prefix |
 | `cover.alt` | Description of the image and any illustrative or simulated content |
 | `cover.fit` | `contain` for complete charts; `cover` for a top-aligned interface crop |
 | `renderer` | Use `standard` for new projects |
@@ -118,7 +118,7 @@ npm run test:authoring
 
 Browser tests require Playwright Chromium or a local Chrome executable specified by `CHROMIUM_PATH`.
 
-The build checks references, dates, required content, homepage pins, local resources, source-bundle hashes and original project evidence. The 19 rule/generation tests cover selection, filtering, drafts, routes, archiving and overwrite protection. The 47 browser checks cover four viewport widths, shared filters, history navigation, empty states, the original cases, downloads and 404 responses. The 5 authoring lifecycle checks build an isolated copy with a temporary category and project, verify it in a browser, then remove the copy.
+The build checks references, dates, required content, homepage pins, local resources, source-bundle hashes and original project evidence. The 19 rule/generation tests cover selection, filtering, drafts, routes, archiving and overwrite protection. The browser checks cover four viewport widths, shared filters, history navigation, empty states, the original cases, downloads and 404 responses. The 5 authoring lifecycle checks build an isolated copy with a temporary category and project, verify it in a browser, then remove the copy.
 
 HTTPS link syntax is checked automatically; verify access to new external links manually. If intentionally retiring an original case, update its specialised acceptance scenario as part of the same change.
 

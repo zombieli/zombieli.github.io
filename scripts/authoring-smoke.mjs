@@ -67,7 +67,7 @@ try {
   await page.getByRole('link', { name: 'All qa future category projects', exact: true }).click()
   assert.equal(await page.locator('.library-grid [data-project="qa-new-mobile-project"]').count(), 1)
   assert.equal(await page.getByRole('button', { name: /^QA future category/ }).getAttribute('aria-pressed'), 'true')
-  assert(!await page.locator('.future-grid').innerText().then(text => text.includes('QA future category')))
+  assert(!(await page.locator('.future-grid').allTextContents()).join(' ').includes('QA future category'))
   checks.push('Newly active category filters correctly and leaves the future-only area')
   writeFileSync(projectPath, JSON.stringify({ ...project, status: 'archived' }))
   const archivedEntries = prepareCatalogue(fixture)

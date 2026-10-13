@@ -1,0 +1,58 @@
+{
+  "project": "Test Report Delta",
+  "version": "1.1.0",
+  "checkedAt": "2026-10-13T02:18:58.969Z",
+  "runtime": "v24.19.0",
+  "unit": {
+    "command": "node --test --test-reporter=tap tests/cli.test.mjs tests/core.test.mjs",
+    "exitCode": 0,
+    "tests": 45,
+    "passed": 45,
+    "failed": 0,
+    "output": "unit-tests.txt"
+  },
+  "cliSample": {
+    "command": "node src/cli.mjs web/samples/baseline.json web/samples/candidate.json --json",
+    "exitCode": 1,
+    "verdict": "fail",
+    "counts": {
+      "baseline": 7,
+      "candidate": 7,
+      "regressions": 1,
+      "persistentFailures": 1,
+      "recoveries": 1,
+      "resumed": 0,
+      "added": 1,
+      "removed": 1,
+      "newSkipped": 1,
+      "candidateFailures": 2,
+      "slower": 1,
+      "faster": 0
+    },
+    "artifact": "sample-comparison.json"
+  },
+  "browser": {
+    "command": "node scripts/browser-check.mjs",
+    "report": "browser-verification.json",
+    "checks": 11,
+    "passed": 11,
+    "viewportWidths": [
+      360,
+      390,
+      768,
+      1440
+    ],
+    "consoleErrors": [],
+    "screenshots": [
+      "desktop.png",
+      "mobile.png"
+    ]
+  },
+  "limitations": [
+    "Normalised JSON input only; no direct JUnit adapter.",
+    "Synthetic sample runs; timings are not production benchmarks.",
+    "Desktop Chromium browser checks; no native mobile device testing.",
+    "Timing warnings are advisory; passing verdict is a comparison policy result.",
+    "No backend, report upload or hosted CI service is included."
+  ]
+}

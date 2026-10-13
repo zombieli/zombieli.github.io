@@ -1,0 +1,84 @@
+{
+  "id": "test-report-delta",
+  "title": "Test Report Delta",
+  "categoryId": "cloud-developer-tools",
+  "status": "published",
+  "publishedAt": "2026-10-13",
+  "updatedAt": "2026-10-13",
+  "summary": "A shared browser and CLI comparison engine that exposes regressions, lost coverage and timing changes between test runs.",
+  "technologies": [
+    "JavaScript",
+    "Node.js",
+    "CLI",
+    "JSON"
+  ],
+  "tags": [
+    "Developer tools",
+    "CI",
+    "Test evidence"
+  ],
+  "proof": "45 native tests · 11 browser scenarios",
+  "cover": {
+    "src": "/media/test-report-delta.png",
+    "alt": "Actual browser capture of Test Report Delta using fictional example data",
+    "fit": "cover"
+  },
+  "renderer": "standard",
+  "links": [
+    {
+      "label": "Open interactive demo",
+      "href": "/demos/test-report-delta/"
+    },
+    {
+      "label": "Download source and tests",
+      "href": "/downloads/test-report-delta.zip"
+    },
+    {
+      "label": "Verification record",
+      "href": "/evidence/test-report-delta-verification.json"
+    },
+    {
+      "label": "Development log",
+      "href": "/evidence/test-report-delta-development.md"
+    }
+  ],
+  "caseStudy": {
+    "role": "Comparison policy, CLI and browser workspace",
+    "context": "A candidate run can look better simply because a failing test disappeared. This developer tool makes changed coverage visible alongside status transitions, using the same rules in the browser and terminal.",
+    "sections": [
+      {
+        "heading": "Problem",
+        "paragraphs": [
+          "Comparing only failure totals hides removed tests, newly skipped cases and persistent failures. Developers need a deterministic explanation of what changed and an exit status that a pipeline can consume."
+        ]
+      },
+      {
+        "heading": "Implementation and decisions",
+        "paragraphs": [
+          "The versioned normalised JSON schema identifies a case by its exact suite/name pair. A pure comparison core classifies regressions, recoveries, persistent failures, additions, removals and new skips. The CLI and browser both import that core.",
+          "Candidate failures fail the policy; an empty candidate or blocked coverage change remains incomplete. Explicit flags allow removed or newly skipped coverage. Duration warnings require both a relative and absolute increase and remain advisory.",
+          "Selecting a replacement report clears the previous result immediately. Per-input generation tokens prevent a delayed file read from restoring an obsolete accepted verdict. Files are processed locally."
+        ]
+      },
+      {
+        "heading": "Verification and results",
+        "paragraphs": [
+          "45 native tests include actual CLI subprocess exit codes, input validation, status transitions, coverage overrides and timing boundaries. Eleven browser scenarios check downloads, malformed replacements, delayed reads, added-failure totals, sample replacement races, safe rendering, keyboard access and four viewport widths.",
+          "The bundled sample intentionally exits with status 1: two candidate failures, one removed case and one new skip remain visible alongside a recovery. The example is designed to explain an unsuccessful comparison."
+        ]
+      },
+      {
+        "heading": "Reproduce the work",
+        "paragraphs": [
+          "Extract the source and run node --test tests/*.test.mjs with Node 24. Run node src/cli.mjs web/samples/baseline.json web/samples/candidate.json --json to inspect the sample result. The README includes policy flags and a CI example.",
+          "Open the browser demo and choose Load sample comparison, or select two files matching the documented schema. The source archive includes real test output, the complete sample comparison, architecture and development log."
+        ]
+      }
+    ],
+    "limitations": [
+      "Normalised JSON input only; no direct JUnit adapter or hosted CI service.",
+      "Sample data and timings are synthetic. One timing measurement does not establish a performance regression.",
+      "A pass means the stated comparison policy is satisfied; it does not establish overall release safety. Browser checks use desktop Chromium."
+    ]
+  }
+}

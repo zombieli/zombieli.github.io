@@ -5,23 +5,44 @@
     {
       "project": "device-diagnostics-lab",
       "file": "/downloads/device-diagnostics-lab.zip",
-      "sha256": "20b47cbfe17ce39a3b324783de467cf926e12630d433a4248e76f7b2c324ef6d",
+      "sha256": "d04862e3958946c5eafa9d9773ae7f01ae0b2135470c6763010799a7d1bb3c8b",
       "files": 27,
       "bytes": 28595
     },
     {
       "project": "field-service-workflow",
       "file": "/downloads/field-service-workflow.zip",
-      "sha256": "0335e4a618e763a7134d36619c6a962d34e819b652279aff2765246391877695",
+      "sha256": "8132faa86c6451692d41ab1234b9de7ff870d22a38cedbfca8b93d39314baaf4",
       "files": 22,
       "bytes": 33611
     },
     {
       "project": "scheduling-simulation-study",
       "file": "/downloads/scheduling-simulation-study.zip",
-      "sha256": "2a19ea97a49bb6536c349f4b56119e59168c368dbdbda19fc7bcead86bc19ce7",
+      "sha256": "1593bee26a999368f7e056cb653f333ef684092f1f33fbbd125c7d540d8f515d",
       "files": 14,
       "bytes": 146807
+    },
+    {
+      "project": "inspection-notebook",
+      "file": "/downloads/inspection-notebook.zip",
+      "sha256": "234a8224394258a290c1ca14efa8dea86c187635176c5fda6cc5c108b1fcc81e",
+      "files": 35,
+      "bytes": 267031
+    },
+    {
+      "project": "test-report-delta",
+      "file": "/downloads/test-report-delta.zip",
+      "sha256": "a30f8308abb82197f5d1d14e45cc8f6ee863733b194b13e828cd220e80bdd2bc",
+      "files": 24,
+      "bytes": 225458
+    },
+    {
+      "project": "technical-manual-search",
+      "file": "/downloads/technical-manual-search.zip",
+      "sha256": "58e890c03def4cffe3b58cfe160d91ce6b21af11c3effb5a7033a3d1eb291aa1",
+      "files": 29,
+      "bytes": 246918
     }
   ]
 }

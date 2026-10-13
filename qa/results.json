@@ -1,35 +1,47 @@
 {
-  "executed_at_utc": "2026-10-10T02:57:57.998Z",
-  "browser": "153.0.8010.53",
+  "executed_at_utc": "2026-10-13T02:22:39.264Z",
+  "browser": "154.0.8037.98",
   "checks": [
     "No horizontal overflow: / 360px",
     "No horizontal overflow: /projects/ 360px",
     "No horizontal overflow: /projects/device-diagnostics/ 360px",
     "No horizontal overflow: /projects/field-service/ 360px",
+    "No horizontal overflow: /projects/inspection-notebook/ 360px",
     "No horizontal overflow: /projects/scheduling/ 360px",
+    "No horizontal overflow: /projects/technical-manual-search/ 360px",
+    "No horizontal overflow: /projects/test-report-delta/ 360px",
     "No horizontal overflow: / 390px",
     "No horizontal overflow: /projects/ 390px",
     "No horizontal overflow: /projects/device-diagnostics/ 390px",
     "No horizontal overflow: /projects/field-service/ 390px",
+    "No horizontal overflow: /projects/inspection-notebook/ 390px",
     "No horizontal overflow: /projects/scheduling/ 390px",
+    "No horizontal overflow: /projects/technical-manual-search/ 390px",
+    "No horizontal overflow: /projects/test-report-delta/ 390px",
     "No horizontal overflow: / 768px",
     "No horizontal overflow: /projects/ 768px",
     "No horizontal overflow: /projects/device-diagnostics/ 768px",
     "No horizontal overflow: /projects/field-service/ 768px",
+    "No horizontal overflow: /projects/inspection-notebook/ 768px",
     "No horizontal overflow: /projects/scheduling/ 768px",
+    "No horizontal overflow: /projects/technical-manual-search/ 768px",
+    "No horizontal overflow: /projects/test-report-delta/ 768px",
     "No horizontal overflow: / 1440px",
     "No horizontal overflow: /projects/ 1440px",
     "No horizontal overflow: /projects/device-diagnostics/ 1440px",
     "No horizontal overflow: /projects/field-service/ 1440px",
+    "No horizontal overflow: /projects/inspection-notebook/ 1440px",
     "No horizontal overflow: /projects/scheduling/ 1440px",
+    "No horizontal overflow: /projects/technical-manual-search/ 1440px",
+    "No horizontal overflow: /projects/test-report-delta/ 1440px",
     "Keyboard skip link; home to case; timeout and recovery evidence; raw request disclosure",
     "Homepage has exactly one representative per published category",
     "Collection shows all published work, category counts and honest future directions",
+    "Populated categories keep a separately labelled future roadmap",
     "Category URL survives reload and exposes selected state",
     "Keyboard category selection and browser back/forward restore filters",
     "Technology search, URL persistence, zero results and reset work together",
     "Title sorting is deterministic and shareable",
-    "Empty future category contains labelled ideas and no invented project cards",
     "Outdated category URLs fall back to all categories without dropping the search",
     "Homepage category links, collection case links and return navigation work",
     "Resource loads: /resume/leon-li-resume.pdf",
@@ -52,12 +64,12 @@
   ],
   "assets": [
     {
-      "name": "main-BZiniTOq.css",
-      "bytes": 16319
+      "name": "main-DlHo--b0.css",
+      "bytes": 16510
     },
     {
-      "name": "main-CF9fUjIa.js",
-      "bytes": 105405
+      "name": "main-DWiAsEY_.js",
+      "bytes": 116613
     }
   ],
   "limitations": "Chromium functional checks; not a WCAG audit, Lighthouse score or public deployment verification."

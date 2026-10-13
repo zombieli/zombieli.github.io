@@ -59,13 +59,14 @@ button { cursor: pointer; }
 .reset-filters { margin-top: 25px; padding: 8px 0; border: 0; color: var(--blue); text-decoration: underline; text-underline-offset: 4px; font-size: .8rem; background: transparent; }
 .filter-notice { font-size: .85rem; border-left: 3px solid var(--blue); padding-left: 14px; margin-top: 22px; }
 .future-section { border-top: 1px solid var(--line); }
-.future-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
-.future-grid article { border-top: 2px solid #b4c3d8; padding-top: 20px; }
+:is(.future-grid, .roadmap-grid) { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.roadmap-grid { margin-top: 32px; }
+:is(.future-grid, .roadmap-grid) article { border-top: 2px solid #b4c3d8; padding-top: 20px; }
 .planned-label { font-size: .62rem; letter-spacing: .1em; color: var(--muted); }
-.future-grid h3 { font-size: 1.2rem; margin: 15px 0; }
-.future-grid p, .future-grid li { font-size: .82rem; color: var(--muted); }
-.future-grid ul { padding-left: 20px; }
-.future-grid li + li { margin-top: 10px; }
+:is(.future-grid, .roadmap-grid) h3 { font-size: 1.2rem; margin: 15px 0; }
+:is(.future-grid, .roadmap-grid) p, :is(.future-grid, .roadmap-grid) li { font-size: .82rem; color: var(--muted); }
+:is(.future-grid, .roadmap-grid) ul { padding-left: 20px; }
+:is(.future-grid, .roadmap-grid) li + li { margin-top: 10px; }
 .standard-case { overflow-wrap: anywhere; }
 .standard-case figure img { max-height: 480px; object-fit: contain; background: white; }
 @media (max-width: 1000px) {
@@ -77,7 +78,7 @@ button { cursor: pointer; }
   .catalogue-section-heading { display: block; }
   .catalogue-section-heading h2 { margin-bottom: 20px; }
   .catalogue-section-heading > p, .catalogue-section-heading > div:last-child > p { max-width: none; }
-  .featured-grid, .future-grid, .library-layout { grid-template-columns: minmax(0, 1fr); }
+  .featured-grid, .future-grid, .roadmap-grid, .library-layout { grid-template-columns: minmax(0, 1fr); }
   .library-heading { padding-top: 30px; padding-bottom: 28px; }
   .library-heading h1 { font-size: 2.65rem; }
   .library-layout { gap: 20px; }
@@ -88,5 +89,5 @@ button { cursor: pointer; }
   .library-toolbar { grid-template-columns: minmax(0, 1fr); }
   .catalogue-empty { padding: 24px; }
   .results-heading { gap: 10px; }
-  .future-grid { gap: 30px; }
+  .future-grid, .roadmap-grid { gap: 30px; }
 }

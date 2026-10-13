@@ -1,6 +1,6 @@
 {
-  "executed_at_utc": "2026-10-10T02:57:59.974Z",
-  "browser": "153.0.8010.53",
+  "executed_at_utc": "2026-10-13T02:17:25.179Z",
+  "browser": "154.0.8037.98",
   "checks": [
     "Scaffold creates a hidden draft and refuses to overwrite it",
     "Publishing the first work in a new category automatically adds a homepage card and working static case route",

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#132b36">
+  <meta name="description" content="Explore fictional technical training manuals with deterministic lexical search and complete source references.">
+  <title>Technical Manual Search · Reference Desk</title>
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+  <a class="skip" href="#search-query">Skip to search</a>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="./" aria-label="Reference Desk home"><span class="brand-symbol" aria-hidden="true">R<span>↗</span></span><span>REFERENCE<br>DESK</span></a>
+      <div class="sidebar-main">
+        <p class="overline">THE LIBRARY</p>
+        <a class="active-nav" href="./"><span aria-hidden="true">⌕</span> Manual search <span class="nav-dot" aria-hidden="true"></span></a>
+        <p class="sidebar-description">A small collection.<br>A clear source for every result.</p>
+        <div class="library-list" id="library-list"></div>
+      </div>
+      <div class="sidebar-footer"><span class="status-dot" aria-hidden="true"></span> Local search engine<p>No accounts. No external requests.</p></div>
+    </aside>
+    <main>
+      <header class="topbar"><span>Technical Manual Search</span><span class="version">TRAINING COLLECTION / 01</span></header>
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">FIND THE SECTION. READ THE SOURCE.</p>
+        <h1 id="page-title">Good answers start<br>with <em>the right reference.</em></h1>
+        <p class="lede">Search maintenance steps, data procedures, and workshop notes.<br class="desktop-break"> Every match takes you back to its complete source section.</p>
+      </section>
+      <section class="search-panel" aria-label="Search manuals">
+        <form id="search-form">
+          <label class="field-label" for="search-query">What are you looking for?</label>
+          <div class="query-row"><span class="search-icon" aria-hidden="true">⌕</span><input id="search-query" name="q" type="search" placeholder="Try battery replacement or export CSV" maxlength="240" autocomplete="off" aria-describedby="query-help"><button class="primary" type="submit">Search <span aria-hidden="true">↗</span></button></div>
+          <div class="filter-row">
+            <div><label for="manual-filter">Manual</label><select id="manual-filter" name="manual"><option value="">All manuals</option></select></div>
+            <div><label for="category-filter">Category</label><select id="category-filter" name="category"><option value="">All categories</option></select></div>
+            <p id="query-help">Exact terms · up to 240 characters<br>Filters apply when you search</p>
+          </div>
+        </form>
+        <div class="suggestions"><span>Try a topic</span><button type="button" data-query="battery replacement">Battery replacement</button><button type="button" data-query="missing samples">Missing samples</button><button type="button" data-query="cart handover">Cart handover</button></div>
+      </section>
+      <div class="results-layout">
+        <section class="results-region" aria-label="Search results"><div class="results-heading"><h2>Reference results</h2><span id="result-count">15 sections indexed</span></div><p id="search-status" role="status" aria-live="polite">Loading the training collection…</p><div id="results"></div></section>
+        <aside class="context"><p class="overline">ABOUT THIS COLLECTION</p><h2>Small corpus.<br>Visible evidence.</h2><p>Three original, fictional training manuals. Fifteen referenced sections. Search runs entirely in your browser.</p><dl><div><dt>Method</dt><dd>BM25-style lexical ranking</dd></div><div><dt>Source</dt><dd>Complete section text</dd></div><div><dt>Scope</dt><dd>Classroom examples only</dd></div></dl><p class="context-note">Matches are ranked by words, not meaning. A result can share a term without answering your question. Read the source before drawing a conclusion.</p><a href="./data/manuals.json">View the corpus <span aria-hidden="true">↗</span></a></aside>
+      </div>
+      <footer class="page-footer"><span>REFERENCE DESK</span><p>Fictional training material · no real equipment instructions</p><span>01 / 03 MANUALS</span></footer>
+    </main>
+  </div>
+  <noscript><p class="noscript">Enable JavaScript to search. The complete <a href="./data/manuals.json">training corpus</a> is also available as JSON.</p></noscript>
+</body>
+</html>

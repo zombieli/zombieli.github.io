@@ -48,6 +48,11 @@ const base = process.env.BASE_URL || 'http://127.0.0.1:4173'
   assert.equal(await page.locator('.category-filters button').count(),catalogue.categories.length+1)
   assert.equal(await page.locator('.future-grid article').count(),catalogue.categories.length-activeCategories.length)
   checks.push('Collection shows all published work, category counts and honest future directions')
+  assert.equal(await page.locator('.roadmap-grid article').count(),activeCategories.filter(c=>c.ideas.length).length)
+  for (const category of activeCategories.filter(c=>c.ideas.length)) {
+    assert.match(await page.locator(`.roadmap-grid [data-category="${category.id}"]`).innerText(),/POSSIBLE NEXT STEPS/)
+  }
+  checks.push('Populated categories keep a separately labelled future roadmap')
   const webButton=page.getByRole('button',{name:/^Web applications/})
   await webButton.click()
   assert.equal(new URL(page.url()).searchParams.get('category'),'web-applications')

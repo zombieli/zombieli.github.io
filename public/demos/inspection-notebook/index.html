@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#132d3c">
+  <meta name="description" content="A device-local, offline inspection notebook for fictional training equipment.">
+  <title>Inspection Notebook · Training demo</title>
+  <link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to notebook</a>
+  <header class="masthead"><div class="header-inner">
+    <a class="brand" href="./"><span class="mark" aria-hidden="true">✓</span><span>FIELD NOTES<span class="brand-detail">Inspection notebook</span></span></a>
+    <a class="portfolio-link" href="../../">Portfolio <span aria-hidden="true">↗</span></a>
+  </div></header>
+  <main id="main">
+    <section class="intro" aria-labelledby="page-title">
+      <div><p class="eyebrow">OFFLINE WORKSPACE / TRAINING DEMO</p><h1 id="page-title">Every check.<br><span>A clear record.</span></h1><p class="intro-copy">Capture inspections, finish the checklist, and keep a reliable record on this device—even without a connection.</p></div>
+      <div class="connection-card"><span id="network" class="connection">Online · saved on this device</span><span id="offline-ready">Preparing offline access…</span><p>Fictional equipment only.<br>No account. No background upload.</p></div>
+    </section>
+    <div id="feedback" aria-live="polite"><p id="notice" role="status" hidden></p><p id="error" role="alert" hidden></p></div>
+    <section class="stats" aria-label="Notebook totals"><div><strong id="total">0</strong><span>Total inspections</span></div><div><strong id="draft-count">0</strong><span>In progress</span></div><div><strong id="submitted-count">0</strong><span>Submitted</span></div><div class="stats-caption"><span class="small-label">STORAGE</span><strong class="device-label">This browser</strong><span>Back up records to keep a copy.</span></div></section>
+    <div class="workspace">
+      <section class="records-panel" aria-labelledby="records-title">
+        <div class="section-heading"><div><p class="eyebrow">YOUR NOTEBOOK</p><h2 id="records-title">Inspections</h2></div><button id="new" class="primary" disabled><span aria-hidden="true">＋</span> New inspection</button></div>
+        <div class="filters" role="group" aria-label="Filter inspection status"><button data-filter="all" aria-pressed="true">All inspections</button><button data-filter="draft" aria-pressed="false">Drafts</button><button data-filter="submitted" aria-pressed="false">Submitted</button></div>
+        <div id="record-list" class="record-list" aria-live="polite"><p class="empty">Opening device storage…</p></div>
+      </section>
+      <section id="editor" class="editor" aria-labelledby="editor-title" hidden></section>
+      <aside id="guide" class="guide" aria-label="Notebook guide">
+        <p class="eyebrow">A SIMPLE FIELD WORKFLOW</p><h2>From draft to record.</h2>
+        <ol class="steps"><li><span>01</span><div><strong>Start an inspection</strong><p>Select a training asset and record its condition.</p></div></li><li><span>02</span><div><strong>Work through the checks</strong><p>Save your draft as you go. Return to it from this browser.</p></div></li><li><span>03</span><div><strong>Submit a fixed record</strong><p>All checks are required. Submitted inspections become read-only.</p></div></li></ol>
+        <div class="sample"><strong>Explore with fictional examples</strong><p>Add two labelled training records to see the workflow. Your existing records stay in place.</p><button id="samples" class="secondary" disabled>Load fictional examples</button></div>
+      </aside>
+    </div>
+    <section class="backup" aria-labelledby="backup-title"><div><p class="eyebrow">KEEP A COPY</p><h2 id="backup-title">Your records, portable.</h2><p>Export a JSON backup or add records from a validated backup. Existing IDs are rejected; imports never overwrite your notebook.</p></div><div class="backup-actions"><button id="export" class="secondary" disabled>Export JSON</button><label class="file-label" for="import-file">Import JSON backup<input type="file" id="import-file" accept=".json,application/json" disabled></label><p>Schema v1 · up to 1,000 records · 16 MB</p></div></section>
+    <div class="storage-note"><p>Browser storage can be cleared by your browser or device. Export important records. Offline access becomes available after the first successful online load.</p><button id="retry" class="secondary" hidden>Retry device storage</button></div>
+  </main>
+  <footer><span>Inspection Notebook</span><span>Fictional training environment · v1.1.0</span></footer>
+</body>
+</html>

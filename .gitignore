@@ -4,4 +4,7 @@ dist/
 qa/*
 !qa/results.json
 !qa/authoring-results.json
+!qa/bundle-results.json
+__pycache__/
+*.pyc
 *.log

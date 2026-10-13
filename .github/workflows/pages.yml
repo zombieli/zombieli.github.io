@@ -20,6 +20,9 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+      - name: Source archive checks
+        run: |
+          python3 -m unittest discover -s tests -p 'test_*.py'
       - run: npx playwright install --with-deps chromium
       - run: npm run test:authoring
       - name: Browser acceptance
@@ -27,6 +30,7 @@ jobs:
           node scripts/serve.mjs &
           for attempt in $(seq 1 30); do curl --fail http://127.0.0.1:4173/ && break || sleep 1; done
           node scripts/browser-qa.cjs
+          python3 scripts/check-project-bundles.py --browser
       - uses: actions/upload-pages-artifact@v5
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         with:

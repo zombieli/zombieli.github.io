@@ -1,0 +1,83 @@
+{
+  "id": "inspection-notebook",
+  "title": "Offline Inspection Notebook",
+  "categoryId": "mobile-applications",
+  "status": "published",
+  "publishedAt": "2026-10-13",
+  "updatedAt": "2026-10-13",
+  "summary": "A mobile-first inspection PWA with offline drafts, fixed submitted records and transactional backup recovery.",
+  "technologies": [
+    "JavaScript",
+    "IndexedDB",
+    "Service Worker",
+    "Web App Manifest"
+  ],
+  "tags": [
+    "Offline",
+    "PWA",
+    "Transactions"
+  ],
+  "proof": "35 domain tests · 20 browser checks",
+  "cover": {
+    "src": "/media/inspection-notebook.png",
+    "alt": "Actual browser capture of Offline Inspection Notebook using fictional example data",
+    "fit": "cover"
+  },
+  "renderer": "standard",
+  "links": [
+    {
+      "label": "Open interactive demo",
+      "href": "/demos/inspection-notebook/"
+    },
+    {
+      "label": "Download source and tests",
+      "href": "/downloads/inspection-notebook.zip"
+    },
+    {
+      "label": "Verification record",
+      "href": "/evidence/inspection-notebook-verification.json"
+    },
+    {
+      "label": "Development log",
+      "href": "/evidence/inspection-notebook-development.md"
+    }
+  ],
+  "caseStudy": {
+    "role": "Record model, offline workflow and verification",
+    "context": "A field record should survive a page reload and remain available when connectivity disappears. This fictional inspection workflow explores those requirements in a browser that a reviewer can open immediately.",
+    "sections": [
+      {
+        "heading": "Problem",
+        "paragraphs": [
+          "An editable draft and a completed record have different rules. A backup must restore useful work without silently replacing existing records or leaving half an import behind."
+        ]
+      },
+      {
+        "heading": "Implementation and decisions",
+        "paragraphs": [
+          "A pure domain module validates record types, checklist completion, timestamps and backup envelopes. IndexedDB transactions enforce immutable submitted records, detect stale draft edits and reject an import atomically if any identifier conflicts.",
+          "A service worker caches only this demo directory. The first online visit prepares the shell for offline reload. Records stay in the browser; the interface provides explicit JSON export and import with a 1,000-record and 16 MB bound."
+        ]
+      },
+      {
+        "heading": "Verification and results",
+        "paragraphs": [
+          "35 domain tests and 20 desktop Chrome checks cover required fields, same-clock edits, persistence, pending-save input protection, stale tabs, offline reload, rollback with queued writes, round-trip backups and scoped caching. Layouts were checked at 360, 390, 768 and 1440 pixels.",
+          "Development exposed and corrected a coerced condition type, repeated abort callbacks and an export-size boundary that initially rejected valid large backups. The development log preserves the observed failures and fixes."
+        ]
+      },
+      {
+        "heading": "Reproduce the work",
+        "paragraphs": [
+          "Download and extract the source. With Node 24, run npm test, then npm run serve. The README documents the local URL and browser-check configuration. The archive includes the architecture, test output, verification record and screenshots.",
+          "In the hosted demo, create a draft or explicitly load fictional examples. Export anything you want to keep before clearing site data. Offline reload requires an initial successful online visit and an active service worker."
+        ]
+      }
+    ],
+    "limitations": [
+      "Desktop Chrome verification with resized viewports; physical phones and the installation prompt have not been tested.",
+      "No server synchronisation, real equipment integration or cryptographic record sealing. Clearing browser storage removes local records.",
+      "The notebook holds up to 1,000 records and has no deletion workflow. Quota exhaustion and storage eviction were not reproduced."
+    ]
+  }
+}

@@ -1,0 +1,470 @@
+{
+  "schemaVersion": 1,
+  "k": 5,
+  "rankDepth": 50,
+  "totalQueries": 26,
+  "positive": {
+    "count": 18,
+    "mrr": 0.9444444444444444,
+    "recallAtK": 0.9444444444444444,
+    "hitAtK": 0.9444444444444444,
+    "missesAtK": [
+      "p17"
+    ]
+  },
+  "negative": {
+    "count": 8,
+    "emptyResultCount": 4,
+    "falsePositiveCount": 4,
+    "emptyResultRate": 0.5,
+    "falsePositiveRate": 0.5
+  },
+  "rows": [
+    {
+      "id": "p01",
+      "kind": "positive",
+      "query": "isolate beacon power",
+      "relevant": [
+        "aurora-beacon#power-isolation"
+      ],
+      "returned": [
+        "aurora-beacon#power-isolation",
+        "aurora-beacon#battery-replacement",
+        "aurora-beacon#water-ingress",
+        "aurora-beacon#flash-check",
+        "aurora-beacon#lens-cleaning"
+      ],
+      "firstRelevantRank": 1,
+      "reciprocalRank": 1,
+      "recallAtK": 1,
+      "hitAtK": 1,
+      "falsePositive": null
+    },
+    {
+      "id": "p02",
+      "kind": "positive",
+      "query": "battery replacement",
+      "relevant": [
+        "aurora-beacon#battery-replacement"
+      ],
+      "returned": [
+        "aurora-beacon#battery-replacement"
+      ],
+      "firstRelevantRank": 1,
+      "reciprocalRank": 1,
+      "recallAtK": 1,
+      "hitAtK": 1,
+      "falsePositive": null
+    },
+    {
+      "id": "p03",
+      "kind": "positive",
+      "query": "clean cloudy lens",
+      "relevant": [
+        "aurora-beacon#lens-cleaning"
+      ],
+      "returned": [
+        "aurora-beacon#lens-cleaning"
+      ],
+      "firstRelevantRank": 1,
+      "reciprocalRank": 1,
+      "recallAtK": 1,
+      "hitAtK": 1,
+      "falsePositive": null
+    },
+    {
+      "id": "p04",
+      "kind": "positive",
+      "query": "two short flashes",
+      "relevant": [
+        "aurora-beacon#flash-check"
+      ],
+      "returned": [
+        "aurora-beacon#flash-check",
+        "cedar-logger#capture-start",
+        "cedar-logger#clock-setting",
+        "aurora-beacon#battery-replacement"
+      ],
+      "firstRelevantRank": 1,
+      "reciprocalRank": 1,
+      "recallAtK": 1,
+      "hitAtK": 1,
+      "falsePositive": null
+    },
+    {
+      "id": "p05",
+      "kind": "positive",
+      "query": "water ingress seal",
+      "relevant": [
+        "aurora-beacon#water-ingress"
+      ],
+      "returned": [
+        "aurora-beacon#water-ingress"
+      ],
+      "firstRelevantRank": 1,
+      "reciprocalRank": 1,
+      "recallAtK": 1,
+      "hitAtK": 1,
+      "falsePositive": null
+    },
+    {
+      "id": "p06",
+      "kind": "positive",
+      "query": "UTC clock offset",
+      "relevant": [
+        "cedar-logger#clock-setting"
+      ],
+      "returned": [
+        "cedar-logger#clock-setting",
+        "cedar-logger#csv-export"
+      ],
+      "firstRelevantRank": 1,
+      "reciprocalRank": 1,
+      "recallAtK": 1,
+      "hitAtK": 1,
+      "falsePositive": null
+    },
+    {
+      "id": "p07",
+      "kind": "positive",
+      "query": "start capture storage full",
+      "relevant": [
+        "cedar-logger#capture-start"
+      ],
+      "returned": [
+        "cedar-logger#capture-start",
+        "cedar-logger#missing-samples",
+        "cedar-logger#clock-setting"
+      ],
+      "firstRelevantRank": 1,
+      "reciprocalRank": 1,
+      "recallAtK": 1,
+      "hitAtK": 1,
+      "falsePositive": null
+    },
+    {
+      "id": "p08",
+      "kind": "positive",
+      "query": "export CSV columns",
+      "relevant": [
+        "cedar-logger#csv-export"
+      ],
+      "returned": [
+        "cedar-logger#csv-export",
+        "cedar-logger#missing-samples",
+        "cedar-logger#capture-start"
+      ],
+      "firstRelevantRank": 1,
+      "reciprocalRank": 1,
+      "recallAtK": 1,
+      "hitAtK": 1,
+      "falsePositive": null
+    },
+    {
+      "id": "p09",
+      "kind": "positive",
+      "query": "missing samples timestamp gap",
+      "relevant": [
+        "cedar-logger#missing-samples"
+      ],
+      "returned": [
+        "cedar-logger#missing-samples",
+        "mariner-cart#tool-inventory",
+        "cedar-logger#csv-export"
+      ],
+      "firstRelevantRank": 1,
+      "reciprocalRank": 1,
+      "recallAtK": 1,
+      "hitAtK": 1,
+      "falsePositive": null
+    },
+    {
+      "id": "p10",
+      "kind": "positive",
+      "query": "literal session label markup",
+      "relevant": [
+        "cedar-logger#label-literals"
+      ],
+      "returned": [
+        "cedar-logger#label-literals",
+        "cedar-logger#capture-start",
+        "cedar-logger#csv-export",
+        "mariner-cart#cable-routing",
+        "cedar-logger#missing-samples"
+      ],
+      "firstRelevantRank": 1,
+      "reciprocalRank": 1,
+      "recallAtK": 1,
+      "hitAtK": 1,
+      "falsePositive": null
+    },
+    {
+      "id": "p11",
+      "kind": "positive",
+      "query": "wheel brake lever",
+      "relevant": [
+        "mariner-cart#wheel-check",
+        "mariner-cart#cable-routing"
+      ],
+      "returned": [
+        "mariner-cart#wheel-check",
+        "mariner-cart#cable-routing"
+      ],
+      "firstRelevantRank": 1,
+      "reciprocalRank": 1,
+      "recallAtK": 1,
+      "hitAtK": 1,
+      "falsePositive": null
+    },
+    {
+      "id": "p12",
+      "kind": "positive",
+      "query": "missing tool inventory",
+      "relevant": [
+        "mariner-cart#tool-inventory"
+      ],
+      "returned": [
+        "mariner-cart#tool-inventory",
+        "mariner-cart#handover-record",
+        "cedar-logger#missing-samples"
+      ],
+      "firstRelevantRank": 1,
+      "reciprocalRank": 1,
+      "recallAtK": 1,
+      "hitAtK": 1,
+      "falsePositive": null
+    },
+    {
+      "id": "p13",
+      "kind": "positive",
+      "query": "cable tray straps",
+      "relevant": [
+        "mariner-cart#cable-routing"
+      ],
+      "returned": [
+        "mariner-cart#cable-routing",
+        "cedar-logger#missing-samples"
+      ],
+      "firstRelevantRank": 1,
+      "reciprocalRank": 1,
+      "recallAtK": 1,
+      "hitAtK": 1,
+      "falsePositive": null
+    },
+    {
+      "id": "p14",
+      "kind": "positive",
+      "query": "simulated spill barrier",
+      "relevant": [
+        "mariner-cart#spill-response"
+      ],
+      "returned": [
+        "mariner-cart#spill-response"
+      ],
+      "firstRelevantRank": 1,
+      "reciprocalRank": 1,
+      "recallAtK": 1,
+      "hitAtK": 1,
+      "falsePositive": null
+    },
+    {
+      "id": "p15",
+      "kind": "positive",
+      "query": "cart handover defects",
+      "relevant": [
+        "mariner-cart#handover-record"
+      ],
+      "returned": [
+        "mariner-cart#handover-record",
+        "mariner-cart#wheel-check",
+        "mariner-cart#cable-routing",
+        "mariner-cart#spill-response",
+        "mariner-cart#tool-inventory"
+      ],
+      "firstRelevantRank": 1,
+      "reciprocalRank": 1,
+      "recallAtK": 1,
+      "hitAtK": 1,
+      "falsePositive": null
+    },
+    {
+      "id": "p16",
+      "kind": "positive",
+      "query": "beacon battery",
+      "relevant": [
+        "aurora-beacon#battery-replacement",
+        "aurora-beacon#power-isolation"
+      ],
+      "returned": [
+        "aurora-beacon#battery-replacement",
+        "aurora-beacon#water-ingress",
+        "aurora-beacon#power-isolation",
+        "aurora-beacon#flash-check",
+        "aurora-beacon#lens-cleaning"
+      ],
+      "firstRelevantRank": 1,
+      "reciprocalRank": 1,
+      "recallAtK": 1,
+      "hitAtK": 1,
+      "falsePositive": null
+    },
+    {
+      "id": "p17",
+      "kind": "positive",
+      "query": "download readings",
+      "relevant": [
+        "cedar-logger#csv-export"
+      ],
+      "returned": [
+        "cedar-logger#missing-samples"
+      ],
+      "firstRelevantRank": null,
+      "reciprocalRank": 0,
+      "recallAtK": 0,
+      "hitAtK": 0,
+      "falsePositive": null
+    },
+    {
+      "id": "p18",
+      "kind": "positive",
+      "query": "cable disconnection gap",
+      "relevant": [
+        "cedar-logger#missing-samples",
+        "mariner-cart#cable-routing"
+      ],
+      "returned": [
+        "cedar-logger#missing-samples",
+        "mariner-cart#cable-routing"
+      ],
+      "firstRelevantRank": 1,
+      "reciprocalRank": 1,
+      "recallAtK": 1,
+      "hitAtK": 1,
+      "falsePositive": null
+    },
+    {
+      "id": "n01",
+      "kind": "negative",
+      "query": "satellite ephemeris",
+      "relevant": [],
+      "returned": [],
+      "firstRelevantRank": null,
+      "reciprocalRank": null,
+      "recallAtK": null,
+      "hitAtK": null,
+      "falsePositive": false
+    },
+    {
+      "id": "n02",
+      "kind": "negative",
+      "query": "firmware upgrade",
+      "relevant": [],
+      "returned": [],
+      "firstRelevantRank": null,
+      "reciprocalRank": null,
+      "recallAtK": null,
+      "hitAtK": null,
+      "falsePositive": false
+    },
+    {
+      "id": "n03",
+      "kind": "negative",
+      "query": "wireless pairing",
+      "relevant": [],
+      "returned": [],
+      "firstRelevantRank": null,
+      "reciprocalRank": null,
+      "recallAtK": null,
+      "hitAtK": null,
+      "falsePositive": false
+    },
+    {
+      "id": "n04",
+      "kind": "negative",
+      "query": "hydraulic torque",
+      "relevant": [],
+      "returned": [],
+      "firstRelevantRank": null,
+      "reciprocalRank": null,
+      "recallAtK": null,
+      "hitAtK": null,
+      "falsePositive": false
+    },
+    {
+      "id": "n05",
+      "kind": "unanswerable",
+      "query": "battery warranty duration",
+      "relevant": [],
+      "returned": [
+        "aurora-beacon#battery-replacement"
+      ],
+      "firstRelevantRank": null,
+      "reciprocalRank": null,
+      "recallAtK": null,
+      "hitAtK": null,
+      "falsePositive": true
+    },
+    {
+      "id": "n06",
+      "kind": "unanswerable",
+      "query": "encrypted CSV export",
+      "relevant": [],
+      "returned": [
+        "cedar-logger#csv-export",
+        "cedar-logger#missing-samples",
+        "cedar-logger#capture-start"
+      ],
+      "firstRelevantRank": null,
+      "reciprocalRank": null,
+      "recallAtK": null,
+      "hitAtK": null,
+      "falsePositive": true
+    },
+    {
+      "id": "n07",
+      "kind": "unanswerable",
+      "query": "cart maximum load rating",
+      "relevant": [],
+      "returned": [
+        "mariner-cart#wheel-check",
+        "mariner-cart#handover-record",
+        "mariner-cart#cable-routing",
+        "mariner-cart#spill-response",
+        "mariner-cart#tool-inventory"
+      ],
+      "firstRelevantRank": null,
+      "reciprocalRank": null,
+      "recallAtK": null,
+      "hitAtK": null,
+      "falsePositive": true
+    },
+    {
+      "id": "n08",
+      "kind": "unanswerable",
+      "query": "lens replacement price",
+      "relevant": [],
+      "returned": [
+        "aurora-beacon#lens-cleaning",
+        "aurora-beacon#battery-replacement"
+      ],
+      "firstRelevantRank": null,
+      "reciprocalRank": null,
+      "recallAtK": null,
+      "hitAtK": null,
+      "falsePositive": true
+    }
+  ],
+  "corpus": {
+    "manuals": 3,
+    "sections": 15,
+    "sha256": "d5e8ad50884382c809e9fbd3a95264881ce1d7a6376096a757629fabe00f1a46"
+  },
+  "querySetSha256": "3bafaaf06896eac314084c8df6ea692c7e638fa8e721056f870a93bc99b95383",
+  "limitations": [
+    "Original fictional training data; not an independent benchmark.",
+    "Relevance labels are project-authored and reviewed against the corpus.",
+    "Exact terms only: no stemming, synonyms, semantic retrieval or generated answers.",
+    "Negative false positives are lexical matches to unsupported questions, not valid answers.",
+    "MRR uses up to 50 ranks; the present corpus has 15 sections. All positive queries, including misses, are counted."
+  ]
+}
