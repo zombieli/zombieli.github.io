@@ -1,0 +1,40 @@
+.scheduling-journey { grid-template-columns: 200px minmax(0, 1fr); gap: 48px; }
+.scheduling-nav-intro { display: flex; flex-direction: column; gap: 5px; padding-bottom: 14px; }
+.scheduling-nav-intro strong { font-size: .95rem; font-weight: 600; }
+.scheduling-nav-intro span { color: var(--muted); font-size: .8rem; }
+.scheduling-journey-nav a { display: flex; align-items: baseline; gap: 12px; min-height: 44px; padding: 9px 10px; border-radius: 4px; text-decoration: none; line-height: 1.4; }
+.scheduling-journey-nav a[aria-current="step"] { color: var(--blue); background: #eaf0ff; font-weight: 600; }
+.scheduling-journey-nav a:hover { text-decoration: underline; }
+.scheduling-stage-number { flex-shrink: 0; font-size: .76rem; font-variant-numeric: tabular-nums; }
+.scheduling-stage { border-bottom: 1px solid var(--line); padding-bottom: 54px; }
+.scheduling-stage:last-child { border-bottom: 0; padding-bottom: 0; }
+.scheduling-stage > .eyebrow { color: var(--blue); }
+.scheduling-brief { margin-block: 28px; }
+.scheduling-brief > div { display: grid; grid-template-columns: 130px minmax(0, 1fr); gap: 22px; padding-block: 17px; border-bottom: 1px solid var(--line); }
+.scheduling-brief dt { font-weight: 600; font-size: .88rem; }
+.scheduling-brief dd { color: var(--muted); font-size: .94rem; }
+.case-content .scheduling-handoff { margin-top: 28px; padding-left: 18px; border-left: 3px solid var(--line); font-size: .9rem; }
+.scheduling-verification-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin-block: 28px; }
+.scheduling-verification-grid h3 { font-size: 1.05rem; }
+.scheduling-verification-grid p { font-size: .88rem; }
+.scheduling-disclosure { padding-block: 14px; border-block: 1px solid var(--line); }
+.scheduling-delivery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px; margin: 30px 0; }
+.scheduling-delivery h3 { font-size: 1.1rem; }
+.scheduling-delivery p { font-size: .92rem; }
+.scheduling-files { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; padding-block: 22px; margin-top: 26px; border-block: 1px solid var(--line); }
+.scheduling-files > a { display: flex; flex-direction: column; gap: 9px; font-size: .9rem; }
+.scheduling-files span { font-size: .8rem; color: var(--muted); }
+@media (max-width: 1000px) {
+  .scheduling-journey { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .scheduling-journey-nav { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px 14px; }
+  .scheduling-nav-intro { grid-column: 1 / -1; }
+}
+@media (max-width: 600px) {
+  .scheduling-journey-nav { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 5px; }
+  .scheduling-journey-nav a { font-size: .8rem; padding-inline: 6px; gap: 8px; }
+  .scheduling-brief > div { grid-template-columns: minmax(0, 1fr); gap: 5px; }
+  .scheduling-verification-grid, .scheduling-delivery, .scheduling-files { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .scheduling-verification-grid h3 { margin-bottom: 8px; }
+  .scheduling-verification-grid p { margin-bottom: 0; }
+  .scheduling-stage { padding-bottom: 38px; }
+}

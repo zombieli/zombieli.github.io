@@ -1,0 +1,50 @@
+[
+  {
+    "id": "scope",
+    "label": "Define local records",
+    "shortLabel": "Scope",
+    "artifact": "Three training assets + one bounded record schema",
+    "title": "Start with the record that must survive a reload.",
+    "detail": "A fictional equipment inspection captures an asset, its condition, three checks and optional notes. Drafts can be incomplete; submitted records must satisfy the full schema."
+  },
+  {
+    "id": "records",
+    "label": "Protect the record lifecycle",
+    "shortLabel": "Records",
+    "artifact": "Explicit draft saves + read-only submitted records",
+    "title": "Make each saved change deliberate.",
+    "detail": "Save draft preserves unfinished work. Submission requires an asset, condition and all three checks. Pending writes lock the editor; timestamp checks reject stale saves from another tab."
+  },
+  {
+    "id": "offline",
+    "label": "Prepare offline availability",
+    "shortLabel": "Offline",
+    "artifact": "A scoped shell cache alongside IndexedDB records",
+    "title": "Keep the notebook available when the connection drops.",
+    "detail": "A successful online visit prepares the application shell. After the service worker takes control, that shell can reload offline while inspection records remain in separate browser storage."
+  },
+  {
+    "id": "recovery",
+    "label": "Restore backups atomically",
+    "shortLabel": "Recovery",
+    "artifact": "Validated JSON + an all-or-nothing add transaction",
+    "title": "Restore the whole batch, or leave every record unchanged.",
+    "detail": "Validate the backup before opening a write transaction. Enforce the 1,000-record limit and add each ID without overwriting. An existing ID aborts the entire import, including queued new records."
+  },
+  {
+    "id": "verification",
+    "label": "Challenge failure boundaries",
+    "shortLabel": "Verify",
+    "artifact": "35 domain tests + 20 browser checks, recorded 13 Oct 2026",
+    "title": "Test the interruptions as well as the happy path.",
+    "detail": "The development record covers pending-write locks, stale tabs, duplicate rollback, backup limits and offline reload. Observed failures led to monotonic edit timestamps and a larger UTF-8 backup bound."
+  },
+  {
+    "id": "reproduce",
+    "label": "Package and reproduce",
+    "shortLabel": "Evidence",
+    "artifact": "Standalone demo, source, architecture and dated evidence",
+    "title": "Leave a small notebook that can be inspected end to end.",
+    "detail": "Keep the browser demo, source archive and development evidence together. The implementation has no external runtime dependencies, server or multi-user sync; records belong to the current browser origin."
+  }
+]

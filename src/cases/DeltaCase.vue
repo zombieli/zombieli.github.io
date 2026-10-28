@@ -1,0 +1,56 @@
+<script setup lang="ts">
+import { onMounted, onUnmounted, ref } from 'vue'
+import stages from '../data/delta-journey.json'
+import DeltaJourneyMap from './DeltaJourneyMap.vue'
+import DeltaComparison from './DeltaComparison.vue'
+import DeltaPolicy from './DeltaPolicy.vue'
+import DeltaReadRace from './DeltaReadRace.vue'
+import './delta-journey.css'
+const emit = defineEmits<{ ready: [] }>()
+const currentStage = ref('question')
+let frame: number | undefined
+function trackStage() {
+  if (frame !== undefined) return
+  frame = window.requestAnimationFrame(() => {
+    frame = undefined
+    let current = stages[0]!.id
+    for (const stage of stages) if ((document.getElementById(stage.id)?.getBoundingClientRect().top ?? Infinity) <= Math.min(180, window.innerHeight * .3)) current = stage.id
+    if (window.scrollY > 0 && window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2) current = stages[stages.length - 1]!.id
+    currentStage.value = current
+  })
+}
+onMounted(() => { emit('ready'); window.addEventListener('scroll', trackStage, { passive: true }); window.addEventListener('resize', trackStage); trackStage() })
+onUnmounted(() => { window.removeEventListener('scroll', trackStage); window.removeEventListener('resize', trackStage); if (frame !== undefined) window.cancelAnimationFrame(frame) })
+</script>
+
+<template>
+  <section class="case-heading wrap">
+    <a class="back" href="/projects/">All projects</a><p class="eyebrow">JavaScript · Shared comparison core · Browser and CLI</p>
+    <h1>Test Report<br>Delta</h1><p class="hero-description">A test run can look better because a failing test disappeared. Follow the exact matches, coverage rules and browser state protections that make the difference visible.</p>
+    <div class="actions"><a class="button primary" href="#delta-build-map">Explore the build journey</a><a class="button secondary" href="/demos/test-report-delta/">Open interactive demo</a></div>
+    <div class="case-facts"><div><span>Project</span><strong>Personal project · October 2026</strong></div><div><span>Implementation</span><strong>One pure core · Two interfaces</strong></div><div><span>Recorded verification · 13 Oct 2026</span><strong>45 native tests · 11 browser scenarios</strong></div></div>
+  </section>
+  <DeltaJourneyMap />
+  <section class="case-layout wrap section delta-journey">
+    <nav class="case-nav delta-journey-nav" aria-label="Build journey"><div class="delta-nav-intro"><strong>Build journey</strong><span>Six stages, with evidence.</span></div><a v-for="(stage, index) in stages" :key="stage.id" :href="'#' + stage.id" :aria-current="currentStage === stage.id ? 'step' : undefined"><span class="delta-stage-number" aria-hidden="true">{{ String(index + 1).padStart(2, '0') }}</span><span>{{ stage.label }}</span></a></nav>
+    <div class="case-content">
+      <section id="question" class="delta-stage"><p class="eyebrow">01 / Frame the comparison</p><h2>Fewer failures is only part of the story.</h2><p>A candidate run may remove an old test, skip one that used to execute or add a new failure. Comparing only totals hides which of those changes occurred.</p><dl class="delta-brief"><div><dt>The question</dt><dd>What changed between a trusted baseline and a candidate, and does the candidate satisfy an explicit comparison policy?</dd></div><div><dt>The signals</dt><dd>Keep test status, missing coverage and comparable timings separate. Preserve recoveries alongside unresolved failures.</dd></div><div><dt>The delivery</dt><dd>Use the same rules in a browser review workspace and a CLI whose actual exit status can block a pipeline.</dd></div></dl><p class="delta-handoff">First define the input and test identity. Without an exact match, a status transition has no reliable meaning.</p><a class="text-link" href="/evidence/test-report-delta-development.md">Read the original development log</a></section>
+      <section id="contract" class="delta-stage"><p class="eyebrow">02 / Define exact identities</p><h2>Match a pair, not a joined label.</h2><p>Each case has a suite, name, status and finite nonnegative duration. The exact, case-sensitive <code>[suite, name]</code> pair is its identity. Whitespace is preserved; duplicate pairs in one report are rejected.</p><div class="delta-identity-example"><div><span>Different identities</span><code>["A:B", "C"]</code><code>["A", "B:C"]</code></div><p>Both could become <code>A:B:C</code> if joined with a colon. Encoding the pair as a JSON array avoids that collision.</p></div><details class="delta-disclosure"><summary>Inspect the normalised report contract</summary><pre>{
+  "schemaVersion": 1,
+  "label": "Main build 1842",
+  "cases": [{
+    "suite": "Authentication",
+    "name": "Sign in with valid credentials",
+    "status": "passed",
+    "durationMs": 120
+  }]
+}</pre><p class="metadata">Statuses: passed, failed or skipped. Up to 50,000 cases and 5 MiB per input file. Unknown fields are ignored during normalisation. This format does not directly parse JUnit/XML or framework-specific reports.</p></details><p class="delta-handoff">The core validates and sorts identities deterministically, then compares the union of both reports.</p><a class="text-link" href="/evidence/test-report-delta-architecture.md">Inspect the shared domain boundary</a></section>
+      <section id="comparison" class="delta-stage"><p class="eyebrow">03 / Share the comparison core</p><h2>One set of rules, from file to review.</h2><p>The browser and CLI both import the same pure comparison module. File reading, display and process exit handling stay at the edges; the core decides status transitions, coverage facets and timing.</p><DeltaComparison /><p class="delta-handoff">An added failed case still counts as a candidate failure. An added skipped case is both “added” and “newly skipped”. Counts can overlap; the verdict must use the right signal.</p><a class="text-link" href="/evidence/test-report-delta-sample.json" download>Download the complete original comparison</a></section>
+      <section id="policy" class="delta-stage"><p class="eyebrow">04 / Make acceptance explicit</p><h2>Keep failures ahead of coverage exceptions.</h2><p>Any failed candidate produces a failing verdict. Otherwise unpermitted removals, new skips or an empty candidate leave the comparison incomplete. Coverage exceptions must be deliberate; they cannot permit failures or an empty candidate.</p><DeltaPolicy /><p>The default timing warning requires a ratio strictly above 1.5 <em>and</em> an absolute change strictly above 100 ms. Equality does not warn. The opposite direction uses the same limits for speedups. Single-run timings remain advisory.</p><p class="delta-handoff">A correct verdict can still become misleading if the browser shows it after its inputs have changed. Clear it before reading replacements.</p></section>
+      <section id="verification" class="delta-stage"><p class="eyebrow">05 / Challenge stale results</p><h2>An old read must not bring back a green result.</h2><p>Selecting a replacement report immediately clears that input, the old verdict, rows and download. Each asynchronous read captures its own input’s generation token. Only a still-current read may update that slot.</p><DeltaReadRace /><div class="delta-failures"><article><span>Observed defect / Failure count</span><h3>A new failure disappeared from the summary.</h3><p>The card counted regressions plus persistent failures, omitting added failures. A browser regression expected one failure and observed zero. The card now uses all candidate failures, matching the verdict and filter.</p></article><article><span>Observed defect / Shared guard</span><h3>The untouched baseline stayed loading.</h3><p>A combined sample guard rejected both responses when only the candidate changed. Independent per-slot guards now preserve the replacement candidate and let the baseline settle.</p></article></div><div class="stats"><div><strong>45</strong><span>recorded native tests</span></div><div><strong>11</strong><span>recorded browser scenarios</span></div><div><strong>1</strong><span>expected sample CLI exit</span></div></div><p>Recorded on 13 October 2026, 10:18 (UTC+8), for v1.1.0 using Node 24.19.0 and desktop Chromium. Native tests include real CLI subprocess exits; browser scenarios include delayed reads, malformed replacements, downloads, safe text rendering and 360 / 390 / 768 / 1440 px layouts.</p><details class="delta-disclosure"><summary>What changed during test-first development?</summary><p>The original native red run had 45 failing tests. After implementation, 44 passed; the remaining test contradicted the empty-candidate safeguard. Its fixture was corrected to test a permitted removal with a nonempty candidate. The empty-candidate rule stayed intact. The log distinguishes implementation defects, test corrections and execution constraints.</p></details><div class="actions"><a class="text-link" href="/evidence/test-report-delta-verification.json">Inspect the dated verification</a><a class="text-link" href="/evidence/test-report-delta-development.md">Read the observed failures and fixes</a></div></section>
+      <section id="reproduce" class="delta-stage"><p class="eyebrow">06 / Package reproducibility</p><h2>Keep the unsuccessful comparison inspectable.</h2><p>The bundled sample intentionally produces <code>fail</code> and exit 1: two candidate failures, one removed case and one new skip. Its recovery and timing warning stay in the same artifact. The JSON output has deterministic ordering and no generated timestamp.</p><div class="actions"><a class="button primary" href="/demos/test-report-delta/">Open interactive demo</a><a class="button secondary" href="/downloads/test-report-delta.zip" download>Download source and tests</a></div><h3>Run the source locally</h3><pre>node --test tests/*.test.mjs
+node src/cli.mjs web/samples/baseline.json web/samples/candidate.json --json
+node scripts/serve.mjs</pre><p>Use Node 24 or later from the extracted source directory. No package installation is required. The sample comparison’s exit 1 is expected. The source server opens the standalone workspace at <code>http://127.0.0.1:4176/</code>.</p><div class="delta-files"><a href="/evidence/test-report-delta-readme.md"><strong>README</strong><span>Schema, CLI flags and CI usage</span></a><a href="/evidence/test-report-delta-architecture.md"><strong>Architecture</strong><span>Pure core and interface boundaries</span></a><a href="/evidence/test-report-delta-sample.json" download><strong>Sample artifact</strong><span>All eight identities, reasons and policy</span></a></div><h3>Scope and contribution</h3><p>The project covers comparison policy, the shared core, terminal and browser interfaces, input-state protection and verification. The six stages group the documented development work; they are not six individual commits.</p><p>The case-page diagrams run bundled examples in memory. The separate browser demo accepts local files without uploading or persisting them. There is no direct JUnit adapter, hosted CI service or baseline storage. Synthetic timings are not production benchmarks, and a policy pass does not establish overall release safety.</p></section>
+    </div>
+  </section>
+</template>

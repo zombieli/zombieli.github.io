@@ -43,7 +43,7 @@ This creates `content/projects/equipment-check-in.json` as a **draft**, not a co
 - `src/data/catalogue.json` and `projects/<id>/index.html` are generated; edit the content records instead. The generator refuses to overwrite unowned HTML and removes only its own stale detail entries.
 - Content editing is file based. There is no CMS or server database. Archiving does not remove historical assets from `public` or make a public source repository private.
 
-The original three specialised case views live in `src/cases/DiagnosticsCase.vue`, `src/WorkflowCase.vue` and `src/SchedulingCase.vue`; changes to their detailed claims need matching edits there and to the real evidence. App owns navigation and page selection, while the homepage lives in `src/pages/HomePage.vue`. Shared personal facts are maintained in `src/data/profile.json`. See [case ownership](docs/adr/0001-case-presentation.md) and the [domain glossary](GLOSSARY.md).
+The original three specialised case views live in `src/cases/DiagnosticsCase.vue`, `src/WorkflowCase.vue` and `src/SchedulingCase.vue`. The notebook, comparator and manual search use `src/cases/InspectionCase.vue`, `src/cases/DeltaCase.vue` and `src/cases/ManualCase.vue`, selected by project ID while retaining their standard catalogue records. Newly authored standard projects still use the generic renderer. Changes to detailed claims need matching edits in the case and real evidence. App owns navigation and page selection, while the homepage lives in `src/pages/HomePage.vue`. Shared personal facts are maintained in `src/data/profile.json`. See [case ownership](docs/adr/0001-case-presentation.md) and the [domain glossary](GLOSSARY.md).
 
 Field reference, category roadmap, authoring and archiving guide: [Content maintenance](docs/content-maintenance.md).
 
@@ -55,6 +55,14 @@ Field reference, category roadmap, authoring and archiving guide: [Content maint
 npx playwright install chromium
 # Keep the production preview running before this command:
 node scripts/browser-qa.cjs
+# Interactive case-study journeys (the local preview defaults to port 4174):
+node scripts/workflow-journey-qa.cjs
+node scripts/workflow-fragment-qa.cjs
+node scripts/scheduling-journey-qa.cjs
+node scripts/inspection-journey-qa.cjs
+node scripts/delta-journey-qa.cjs
+node scripts/manual-journey-qa.cjs
+node scripts/journey-audit.cjs
 # Separate isolated authoring lifecycle test:
 npm run test:authoring
 # Verify downloadable source and its browser demos:
@@ -63,6 +71,18 @@ python scripts/check-project-bundles.py --browser
 ```
 
 Set `CHROMIUM_PATH` to a local Chrome executable if using it instead of Playwright's downloaded Chromium.
+
+The six case journeys share `src/lib/journey-motion.ts`: explicit replay, 1.2-second steps, bounded click feedback, pause on backgrounding and live reduced-motion support. Scenario selection resets the sequence without starting playback. `journey-audit.cjs` checks all six at 320, 390, 844 and 1440 px, keyboard focus, touch targets, mobile form sizing and animation cancellation; it saves viewport screenshots and results under `qa/consistency/`.
+
+Set `BASE_URL` to your preview address when it differs from a script's default. The Field Service journey checks cover lifecycle gates, retained history, commit/conflict/rollback diagrams, keyboard and reduced-motion interaction, responsive layouts and initial chapter links after delayed page loading. These are portfolio presentation checks; the original application's API and demo test results remain separately dated historical evidence.
+
+The Scheduling journey replays exact saved input/timeline subsets for steady arrivals, sparse arrivals and seed 0, while the comparison offers all 22 recorded scenarios. Its tests verify subset equality, ready-job selection, validator rejection before metrics, playback cancellation, responsive layouts and cold chapter links. The presentation validator rechecks all 44 saved schedules against their recorded waiting metrics; this does not rerun the original Python experiment or replace its historical 36-test record.
+
+The Inspection Notebook journey uses a dedicated lazy case view for the existing standard project ID, preserving the catalogue authoring contract. Its record and backup examples use an exact copy of the original pure validation module and illustrate transactions entirely in memory. Checks cover pending-write locking, failed-write input retention, immutable submissions, stale edits, atomic backup outcomes, offline scenarios, motion preferences and chapter links. These presentation checks do not replace the notebook's dated 35-domain-test / 20-browser-check evidence or change its standalone demo.
+
+The Test Report Delta journey uses the original pure comparison module and exact bundled reports, verified against the complete saved comparison artifact. Its policy explorer adds labelled synthetic examples for coverage, added failures, empty candidates and strict timing boundaries. The read-race diagram models the browser's per-input generation guards without file or network I/O. Checks cover source equality, real comparison outcomes, stale reads, motion cancellation, keyboard focus, responsive layout and cold chapter links. Historical 45-native-test / 11-browser-scenario evidence remains dated 13 October 2026; the case-page exit codes are explanations, not newly executed CLI runs.
+
+The Technical Manual Search journey runs the original ranking core on the unchanged 15-section corpus and exposes all 26 saved query outcomes. Tests recompute every metric and returned reference with the original evaluator (only its import path is adapted) and compare against the historical report. The p17 miss still returns the wrong missing-samples section; it is not an empty result. Browser checks cover global scoring under filters, input rejection, exact safe source text, real source-link reload, all query outcomes, motion cancellation and responsive layouts. Original 24-native-test / 17-browser-check evidence remains dated 13 October 2026, separate from new portfolio checks.
 
 `qa/results.json`, `qa/authoring-results.json` and `qa/bundle-results.json` record actual verification runs. Browser checks cover responsive layout, category/search/sort URLs, keyboard use, menu focus, history navigation, empty states, evidence failure/retry, lazy case loading, downloads, video, workflow demo and 404 responses. The lifecycle test builds an isolated copy with an extra category and new standard case, verifies rendering and archiving, then deletes its temporary copy. It does not add sample work to the real portfolio.
 

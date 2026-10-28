@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "statuses": ["Open", "Assigned", "In Progress", "Resolved", "Closed"],
+  "transitions": {"Open": ["Assigned"], "Assigned": ["In Progress"], "In Progress": ["Resolved"], "Resolved": ["Closed", "Open"], "Closed": []},
+  "priorities": ["Low", "Medium", "High"],
+  "assets": [
+    {"id": 1, "display_name": "Demo field terminal 01", "category": "Terminal"},
+    {"id": 2, "display_name": "Demo sensor gateway 02", "category": "Gateway"},
+    {"id": 3, "display_name": "Demo workshop station 03", "category": "Workstation"}
+  ]
+}

@@ -1,6 +1,6 @@
 {
-  "executed_at_utc": "2026-10-13T03:47:14.500Z",
-  "browser": "154.0.8037.98",
+  "executed_at_utc": "2026-10-28T01:54:52.636Z",
+  "browser": "155.0.8059.86",
   "checks": [
     "No horizontal overflow: / 320px",
     "No horizontal overflow: /projects/ 320px",
@@ -87,32 +87,72 @@
   ],
   "assets": [
     {
-      "name": "DiagnosticsCase-CHa2iSrs.js",
-      "bytes": 9521
+      "name": "DeltaCase-BS2Xrn3g.css",
+      "bytes": 16344
     },
     {
-      "name": "main-AoCT88-9.css",
-      "bytes": 16849
+      "name": "DeltaCase-D_SHDJuK.js",
+      "bytes": 42151
     },
     {
-      "name": "main-Bgo0vXI_.js",
-      "bytes": 40919
+      "name": "DiagnosticsCase-DUb2lU24.js",
+      "bytes": 41181
     },
     {
-      "name": "runtime-core.esm-bundler-DHAFmOeX.js",
-      "bytes": 57752
+      "name": "DiagnosticsCase-DxDIMyeZ.css",
+      "bytes": 18239
     },
     {
-      "name": "SchedulingCase-BBgKyWLT.js",
-      "bytes": 11839
+      "name": "InspectionCase-7QCo3o5k.js",
+      "bytes": 49544
     },
     {
-      "name": "StandardCase-BC2R4eb7.js",
+      "name": "InspectionCase-vbWdixzl.css",
+      "bytes": 24221
+    },
+    {
+      "name": "journey-motion-BYMcHw4w.js",
+      "bytes": 1163
+    },
+    {
+      "name": "main-CpZDQZ7X.css",
+      "bytes": 17057
+    },
+    {
+      "name": "main-w1ALLJiU.js",
+      "bytes": 44386
+    },
+    {
+      "name": "ManualCase-bAMMGLih.js",
+      "bytes": 54549
+    },
+    {
+      "name": "ManualCase-Dup1aU5H.css",
+      "bytes": 18034
+    },
+    {
+      "name": "runtime-core.esm-bundler-DT8iB71E.js",
+      "bytes": 57873
+    },
+    {
+      "name": "SchedulingCase-CtqtoP-o.css",
+      "bytes": 20729
+    },
+    {
+      "name": "SchedulingCase-usK5od2C.js",
+      "bytes": 55337
+    },
+    {
+      "name": "StandardCase-DY2aBUcA.js",
       "bytes": 2248
     },
     {
-      "name": "WorkflowCase-BEwx3FSb.js",
-      "bytes": 4199
+      "name": "WorkflowCase-DrbcEGdY.js",
+      "bytes": 39298
+    },
+    {
+      "name": "WorkflowCase-DvCxUD0e.css",
+      "bytes": 20804
     }
   ],
   "injected_case_chunk_errors": [],

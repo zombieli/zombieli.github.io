@@ -1,0 +1,114 @@
+.delta-demo { min-width: 0; padding: 26px; margin-block: 28px; border: 1px solid var(--line); background: var(--surface); border-radius: 6px; }
+.delta-demo-heading > p { font-size: .75rem; color: var(--blue); margin-bottom: 8px; }
+.delta-demo-heading h3 { font-size: 1.3rem; line-height: 1.3; margin-bottom: 22px; }
+.delta-demo button { min-height: 44px; padding: 9px 12px; border: 1px solid #99acb9; border-radius: 4px; color: var(--blue); background: var(--surface); font-size: .77rem; font-weight: 600; line-height: 1.5; }
+.delta-demo button[aria-pressed="true"] { border-color: var(--blue); background: #edf3ff; }
+.delta-demo button:disabled { opacity: .45; cursor: not-allowed; }
+.delta-demo button:focus-visible, .delta-demo input:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+.delta-count-strip { display: flex; gap: 24px; flex-wrap: wrap; border-block: 1px solid var(--line); padding-block: 14px; margin-bottom: 20px; color: var(--muted); }
+.delta-count-strip > span { font-size: .77rem; }
+.delta-count-strip strong { color: var(--ink); font-size: 1.05rem; margin-right: 5px; }
+.delta-matches { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.delta-matches button { text-align: left; display: flex; flex-direction: column; align-items: start; padding: 11px 13px; min-width: 0; }
+.delta-matches button > span { color: var(--muted); font-size: .67rem; font-weight: 400; }
+.delta-matches button strong { color: var(--ink); font-size: .77rem; font-weight: 600; }
+.delta-matches button small { color: var(--blue); font-weight: 400; font-size: .68rem; }
+.delta-pair { display: grid; grid-template-columns: minmax(0, 1fr) 130px minmax(0, 1fr); gap: 12px; align-items: center; padding-block: 26px; }
+.delta-report-side { border: 1px solid var(--line); border-radius: 4px; padding: 18px 10px; display: flex; flex-direction: column; align-items: center; gap: 7px; background: var(--canvas); }
+.delta-report-side > span { font-size: .74rem; color: var(--muted); text-align: center; }
+.delta-report-side strong { font-size: 1rem; }
+.delta-demo svg { fill: none; stroke: var(--blue); stroke-width: 1.7; stroke-linejoin: round; stroke-linecap: round; }
+.delta-report-side svg { width: 48px; height: 48px; }
+.delta-match-center { text-align: center; display: flex; flex-direction: column; gap: 5px; }
+.delta-match-center svg { width: 100%; }
+.delta-match-center strong { font-size: .8rem; }
+.delta-match-center span { font-size: .65rem; color: var(--muted); }
+.delta-demo .is-tracing .delta-trace, .delta-gates.is-tracing button[aria-pressed="true"] svg path { stroke-dasharray: 200; animation: delta-path .65s ease-out both; }
+.delta-explanation { border-left: 3px solid var(--blue); background: #f2f6ff; padding: 18px; min-width: 0; }
+.delta-explanation .delta-kicker { font-size: .73rem; color: var(--blue); }
+.delta-explanation h4 { font-size: .98rem; line-height: 1.4; margin: 6px 0 10px; }
+.case-content .delta-explanation p { font-size: .82rem; margin: 0; }
+.delta-row-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; border-top: 1px solid var(--line); margin-top: 18px; padding-top: 14px; }
+.delta-row-facts span { display: flex; flex-direction: column; gap: 5px; font-size: .7rem; color: var(--muted); }
+.delta-row-facts strong { color: var(--ink); font-size: .8rem; }
+.delta-controls, .delta-options { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.delta-controls { margin-top: 20px; }
+.delta-controls > span { margin-left: auto; font-size: .75rem; color: var(--muted); }
+.case-content .delta-demo-note { margin: 18px 0 0; font-size: .73rem; color: var(--muted); }
+.delta-policy-controls { display: flex; gap: 12px 24px; flex-wrap: wrap; margin-block: 20px 8px; }
+.delta-policy-controls label { display: flex; align-items: center; gap: 9px; font-size: .79rem; min-height: 44px; }
+.delta-policy-controls input { width: 18px; height: 18px; accent-color: var(--blue); margin: 0; }
+.delta-gates { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-block: 20px 26px; }
+.delta-gates button { position: relative; display: flex; flex-direction: column; align-items: center; gap: 8px; min-width: 0; padding: 14px 10px; }
+.delta-gates button:not(:last-child)::after { content: '→'; position: absolute; right: -21px; top: 45%; color: var(--blue); }
+.delta-gates button > span:first-child { align-self: start; font-size: .68rem; }
+.delta-gates button > span:last-child { font-weight: 400; font-size: .8rem; }
+.delta-gates button.blocked > span:last-child { color: #a13340; }
+.delta-gates button strong { color: var(--ink); font-size: .8rem; }
+.delta-gates svg { width: 46px; height: 46px; }
+.delta-explanation ul { margin-block: 10px 0; padding-left: 20px; font-size: .8rem; color: var(--muted); }
+.delta-explanation .delta-verdict-line { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 18px; padding-top: 12px; border-top: 1px solid var(--line); }
+.delta-verdict-line strong { background: var(--ink); color: white; border-radius: 3px; padding: 2px 10px; }
+.delta-verdict-line > span { color: var(--muted); font-size: .7rem; }
+.delta-explanation .delta-error { color: #a13340; margin-top: 16px; }
+.delta-timing-panel { border-top: 1px solid var(--line); padding-top: 22px; margin-top: 24px; }
+.delta-timing-heading { display: flex; gap: 14px; align-items: start; }
+.delta-timing-heading svg { flex: 0 0 40px; width: 40px; height: 40px; }
+.delta-timing-heading h4 { font-size: .92rem; margin: 0 0 7px; }
+.case-content .delta-timing-heading p { font-size: .78rem; margin: 0; }
+.delta-timing-inputs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-block: 20px; }
+.delta-timing-inputs label { display: flex; flex-direction: column; gap: 6px; font-size: .75rem; }
+.delta-timing-inputs input { width: 100%; min-width: 0; min-height: 44px; padding: 8px 10px; border: 1px solid #99acb9; border-radius: 3px; background: white; }
+.delta-timing-output { margin-top: 20px; background: var(--canvas); padding: 16px; border: 1px solid var(--line); border-radius: 4px; }
+.case-content .delta-timing-output p { font-size: .8rem; margin: 0; }
+.delta-timing-bars { display: grid; gap: 14px; margin-bottom: 18px; }
+.delta-timing-bars span { display: block; font-size: .75rem; margin-bottom: 6px; }
+.delta-timing-bars i { display: block; height: 12px; background: #889bc9; border-radius: 2px; transition: width .4s ease; }
+.delta-timing-bars > div:last-child i { background: var(--blue); }
+.delta-race-steps { display: flex; gap: 10px; flex-wrap: wrap; margin-block: 22px; }
+.delta-race-steps button { min-width: 44px; }
+.delta-race-board { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 20px; padding-bottom: 24px; }
+.delta-race-slot { padding: 16px; border: 1px solid var(--line); background: var(--canvas); border-radius: 4px; min-width: 0; }
+.delta-race-slot > div { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.delta-race-slot svg { width: 30px; height: 30px; flex-shrink: 0; }
+.delta-race-slot h4 { font-size: .83rem; margin: 0; }
+.delta-token { display: block; font-size: .68rem; color: var(--blue); border: 1px solid var(--line); padding: 2px 7px; border-radius: 3px; }
+.delta-race-slot > strong { font-size: .85rem; display: block; overflow-wrap: anywhere; }
+.case-content .delta-race-slot p { font-size: .75rem; margin: 7px 0 0; }
+.delta-race-bridge { grid-column: 1 / -1; height: 50px; }
+.delta-race-bridge svg { width: 100%; height: 100%; }
+.delta-race-board.is-ignored .delta-race-bridge svg { stroke: #a13340; }
+.delta-race-result { grid-column: 1 / -1; justify-self: center; min-width: 60%; padding: 14px 24px; display: flex; flex-direction: column; align-items: center; gap: 6px; border: 1px solid var(--line); border-radius: 4px; }
+.delta-race-result > span { font-size: .72rem; color: var(--muted); }
+.delta-race-result strong { font-size: 1rem; }
+.delta-race-board .selected { border-color: var(--blue); background: #edf3ff; }
+@keyframes delta-path { from { stroke-dashoffset: 200; } to { stroke-dashoffset: 0; } }
+@media (max-width: 600px) {
+  .delta-demo { padding: 18px; }
+  .delta-count-strip { gap: 10px 18px; }
+  .delta-matches { grid-template-columns: minmax(0, 1fr); }
+  .delta-pair { grid-template-columns: minmax(0, 1fr) 58px minmax(0, 1fr); gap: 6px; }
+  .delta-report-side { padding: 12px 4px; }
+  .delta-report-side > span { font-size: .65rem; }
+  .delta-report-side strong { font-size: .82rem; }
+  .delta-match-center strong { font-size: .68rem; }
+  .delta-match-center span { font-size: .6rem; }
+  .delta-row-facts { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .delta-row-facts span { flex-direction: row; justify-content: space-between; gap: 6px; }
+  .delta-gates { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+  .delta-gates button { display: grid; grid-template-columns: 40px minmax(0, 1fr); text-align: left; column-gap: 14px; padding: 14px; }
+  .delta-gates button svg { grid-row: 1 / 4; grid-column: 1; width: 40px; height: 40px; }
+  .delta-gates button > span, .delta-gates button strong { grid-column: 2; }
+  .delta-gates button:not(:last-child)::after { content: '↓'; top: auto; bottom: -23px; right: 50%; }
+  .delta-timing-inputs { gap: 12px; }
+  .delta-timing-inputs label { font-size: .7rem; }
+  .delta-race-board { column-gap: 8px; }
+  .delta-race-slot { padding: 12px 8px; }
+  .delta-race-slot > div { flex-direction: column; align-items: start; gap: 6px; }
+  .delta-race-slot h4, .delta-race-slot > strong { font-size: .74rem; }
+  .case-content .delta-race-slot p { font-size: .67rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .delta-demo .is-tracing .delta-trace, .delta-gates.is-tracing button[aria-pressed="true"] svg path { animation: none; }
+  .delta-timing-bars i { transition: none; }
+}

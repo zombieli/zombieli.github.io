@@ -1,0 +1,50 @@
+[
+  {
+    "id": "scope",
+    "label": "Scope the record",
+    "shortLabel": "Scope",
+    "artifact": "Synthetic workshop + traceable work orders",
+    "title": "Give a reported fault a record to follow.",
+    "detail": "Define the assets, required fault details and actor labels before adding a status workflow. The scenario uses fictional workshop data."
+  },
+  {
+    "id": "lifecycle",
+    "label": "Define the lifecycle",
+    "shortLabel": "Lifecycle",
+    "artifact": "contract.json · five states and five legal transitions",
+    "title": "Make each next step explicit.",
+    "detail": "Assignment needs a technician label; resolution needs a treatment note. A resolved order can reopen, while a closed order stays closed."
+  },
+  {
+    "id": "services",
+    "label": "Separate the services",
+    "shortLabel": "Services",
+    "artifact": "Service interface · API service · browser demo",
+    "title": "Share rules across two ways to try the app.",
+    "detail": "The Vue interface uses either FastAPI with SQLite or an in-memory demo service. Both consume the same transition contract; their storage boundaries remain explicit."
+  },
+  {
+    "id": "write-safety",
+    "label": "Protect each change",
+    "shortLabel": "Writes",
+    "artifact": "Version check + atomic record and event writes",
+    "title": "Keep the current record and its history together.",
+    "detail": "The API rejects stale versions and commits a status update with its event in one SQLite transaction. If the event write fails, the change rolls back."
+  },
+  {
+    "id": "verification",
+    "label": "Challenge the rules",
+    "shortLabel": "Verify",
+    "artifact": "25 state pairs · stale edits · rollback tests",
+    "title": "Test the changes that must not get through.",
+    "detail": "Exercise every origin and target pair, missing treatment notes and failed history writes. The 8–9 October 2026 record documents 37 API and 27 demo unit tests passing."
+  },
+  {
+    "id": "delivery",
+    "label": "Package two ways to try it",
+    "shortLabel": "Delivery",
+    "artifact": "Static demo + runnable API source + check results",
+    "title": "Let a reviewer follow the evidence.",
+    "detail": "Open the session-only browser demo or run the complete application locally. Source, reproduction commands and saved browser checks explain what each mode verifies."
+  }
+]

@@ -1,0 +1,54 @@
+.workflow-build-map { margin-bottom: 60px; scroll-margin-top: 30px; }
+.workflow-map-heading { display: flex; align-items: end; justify-content: space-between; gap: 30px; border-top: 1px solid var(--line); padding-top: 36px; }
+.workflow-map-heading h2 { font-size: 1.6rem; margin-bottom: 0; max-width: 32ch; }
+.workflow-map-heading .eyebrow { margin-bottom: 12px; }
+.workflow-map-heading > p { max-width: 25ch; font-size: .88rem; color: var(--muted); margin-bottom: 0; }
+.workflow-map-board { position: relative; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 16px; padding: 36px 0 28px; }
+.workflow-map-connections { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; color: var(--muted); }
+.workflow-map-connection { fill: none; stroke: var(--line); stroke-width: 2; }
+.workflow-map-connection.is-reached { stroke: var(--blue); opacity: .55; }
+.workflow-map-trace { fill: none; stroke: var(--blue); stroke-width: 3; stroke-dasharray: 1; animation: workflow-map-draw .65s ease-out both; }
+@keyframes workflow-map-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+.workflow-map-node { position: relative; border: 0; padding: 10px 2px; background: none; display: flex; align-items: center; flex-direction: column; gap: 12px; min-width: 0; border-radius: 6px; }
+.workflow-map-symbol { display: block; width: 80px; height: 64px; background: var(--canvas); color: var(--muted); }
+.workflow-map-symbol svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.workflow-map-symbol .workflow-symbol-soft { fill: #eaf0f7; }
+.workflow-map-node-label { font-size: .88rem; line-height: 1.4; display: flex; align-items: baseline; gap: 7px; padding: 4px 8px; border-radius: 4px; background: var(--canvas); }
+.workflow-map-node-number { color: var(--muted); font-size: .75rem; font-variant-numeric: tabular-nums; }
+.workflow-map-node.is-selected .workflow-map-symbol { color: var(--blue); }
+.workflow-map-node.is-selected .workflow-symbol-soft { fill: #e4ecff; }
+.workflow-map-node.is-selected .workflow-map-node-label { color: var(--blue); background: #eaf0ff; font-weight: 600; }
+.workflow-map-node:hover .workflow-map-symbol { color: var(--blue); }
+.workflow-map-artifact { display: grid; grid-template-columns: 1.5fr 1fr; gap: 42px; padding: 26px 30px; border: 1px solid var(--line); background: var(--surface); border-radius: 6px; }
+.workflow-map-artifact h3 { font-size: 1.2rem; line-height: 1.3; margin-bottom: 10px; }
+.workflow-map-artifact p { font-size: .9rem; color: var(--muted); margin-bottom: 0; max-width: 65ch; }
+.workflow-map-artifact .workflow-map-stage-label { color: var(--blue); font-size: .8rem; margin-bottom: 12px; }
+.workflow-map-deliverable { align-self: center; display: flex; flex-direction: column; gap: 10px; padding-left: 26px; border-left: 1px solid var(--line); min-width: 0; }
+.workflow-map-deliverable > span { color: var(--muted); font-size: .8rem; }
+.workflow-map-deliverable strong { font-size: .92rem; font-weight: 600; overflow-wrap: anywhere; }
+.workflow-map-deliverable a { margin-top: 7px; }
+@media (max-width: 1000px) and (min-width: 601px) {
+  .workflow-map-board { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 32px; grid-template-areas: 'scope lifecycle services' 'delivery verification writes'; }
+  .workflow-map-node:nth-of-type(1) { grid-area: scope; }
+  .workflow-map-node:nth-of-type(2) { grid-area: lifecycle; }
+  .workflow-map-node:nth-of-type(3) { grid-area: services; }
+  .workflow-map-node:nth-of-type(4) { grid-area: writes; }
+  .workflow-map-node:nth-of-type(5) { grid-area: verification; }
+  .workflow-map-node:nth-of-type(6) { grid-area: delivery; }
+}
+@media (max-width: 600px) {
+  .workflow-build-map { margin-bottom: 38px; }
+  .workflow-map-heading { flex-direction: column; align-items: start; gap: 16px; }
+  .workflow-map-heading > p { max-width: none; }
+  .workflow-map-board { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 16px; grid-template-areas: 'scope lifecycle' 'writes services' 'verification delivery'; padding-block: 26px; }
+  .workflow-map-node:nth-of-type(1) { grid-area: scope; }
+  .workflow-map-node:nth-of-type(2) { grid-area: lifecycle; }
+  .workflow-map-node:nth-of-type(3) { grid-area: services; }
+  .workflow-map-node:nth-of-type(4) { grid-area: writes; }
+  .workflow-map-node:nth-of-type(5) { grid-area: verification; }
+  .workflow-map-node:nth-of-type(6) { grid-area: delivery; }
+  .workflow-map-node-label { font-size: .85rem; gap: 5px; }
+  .workflow-map-artifact { grid-template-columns: minmax(0, 1fr); gap: 20px; padding: 22px 20px; }
+  .workflow-map-deliverable { border-left: 0; border-top: 1px solid var(--line); padding: 18px 0 0; }
+}
+@media (prefers-reduced-motion: reduce) { .workflow-map-trace { animation: none; } }

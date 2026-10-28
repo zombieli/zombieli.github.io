@@ -1,0 +1,50 @@
+[
+  {
+    "id": "question",
+    "label": "Frame the question",
+    "shortLabel": "Question",
+    "artifact": "Average wait + longest wait",
+    "title": "Ask who benefits from the shorter queue.",
+    "detail": "Compare the average and the longest individual wait. A lower average can hide a long delay for one job."
+  },
+  {
+    "id": "model",
+    "label": "Define the model",
+    "shortLabel": "Model",
+    "artifact": "One bench · release + duration · 2-minute changeover",
+    "title": "Make the workshop assumptions explicit.",
+    "detail": "Jobs have known durations and release times. One bench handles one job at a time without interruption, with changeover between jobs."
+  },
+  {
+    "id": "dispatch",
+    "label": "Implement dispatch",
+    "shortLabel": "Dispatch",
+    "artifact": "Deterministic FCFS and SPT policies",
+    "title": "Choose from the jobs that are ready.",
+    "detail": "FCFS chooses the earliest arrival; SPT chooses the shortest ready job. Stable tie-breaking makes both repeatable, without looking at future arrivals."
+  },
+  {
+    "id": "validation",
+    "label": "Validate independently",
+    "shortLabel": "Validate",
+    "artifact": "Coverage, release, duration and changeover checks",
+    "title": "Reject an invalid schedule before scoring it.",
+    "detail": "An independent validator checks job coverage and timing constraints. A failed check blocks the waiting-time metrics."
+  },
+  {
+    "id": "comparison",
+    "label": "Compare the experiments",
+    "shortLabel": "Compare",
+    "artifact": "22 scenarios · 44 recorded policy runs",
+    "title": "Keep the counterexample in the result.",
+    "detail": "Both policies receive identical inputs. The steady-arrival case shows lower average waiting under SPT alongside a worse longest wait."
+  },
+  {
+    "id": "reproduce",
+    "label": "Package reproducibility",
+    "shortLabel": "Evidence",
+    "artifact": "inputs.json + timelines.json + results.json",
+    "title": "Save enough to inspect the whole experiment.",
+    "detail": "Preserve inputs, complete schedules, metrics, environment and source hash. The 9 October 2026 development record documents 36 tests and 44 feasible runs."
+  }
+]

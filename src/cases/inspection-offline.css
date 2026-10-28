@@ -1,0 +1,38 @@
+.inspection-offline { margin-block: 28px; border: 1px solid var(--line); border-radius: 8px; padding: 24px; background: var(--surface); }
+.inspection-offline-heading { display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: 10px; margin-bottom: 22px; }
+.inspection-offline-heading .eyebrow { font-size: .72rem; margin-bottom: 8px; color: var(--blue); }
+.inspection-offline-heading h3 { margin: 0; font-size: 1.3rem; }
+.inspection-offline-tag { font-size: .68rem; color: var(--muted); border: 1px solid var(--line); padding: 4px 8px; border-radius: 4px; }
+.inspection-offline-modes { display: flex; flex-wrap: wrap; gap: 8px; }
+.inspection-offline-modes button { min-height: 44px; border: 1px solid var(--line); border-radius: 4px; padding: 8px 12px; font-size: .77rem; background: var(--surface); }
+.inspection-offline-modes button[aria-pressed="true"] { color: var(--blue); background: #edf3ff; border-color: var(--blue); }
+.inspection-offline-board { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; padding-block: 30px; }
+.inspection-offline-node { position: relative; min-width: 0; display: flex; align-items: center; flex-direction: column; gap: 7px; border: 1px solid var(--line); border-radius: 6px; background: var(--canvas); padding: 16px 10px; text-align: center; }
+.inspection-offline-node:not(:last-child)::after { content: '→'; position: absolute; right: -24px; top: 45%; font-size: 19px; color: var(--blue); }
+.inspection-offline-node.selected { border-color: var(--blue); background: #edf3ff; box-shadow: inset 0 0 0 1px var(--blue); }
+.inspection-offline-node.blocked small { color: #944218; }
+.inspection-offline-node svg { width: 60px; height: 60px; stroke: var(--blue); fill: none; stroke-width: 1.8; stroke-linejoin: round; stroke-linecap: round; }
+.inspection-offline-node strong { font-size: .85rem; line-height: 1.4; }
+.inspection-offline-node > span { font-size: .7rem; color: var(--muted); }
+.inspection-offline-node .inspection-offline-number { align-self: start; font-size: .7rem; color: var(--blue); }
+.inspection-offline-node small { display: block; font-size: .67rem; color: var(--muted); line-height: 1.5; }
+.inspection-offline-node.tracing svg path { stroke-dasharray: 240; animation: inspection-offline-trace .8s ease-out both; }
+.inspection-offline-inspector { min-height: 110px; padding: 16px; border-left: 3px solid var(--blue); background: #f1f5fc; }
+.inspection-offline-inspector strong, .inspection-offline-result strong { font-size: .86rem; }
+.case-content .inspection-offline-inspector p, .case-content .inspection-offline-result p { font-size: .8rem; margin: 7px 0 0; }
+.inspection-offline-result { border-block: 1px solid var(--line); margin-top: 22px; padding-block: 18px; }
+.inspection-offline-footer { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 20px; }
+.inspection-offline-footer .button { font-size: .75rem; min-height: 44px; }
+.inspection-offline-footer > span { flex: 1 1 180px; font-size: .7rem; color: var(--muted); }
+@keyframes inspection-offline-trace { from { stroke-dashoffset: 240; } to { stroke-dashoffset: 0; } }
+@media (max-width: 600px) {
+  .inspection-offline { padding: 16px; }
+  .inspection-offline-board { grid-template-columns: minmax(0, 1fr); gap: 24px; padding-block: 22px; }
+  .inspection-offline-node { display: grid; grid-template-columns: 58px minmax(0, 1fr); text-align: left; gap: 3px 12px; padding: 14px; }
+  .inspection-offline-node svg { grid-column: 1; grid-row: 1 / 5; width: 54px; height: 54px; }
+  .inspection-offline-node .inspection-offline-number, .inspection-offline-node strong, .inspection-offline-node > span, .inspection-offline-node small { grid-column: 2; }
+  .inspection-offline-node:not(:last-child)::after { content: '↓'; top: auto; bottom: -25px; right: 50%; }
+  .inspection-offline-inspector { min-height: 150px; }
+  .inspection-offline-modes button { flex: 1 1 100%; text-align: left; }
+}
+@media (prefers-reduced-motion: reduce) { .inspection-offline-node.tracing svg path { animation: none; } }

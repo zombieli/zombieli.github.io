@@ -1,0 +1,14 @@
+Evidence origin: simulator (TCP loopback)
+CASE-01 PASS  normal                    diagnostic=ok                attempts=1
+CASE-02 PASS  timeout                   diagnostic=timeout           attempts=2
+CASE-03 PASS  disconnect                diagnostic=connection_error  attempts=2
+CASE-04 PASS  malformed                 diagnostic=protocol_error    attempts=1
+CASE-05 FAIL  missing_field             diagnostic=validation_error  attempts=1
+CASE-06 PASS  wrong_type                diagnostic=validation_error  attempts=1
+CASE-07 PASS  out_of_range              diagnostic=validation_error  attempts=1
+CASE-08 PASS  wrong_id                  diagnostic=validation_error  attempts=1
+CASE-09 PASS  oversized                 diagnostic=protocol_error    attempts=1
+CASE-10 PASS  no_newline                diagnostic=protocol_error    attempts=1
+CASE-11 PASS  recover_after_disconnect  diagnostic=ok                attempts=2
+{"pass": 10, "fail": 1, "error": 0, "skipped": 0, "total": 11, "diagnostic_faults": 9}
+Report: evidence\20261008T152057Z-fa5bb5f3\report.json

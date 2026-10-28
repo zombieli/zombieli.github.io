@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "baselineLabel": "Main · build 1842",
+  "candidateLabel": "Feature branch · build 1843",
+  "verdict": "fail",
+  "reasons": [
+    "2 candidate test(s) failed",
+    "1 baseline test(s) removed",
+    "1 test(s) newly skipped"
+  ],
+  "policy": {
+    "allowRemoved": false,
+    "allowSkipped": false,
+    "slowdownRatio": 1.5,
+    "slowdownMs": 100
+  },
+  "counts": {
+    "baseline": 7,
+    "candidate": 7,
+    "regressions": 1,
+    "persistentFailures": 1,
+    "recoveries": 1,
+    "resumed": 0,
+    "added": 1,
+    "removed": 1,
+    "newSkipped": 1,
+    "candidateFailures": 2,
+    "slower": 1,
+    "faster": 0
+  },
+  "rows": [
+    {
+      "suite": "Authentication",
+      "name": "Expire an inactive session",
+      "kind": "persistent-failure",
+      "newSkipped": false,
+      "baseline": {
+        "status": "failed",
+        "durationMs": 80
+      },
+      "candidate": {
+        "status": "failed",
+        "durationMs": 85
+      },
+      "timing": "unavailable",
+      "deltaMs": null,
+      "ratio": null
+    },
+    {
+      "suite": "Authentication",
+      "name": "Sign in with valid credentials",
+      "kind": "regression",
+      "newSkipped": false,
+      "baseline": {
+        "status": "passed",
+        "durationMs": 120
+      },
+      "candidate": {
+        "status": "failed",
+        "durationMs": 130
+      },
+      "timing": "unavailable",
+      "deltaMs": null,
+      "ratio": null
+    },
+    {
+      "suite": "Billing",
+      "name": "Export monthly statement",
+      "kind": "recovery",
+      "newSkipped": false,
+      "baseline": {
+        "status": "failed",
+        "durationMs": 190
+      },
+      "candidate": {
+        "status": "passed",
+        "durationMs": 180
+      },
+      "timing": "unavailable",
+      "deltaMs": null,
+      "ratio": null
+    },
+    {
+      "suite": "Billing",
+      "name": "Generate a payment receipt",
+      "kind": "unchanged",
+      "newSkipped": false,
+      "baseline": {
+        "status": "passed",
+        "durationMs": 100
+      },
+      "candidate": {
+        "status": "passed",
+        "durationMs": 450
+      },
+      "timing": "slower",
+      "deltaMs": 350,
+      "ratio": 4.5
+    },
+    {
+      "suite": "Core",
+      "name": "Navigate to workspace",
+      "kind": "unchanged",
+      "newSkipped": false,
+      "baseline": {
+        "status": "passed",
+        "durationMs": 140
+      },
+      "candidate": {
+        "status": "passed",
+        "durationMs": 135
+      },
+      "timing": "stable",
+      "deltaMs": -5,
+      "ratio": 0.9642857142857143
+    },
+    {
+      "suite": "Core",
+      "name": "Open legacy dashboard",
+      "kind": "removed",
+      "newSkipped": false,
+      "baseline": {
+        "status": "passed",
+        "durationMs": 210
+      },
+      "candidate": null,
+      "timing": "unavailable",
+      "deltaMs": null,
+      "ratio": null
+    },
+    {
+      "suite": "Search",
+      "name": "Filter results by category",
+      "kind": "added",
+      "newSkipped": false,
+      "baseline": null,
+      "candidate": {
+        "status": "passed",
+        "durationMs": 75
+      },
+      "timing": "unavailable",
+      "deltaMs": null,
+      "ratio": null
+    },
+    {
+      "suite": "Search",
+      "name": "Find an exact phrase",
+      "kind": "new-skipped",
+      "newSkipped": true,
+      "baseline": {
+        "status": "passed",
+        "durationMs": 90
+      },
+      "candidate": {
+        "status": "skipped",
+        "durationMs": 0
+      },
+      "timing": "unavailable",
+      "deltaMs": null,
+      "ratio": null
+    }
+  ]
+}

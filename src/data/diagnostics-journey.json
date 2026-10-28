@@ -1,0 +1,8 @@
+[
+  { "id": "problem", "label": "Scope the problem", "artifact": "Scope and acceptance criteria" },
+  { "id": "contract", "label": "Define the contract", "artifact": "Protocol and requirements" },
+  { "id": "design", "label": "Divide the system", "artifact": "Implementation boundaries" },
+  { "id": "fault-handling", "label": "Handle the faults", "artifact": "Recorded retry attempts" },
+  { "id": "results", "label": "Challenge the result", "artifact": "Passing and failing evidence" },
+  { "id": "reproduce", "label": "Package the evidence", "artifact": "Reports and reproducible source" }
+]

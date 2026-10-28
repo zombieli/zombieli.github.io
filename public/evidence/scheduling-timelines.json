@@ -1,0 +1,6706 @@
+[
+  {
+    "scenario": "mixed-00",
+    "policy": "fcfs",
+    "slots": [
+      {
+        "job_id": "J002",
+        "start": 5,
+        "end": 15
+      },
+      {
+        "job_id": "J027",
+        "start": 17,
+        "end": 42
+      },
+      {
+        "job_id": "J024",
+        "start": 44,
+        "end": 47
+      },
+      {
+        "job_id": "J008",
+        "start": 49,
+        "end": 55
+      },
+      {
+        "job_id": "J014",
+        "start": 57,
+        "end": 62
+      },
+      {
+        "job_id": "J020",
+        "start": 64,
+        "end": 85
+      },
+      {
+        "job_id": "J017",
+        "start": 87,
+        "end": 104
+      },
+      {
+        "job_id": "J019",
+        "start": 106,
+        "end": 121
+      },
+      {
+        "job_id": "J004",
+        "start": 123,
+        "end": 134
+      },
+      {
+        "job_id": "J023",
+        "start": 136,
+        "end": 154
+      },
+      {
+        "job_id": "J005",
+        "start": 156,
+        "end": 169
+      },
+      {
+        "job_id": "J007",
+        "start": 171,
+        "end": 177
+      },
+      {
+        "job_id": "J003",
+        "start": 179,
+        "end": 196
+      },
+      {
+        "job_id": "J022",
+        "start": 198,
+        "end": 215
+      },
+      {
+        "job_id": "J018",
+        "start": 217,
+        "end": 222
+      },
+      {
+        "job_id": "J006",
+        "start": 224,
+        "end": 232
+      },
+      {
+        "job_id": "J010",
+        "start": 234,
+        "end": 244
+      },
+      {
+        "job_id": "J021",
+        "start": 246,
+        "end": 254
+      },
+      {
+        "job_id": "J012",
+        "start": 256,
+        "end": 277
+      },
+      {
+        "job_id": "J029",
+        "start": 279,
+        "end": 302
+      },
+      {
+        "job_id": "J015",
+        "start": 304,
+        "end": 308
+      },
+      {
+        "job_id": "J009",
+        "start": 310,
+        "end": 315
+      },
+      {
+        "job_id": "J001",
+        "start": 317,
+        "end": 332
+      },
+      {
+        "job_id": "J025",
+        "start": 334,
+        "end": 353
+      },
+      {
+        "job_id": "J028",
+        "start": 355,
+        "end": 369
+      },
+      {
+        "job_id": "J000",
+        "start": 371,
+        "end": 385
+      },
+      {
+        "job_id": "J013",
+        "start": 387,
+        "end": 393
+      },
+      {
+        "job_id": "J016",
+        "start": 395,
+        "end": 418
+      },
+      {
+        "job_id": "J011",
+        "start": 420,
+        "end": 439
+      },
+      {
+        "job_id": "J026",
+        "start": 441,
+        "end": 443
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-00",
+    "policy": "spt",
+    "slots": [
+      {
+        "job_id": "J002",
+        "start": 5,
+        "end": 15
+      },
+      {
+        "job_id": "J027",
+        "start": 17,
+        "end": 42
+      },
+      {
+        "job_id": "J024",
+        "start": 44,
+        "end": 47
+      },
+      {
+        "job_id": "J014",
+        "start": 49,
+        "end": 54
+      },
+      {
+        "job_id": "J008",
+        "start": 56,
+        "end": 62
+      },
+      {
+        "job_id": "J007",
+        "start": 64,
+        "end": 70
+      },
+      {
+        "job_id": "J018",
+        "start": 72,
+        "end": 77
+      },
+      {
+        "job_id": "J006",
+        "start": 79,
+        "end": 87
+      },
+      {
+        "job_id": "J021",
+        "start": 89,
+        "end": 97
+      },
+      {
+        "job_id": "J015",
+        "start": 99,
+        "end": 103
+      },
+      {
+        "job_id": "J009",
+        "start": 105,
+        "end": 110
+      },
+      {
+        "job_id": "J010",
+        "start": 112,
+        "end": 122
+      },
+      {
+        "job_id": "J026",
+        "start": 124,
+        "end": 126
+      },
+      {
+        "job_id": "J013",
+        "start": 128,
+        "end": 134
+      },
+      {
+        "job_id": "J004",
+        "start": 136,
+        "end": 147
+      },
+      {
+        "job_id": "J005",
+        "start": 149,
+        "end": 162
+      },
+      {
+        "job_id": "J028",
+        "start": 164,
+        "end": 178
+      },
+      {
+        "job_id": "J000",
+        "start": 180,
+        "end": 194
+      },
+      {
+        "job_id": "J019",
+        "start": 196,
+        "end": 211
+      },
+      {
+        "job_id": "J001",
+        "start": 213,
+        "end": 228
+      },
+      {
+        "job_id": "J017",
+        "start": 230,
+        "end": 247
+      },
+      {
+        "job_id": "J003",
+        "start": 249,
+        "end": 266
+      },
+      {
+        "job_id": "J022",
+        "start": 268,
+        "end": 285
+      },
+      {
+        "job_id": "J023",
+        "start": 287,
+        "end": 305
+      },
+      {
+        "job_id": "J025",
+        "start": 307,
+        "end": 326
+      },
+      {
+        "job_id": "J011",
+        "start": 328,
+        "end": 347
+      },
+      {
+        "job_id": "J020",
+        "start": 349,
+        "end": 370
+      },
+      {
+        "job_id": "J012",
+        "start": 372,
+        "end": 393
+      },
+      {
+        "job_id": "J029",
+        "start": 395,
+        "end": 418
+      },
+      {
+        "job_id": "J016",
+        "start": 420,
+        "end": 443
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-01",
+    "policy": "fcfs",
+    "slots": [
+      {
+        "job_id": "J007",
+        "start": 3,
+        "end": 17
+      },
+      {
+        "job_id": "J015",
+        "start": 19,
+        "end": 21
+      },
+      {
+        "job_id": "J016",
+        "start": 23,
+        "end": 45
+      },
+      {
+        "job_id": "J021",
+        "start": 47,
+        "end": 65
+      },
+      {
+        "job_id": "J006",
+        "start": 67,
+        "end": 84
+      },
+      {
+        "job_id": "J000",
+        "start": 86,
+        "end": 106
+      },
+      {
+        "job_id": "J022",
+        "start": 108,
+        "end": 124
+      },
+      {
+        "job_id": "J002",
+        "start": 126,
+        "end": 131
+      },
+      {
+        "job_id": "J011",
+        "start": 133,
+        "end": 158
+      },
+      {
+        "job_id": "J028",
+        "start": 160,
+        "end": 162
+      },
+      {
+        "job_id": "J025",
+        "start": 164,
+        "end": 173
+      },
+      {
+        "job_id": "J005",
+        "start": 175,
+        "end": 183
+      },
+      {
+        "job_id": "J029",
+        "start": 185,
+        "end": 204
+      },
+      {
+        "job_id": "J020",
+        "start": 206,
+        "end": 231
+      },
+      {
+        "job_id": "J008",
+        "start": 233,
+        "end": 254
+      },
+      {
+        "job_id": "J004",
+        "start": 256,
+        "end": 278
+      },
+      {
+        "job_id": "J003",
+        "start": 280,
+        "end": 296
+      },
+      {
+        "job_id": "J017",
+        "start": 298,
+        "end": 300
+      },
+      {
+        "job_id": "J024",
+        "start": 302,
+        "end": 311
+      },
+      {
+        "job_id": "J013",
+        "start": 313,
+        "end": 318
+      },
+      {
+        "job_id": "J026",
+        "start": 320,
+        "end": 329
+      },
+      {
+        "job_id": "J019",
+        "start": 331,
+        "end": 339
+      },
+      {
+        "job_id": "J010",
+        "start": 341,
+        "end": 357
+      },
+      {
+        "job_id": "J009",
+        "start": 359,
+        "end": 361
+      },
+      {
+        "job_id": "J027",
+        "start": 363,
+        "end": 379
+      },
+      {
+        "job_id": "J012",
+        "start": 381,
+        "end": 390
+      },
+      {
+        "job_id": "J001",
+        "start": 392,
+        "end": 396
+      },
+      {
+        "job_id": "J014",
+        "start": 398,
+        "end": 410
+      },
+      {
+        "job_id": "J018",
+        "start": 412,
+        "end": 426
+      },
+      {
+        "job_id": "J023",
+        "start": 428,
+        "end": 445
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-01",
+    "policy": "spt",
+    "slots": [
+      {
+        "job_id": "J015",
+        "start": 3,
+        "end": 5
+      },
+      {
+        "job_id": "J007",
+        "start": 7,
+        "end": 21
+      },
+      {
+        "job_id": "J006",
+        "start": 23,
+        "end": 40
+      },
+      {
+        "job_id": "J028",
+        "start": 42,
+        "end": 44
+      },
+      {
+        "job_id": "J002",
+        "start": 46,
+        "end": 51
+      },
+      {
+        "job_id": "J005",
+        "start": 53,
+        "end": 61
+      },
+      {
+        "job_id": "J025",
+        "start": 63,
+        "end": 72
+      },
+      {
+        "job_id": "J017",
+        "start": 74,
+        "end": 76
+      },
+      {
+        "job_id": "J013",
+        "start": 78,
+        "end": 83
+      },
+      {
+        "job_id": "J024",
+        "start": 85,
+        "end": 94
+      },
+      {
+        "job_id": "J019",
+        "start": 96,
+        "end": 104
+      },
+      {
+        "job_id": "J009",
+        "start": 106,
+        "end": 108
+      },
+      {
+        "job_id": "J001",
+        "start": 110,
+        "end": 114
+      },
+      {
+        "job_id": "J026",
+        "start": 116,
+        "end": 125
+      },
+      {
+        "job_id": "J012",
+        "start": 127,
+        "end": 136
+      },
+      {
+        "job_id": "J014",
+        "start": 138,
+        "end": 150
+      },
+      {
+        "job_id": "J018",
+        "start": 152,
+        "end": 166
+      },
+      {
+        "job_id": "J022",
+        "start": 168,
+        "end": 184
+      },
+      {
+        "job_id": "J003",
+        "start": 186,
+        "end": 202
+      },
+      {
+        "job_id": "J010",
+        "start": 204,
+        "end": 220
+      },
+      {
+        "job_id": "J027",
+        "start": 222,
+        "end": 238
+      },
+      {
+        "job_id": "J023",
+        "start": 240,
+        "end": 257
+      },
+      {
+        "job_id": "J021",
+        "start": 259,
+        "end": 277
+      },
+      {
+        "job_id": "J029",
+        "start": 279,
+        "end": 298
+      },
+      {
+        "job_id": "J000",
+        "start": 300,
+        "end": 320
+      },
+      {
+        "job_id": "J008",
+        "start": 322,
+        "end": 343
+      },
+      {
+        "job_id": "J016",
+        "start": 345,
+        "end": 367
+      },
+      {
+        "job_id": "J004",
+        "start": 369,
+        "end": 391
+      },
+      {
+        "job_id": "J011",
+        "start": 393,
+        "end": 418
+      },
+      {
+        "job_id": "J020",
+        "start": 420,
+        "end": 445
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-02",
+    "policy": "fcfs",
+    "slots": [
+      {
+        "job_id": "J007",
+        "start": 4,
+        "end": 24
+      },
+      {
+        "job_id": "J001",
+        "start": 26,
+        "end": 30
+      },
+      {
+        "job_id": "J021",
+        "start": 32,
+        "end": 51
+      },
+      {
+        "job_id": "J022",
+        "start": 53,
+        "end": 62
+      },
+      {
+        "job_id": "J024",
+        "start": 64,
+        "end": 76
+      },
+      {
+        "job_id": "J025",
+        "start": 78,
+        "end": 84
+      },
+      {
+        "job_id": "J029",
+        "start": 86,
+        "end": 102
+      },
+      {
+        "job_id": "J006",
+        "start": 104,
+        "end": 125
+      },
+      {
+        "job_id": "J023",
+        "start": 127,
+        "end": 129
+      },
+      {
+        "job_id": "J005",
+        "start": 131,
+        "end": 152
+      },
+      {
+        "job_id": "J002",
+        "start": 154,
+        "end": 161
+      },
+      {
+        "job_id": "J017",
+        "start": 163,
+        "end": 179
+      },
+      {
+        "job_id": "J027",
+        "start": 181,
+        "end": 199
+      },
+      {
+        "job_id": "J012",
+        "start": 201,
+        "end": 220
+      },
+      {
+        "job_id": "J010",
+        "start": 222,
+        "end": 247
+      },
+      {
+        "job_id": "J020",
+        "start": 249,
+        "end": 267
+      },
+      {
+        "job_id": "J009",
+        "start": 269,
+        "end": 291
+      },
+      {
+        "job_id": "J014",
+        "start": 293,
+        "end": 303
+      },
+      {
+        "job_id": "J026",
+        "start": 305,
+        "end": 323
+      },
+      {
+        "job_id": "J028",
+        "start": 325,
+        "end": 344
+      },
+      {
+        "job_id": "J008",
+        "start": 346,
+        "end": 353
+      },
+      {
+        "job_id": "J003",
+        "start": 355,
+        "end": 378
+      },
+      {
+        "job_id": "J004",
+        "start": 380,
+        "end": 391
+      },
+      {
+        "job_id": "J000",
+        "start": 393,
+        "end": 396
+      },
+      {
+        "job_id": "J011",
+        "start": 398,
+        "end": 416
+      },
+      {
+        "job_id": "J016",
+        "start": 418,
+        "end": 420
+      },
+      {
+        "job_id": "J015",
+        "start": 422,
+        "end": 425
+      },
+      {
+        "job_id": "J019",
+        "start": 427,
+        "end": 441
+      },
+      {
+        "job_id": "J013",
+        "start": 443,
+        "end": 459
+      },
+      {
+        "job_id": "J018",
+        "start": 461,
+        "end": 473
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-02",
+    "policy": "spt",
+    "slots": [
+      {
+        "job_id": "J007",
+        "start": 4,
+        "end": 24
+      },
+      {
+        "job_id": "J001",
+        "start": 26,
+        "end": 30
+      },
+      {
+        "job_id": "J023",
+        "start": 32,
+        "end": 34
+      },
+      {
+        "job_id": "J025",
+        "start": 36,
+        "end": 42
+      },
+      {
+        "job_id": "J022",
+        "start": 44,
+        "end": 53
+      },
+      {
+        "job_id": "J002",
+        "start": 55,
+        "end": 62
+      },
+      {
+        "job_id": "J014",
+        "start": 64,
+        "end": 74
+      },
+      {
+        "job_id": "J024",
+        "start": 76,
+        "end": 88
+      },
+      {
+        "job_id": "J008",
+        "start": 90,
+        "end": 97
+      },
+      {
+        "job_id": "J029",
+        "start": 99,
+        "end": 115
+      },
+      {
+        "job_id": "J016",
+        "start": 117,
+        "end": 119
+      },
+      {
+        "job_id": "J000",
+        "start": 121,
+        "end": 124
+      },
+      {
+        "job_id": "J015",
+        "start": 126,
+        "end": 129
+      },
+      {
+        "job_id": "J004",
+        "start": 131,
+        "end": 142
+      },
+      {
+        "job_id": "J018",
+        "start": 144,
+        "end": 156
+      },
+      {
+        "job_id": "J019",
+        "start": 158,
+        "end": 172
+      },
+      {
+        "job_id": "J017",
+        "start": 174,
+        "end": 190
+      },
+      {
+        "job_id": "J013",
+        "start": 192,
+        "end": 208
+      },
+      {
+        "job_id": "J027",
+        "start": 210,
+        "end": 228
+      },
+      {
+        "job_id": "J020",
+        "start": 230,
+        "end": 248
+      },
+      {
+        "job_id": "J026",
+        "start": 250,
+        "end": 268
+      },
+      {
+        "job_id": "J011",
+        "start": 270,
+        "end": 288
+      },
+      {
+        "job_id": "J021",
+        "start": 290,
+        "end": 309
+      },
+      {
+        "job_id": "J012",
+        "start": 311,
+        "end": 330
+      },
+      {
+        "job_id": "J028",
+        "start": 332,
+        "end": 351
+      },
+      {
+        "job_id": "J006",
+        "start": 353,
+        "end": 374
+      },
+      {
+        "job_id": "J005",
+        "start": 376,
+        "end": 397
+      },
+      {
+        "job_id": "J009",
+        "start": 399,
+        "end": 421
+      },
+      {
+        "job_id": "J003",
+        "start": 423,
+        "end": 446
+      },
+      {
+        "job_id": "J010",
+        "start": 448,
+        "end": 473
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-03",
+    "policy": "fcfs",
+    "slots": [
+      {
+        "job_id": "J016",
+        "start": 1,
+        "end": 24
+      },
+      {
+        "job_id": "J019",
+        "start": 26,
+        "end": 37
+      },
+      {
+        "job_id": "J029",
+        "start": 39,
+        "end": 42
+      },
+      {
+        "job_id": "J014",
+        "start": 44,
+        "end": 62
+      },
+      {
+        "job_id": "J018",
+        "start": 64,
+        "end": 84
+      },
+      {
+        "job_id": "J008",
+        "start": 86,
+        "end": 94
+      },
+      {
+        "job_id": "J013",
+        "start": 96,
+        "end": 118
+      },
+      {
+        "job_id": "J000",
+        "start": 120,
+        "end": 140
+      },
+      {
+        "job_id": "J007",
+        "start": 142,
+        "end": 161
+      },
+      {
+        "job_id": "J002",
+        "start": 163,
+        "end": 184
+      },
+      {
+        "job_id": "J015",
+        "start": 186,
+        "end": 211
+      },
+      {
+        "job_id": "J025",
+        "start": 213,
+        "end": 238
+      },
+      {
+        "job_id": "J027",
+        "start": 240,
+        "end": 246
+      },
+      {
+        "job_id": "J003",
+        "start": 248,
+        "end": 270
+      },
+      {
+        "job_id": "J011",
+        "start": 272,
+        "end": 286
+      },
+      {
+        "job_id": "J022",
+        "start": 288,
+        "end": 309
+      },
+      {
+        "job_id": "J001",
+        "start": 311,
+        "end": 317
+      },
+      {
+        "job_id": "J010",
+        "start": 319,
+        "end": 338
+      },
+      {
+        "job_id": "J004",
+        "start": 340,
+        "end": 344
+      },
+      {
+        "job_id": "J005",
+        "start": 346,
+        "end": 348
+      },
+      {
+        "job_id": "J012",
+        "start": 350,
+        "end": 356
+      },
+      {
+        "job_id": "J009",
+        "start": 358,
+        "end": 375
+      },
+      {
+        "job_id": "J024",
+        "start": 377,
+        "end": 392
+      },
+      {
+        "job_id": "J023",
+        "start": 394,
+        "end": 408
+      },
+      {
+        "job_id": "J017",
+        "start": 410,
+        "end": 414
+      },
+      {
+        "job_id": "J020",
+        "start": 416,
+        "end": 418
+      },
+      {
+        "job_id": "J026",
+        "start": 420,
+        "end": 440
+      },
+      {
+        "job_id": "J021",
+        "start": 442,
+        "end": 452
+      },
+      {
+        "job_id": "J028",
+        "start": 454,
+        "end": 467
+      },
+      {
+        "job_id": "J006",
+        "start": 469,
+        "end": 486
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-03",
+    "policy": "spt",
+    "slots": [
+      {
+        "job_id": "J016",
+        "start": 1,
+        "end": 24
+      },
+      {
+        "job_id": "J029",
+        "start": 26,
+        "end": 29
+      },
+      {
+        "job_id": "J008",
+        "start": 31,
+        "end": 39
+      },
+      {
+        "job_id": "J019",
+        "start": 41,
+        "end": 52
+      },
+      {
+        "job_id": "J014",
+        "start": 54,
+        "end": 72
+      },
+      {
+        "job_id": "J004",
+        "start": 74,
+        "end": 78
+      },
+      {
+        "job_id": "J005",
+        "start": 80,
+        "end": 82
+      },
+      {
+        "job_id": "J027",
+        "start": 84,
+        "end": 90
+      },
+      {
+        "job_id": "J001",
+        "start": 92,
+        "end": 98
+      },
+      {
+        "job_id": "J020",
+        "start": 100,
+        "end": 102
+      },
+      {
+        "job_id": "J017",
+        "start": 104,
+        "end": 108
+      },
+      {
+        "job_id": "J012",
+        "start": 110,
+        "end": 116
+      },
+      {
+        "job_id": "J021",
+        "start": 118,
+        "end": 128
+      },
+      {
+        "job_id": "J028",
+        "start": 130,
+        "end": 143
+      },
+      {
+        "job_id": "J011",
+        "start": 145,
+        "end": 159
+      },
+      {
+        "job_id": "J023",
+        "start": 161,
+        "end": 175
+      },
+      {
+        "job_id": "J024",
+        "start": 177,
+        "end": 192
+      },
+      {
+        "job_id": "J009",
+        "start": 194,
+        "end": 211
+      },
+      {
+        "job_id": "J006",
+        "start": 213,
+        "end": 230
+      },
+      {
+        "job_id": "J007",
+        "start": 232,
+        "end": 251
+      },
+      {
+        "job_id": "J010",
+        "start": 253,
+        "end": 272
+      },
+      {
+        "job_id": "J018",
+        "start": 274,
+        "end": 294
+      },
+      {
+        "job_id": "J000",
+        "start": 296,
+        "end": 316
+      },
+      {
+        "job_id": "J026",
+        "start": 318,
+        "end": 338
+      },
+      {
+        "job_id": "J002",
+        "start": 340,
+        "end": 361
+      },
+      {
+        "job_id": "J022",
+        "start": 363,
+        "end": 384
+      },
+      {
+        "job_id": "J013",
+        "start": 386,
+        "end": 408
+      },
+      {
+        "job_id": "J003",
+        "start": 410,
+        "end": 432
+      },
+      {
+        "job_id": "J015",
+        "start": 434,
+        "end": 459
+      },
+      {
+        "job_id": "J025",
+        "start": 461,
+        "end": 486
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-04",
+    "policy": "fcfs",
+    "slots": [
+      {
+        "job_id": "J029",
+        "start": 0,
+        "end": 11
+      },
+      {
+        "job_id": "J004",
+        "start": 13,
+        "end": 15
+      },
+      {
+        "job_id": "J021",
+        "start": 17,
+        "end": 38
+      },
+      {
+        "job_id": "J001",
+        "start": 40,
+        "end": 65
+      },
+      {
+        "job_id": "J003",
+        "start": 67,
+        "end": 71
+      },
+      {
+        "job_id": "J017",
+        "start": 73,
+        "end": 80
+      },
+      {
+        "job_id": "J008",
+        "start": 82,
+        "end": 100
+      },
+      {
+        "job_id": "J000",
+        "start": 102,
+        "end": 113
+      },
+      {
+        "job_id": "J024",
+        "start": 115,
+        "end": 122
+      },
+      {
+        "job_id": "J025",
+        "start": 124,
+        "end": 141
+      },
+      {
+        "job_id": "J012",
+        "start": 143,
+        "end": 151
+      },
+      {
+        "job_id": "J010",
+        "start": 153,
+        "end": 160
+      },
+      {
+        "job_id": "J026",
+        "start": 162,
+        "end": 166
+      },
+      {
+        "job_id": "J018",
+        "start": 168,
+        "end": 179
+      },
+      {
+        "job_id": "J022",
+        "start": 181,
+        "end": 204
+      },
+      {
+        "job_id": "J023",
+        "start": 206,
+        "end": 224
+      },
+      {
+        "job_id": "J002",
+        "start": 226,
+        "end": 243
+      },
+      {
+        "job_id": "J005",
+        "start": 245,
+        "end": 264
+      },
+      {
+        "job_id": "J009",
+        "start": 266,
+        "end": 279
+      },
+      {
+        "job_id": "J019",
+        "start": 281,
+        "end": 306
+      },
+      {
+        "job_id": "J007",
+        "start": 308,
+        "end": 311
+      },
+      {
+        "job_id": "J016",
+        "start": 313,
+        "end": 323
+      },
+      {
+        "job_id": "J015",
+        "start": 325,
+        "end": 335
+      },
+      {
+        "job_id": "J011",
+        "start": 337,
+        "end": 342
+      },
+      {
+        "job_id": "J014",
+        "start": 344,
+        "end": 366
+      },
+      {
+        "job_id": "J028",
+        "start": 368,
+        "end": 379
+      },
+      {
+        "job_id": "J020",
+        "start": 381,
+        "end": 394
+      },
+      {
+        "job_id": "J006",
+        "start": 396,
+        "end": 407
+      },
+      {
+        "job_id": "J013",
+        "start": 409,
+        "end": 411
+      },
+      {
+        "job_id": "J027",
+        "start": 413,
+        "end": 432
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-04",
+    "policy": "spt",
+    "slots": [
+      {
+        "job_id": "J029",
+        "start": 0,
+        "end": 11
+      },
+      {
+        "job_id": "J004",
+        "start": 13,
+        "end": 15
+      },
+      {
+        "job_id": "J021",
+        "start": 17,
+        "end": 38
+      },
+      {
+        "job_id": "J003",
+        "start": 40,
+        "end": 44
+      },
+      {
+        "job_id": "J026",
+        "start": 46,
+        "end": 50
+      },
+      {
+        "job_id": "J017",
+        "start": 52,
+        "end": 59
+      },
+      {
+        "job_id": "J024",
+        "start": 61,
+        "end": 68
+      },
+      {
+        "job_id": "J010",
+        "start": 70,
+        "end": 77
+      },
+      {
+        "job_id": "J012",
+        "start": 79,
+        "end": 87
+      },
+      {
+        "job_id": "J000",
+        "start": 89,
+        "end": 100
+      },
+      {
+        "job_id": "J007",
+        "start": 102,
+        "end": 105
+      },
+      {
+        "job_id": "J011",
+        "start": 107,
+        "end": 112
+      },
+      {
+        "job_id": "J016",
+        "start": 114,
+        "end": 124
+      },
+      {
+        "job_id": "J013",
+        "start": 126,
+        "end": 128
+      },
+      {
+        "job_id": "J015",
+        "start": 130,
+        "end": 140
+      },
+      {
+        "job_id": "J018",
+        "start": 142,
+        "end": 153
+      },
+      {
+        "job_id": "J028",
+        "start": 155,
+        "end": 166
+      },
+      {
+        "job_id": "J006",
+        "start": 168,
+        "end": 179
+      },
+      {
+        "job_id": "J009",
+        "start": 181,
+        "end": 194
+      },
+      {
+        "job_id": "J020",
+        "start": 196,
+        "end": 209
+      },
+      {
+        "job_id": "J025",
+        "start": 211,
+        "end": 228
+      },
+      {
+        "job_id": "J002",
+        "start": 230,
+        "end": 247
+      },
+      {
+        "job_id": "J008",
+        "start": 249,
+        "end": 267
+      },
+      {
+        "job_id": "J023",
+        "start": 269,
+        "end": 287
+      },
+      {
+        "job_id": "J005",
+        "start": 289,
+        "end": 308
+      },
+      {
+        "job_id": "J027",
+        "start": 310,
+        "end": 329
+      },
+      {
+        "job_id": "J014",
+        "start": 331,
+        "end": 353
+      },
+      {
+        "job_id": "J022",
+        "start": 355,
+        "end": 378
+      },
+      {
+        "job_id": "J001",
+        "start": 380,
+        "end": 405
+      },
+      {
+        "job_id": "J019",
+        "start": 407,
+        "end": 432
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-05",
+    "policy": "fcfs",
+    "slots": [
+      {
+        "job_id": "J021",
+        "start": 0,
+        "end": 2
+      },
+      {
+        "job_id": "J005",
+        "start": 4,
+        "end": 20
+      },
+      {
+        "job_id": "J012",
+        "start": 22,
+        "end": 42
+      },
+      {
+        "job_id": "J009",
+        "start": 44,
+        "end": 57
+      },
+      {
+        "job_id": "J020",
+        "start": 59,
+        "end": 65
+      },
+      {
+        "job_id": "J018",
+        "start": 67,
+        "end": 88
+      },
+      {
+        "job_id": "J017",
+        "start": 90,
+        "end": 94
+      },
+      {
+        "job_id": "J023",
+        "start": 96,
+        "end": 103
+      },
+      {
+        "job_id": "J016",
+        "start": 105,
+        "end": 119
+      },
+      {
+        "job_id": "J028",
+        "start": 121,
+        "end": 145
+      },
+      {
+        "job_id": "J025",
+        "start": 147,
+        "end": 166
+      },
+      {
+        "job_id": "J029",
+        "start": 168,
+        "end": 182
+      },
+      {
+        "job_id": "J022",
+        "start": 184,
+        "end": 192
+      },
+      {
+        "job_id": "J013",
+        "start": 194,
+        "end": 196
+      },
+      {
+        "job_id": "J024",
+        "start": 198,
+        "end": 210
+      },
+      {
+        "job_id": "J011",
+        "start": 212,
+        "end": 231
+      },
+      {
+        "job_id": "J015",
+        "start": 233,
+        "end": 243
+      },
+      {
+        "job_id": "J010",
+        "start": 245,
+        "end": 254
+      },
+      {
+        "job_id": "J000",
+        "start": 256,
+        "end": 266
+      },
+      {
+        "job_id": "J019",
+        "start": 268,
+        "end": 284
+      },
+      {
+        "job_id": "J027",
+        "start": 286,
+        "end": 294
+      },
+      {
+        "job_id": "J004",
+        "start": 296,
+        "end": 314
+      },
+      {
+        "job_id": "J007",
+        "start": 316,
+        "end": 319
+      },
+      {
+        "job_id": "J014",
+        "start": 321,
+        "end": 329
+      },
+      {
+        "job_id": "J001",
+        "start": 331,
+        "end": 344
+      },
+      {
+        "job_id": "J006",
+        "start": 346,
+        "end": 355
+      },
+      {
+        "job_id": "J002",
+        "start": 357,
+        "end": 381
+      },
+      {
+        "job_id": "J026",
+        "start": 383,
+        "end": 406
+      },
+      {
+        "job_id": "J008",
+        "start": 408,
+        "end": 415
+      },
+      {
+        "job_id": "J003",
+        "start": 417,
+        "end": 442
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-05",
+    "policy": "spt",
+    "slots": [
+      {
+        "job_id": "J021",
+        "start": 0,
+        "end": 2
+      },
+      {
+        "job_id": "J005",
+        "start": 4,
+        "end": 20
+      },
+      {
+        "job_id": "J017",
+        "start": 22,
+        "end": 26
+      },
+      {
+        "job_id": "J020",
+        "start": 28,
+        "end": 34
+      },
+      {
+        "job_id": "J013",
+        "start": 36,
+        "end": 38
+      },
+      {
+        "job_id": "J023",
+        "start": 40,
+        "end": 47
+      },
+      {
+        "job_id": "J022",
+        "start": 49,
+        "end": 57
+      },
+      {
+        "job_id": "J015",
+        "start": 59,
+        "end": 69
+      },
+      {
+        "job_id": "J010",
+        "start": 71,
+        "end": 80
+      },
+      {
+        "job_id": "J027",
+        "start": 82,
+        "end": 90
+      },
+      {
+        "job_id": "J007",
+        "start": 92,
+        "end": 95
+      },
+      {
+        "job_id": "J014",
+        "start": 97,
+        "end": 105
+      },
+      {
+        "job_id": "J006",
+        "start": 107,
+        "end": 116
+      },
+      {
+        "job_id": "J008",
+        "start": 118,
+        "end": 125
+      },
+      {
+        "job_id": "J000",
+        "start": 127,
+        "end": 137
+      },
+      {
+        "job_id": "J024",
+        "start": 139,
+        "end": 151
+      },
+      {
+        "job_id": "J009",
+        "start": 153,
+        "end": 166
+      },
+      {
+        "job_id": "J001",
+        "start": 168,
+        "end": 181
+      },
+      {
+        "job_id": "J016",
+        "start": 183,
+        "end": 197
+      },
+      {
+        "job_id": "J029",
+        "start": 199,
+        "end": 213
+      },
+      {
+        "job_id": "J019",
+        "start": 215,
+        "end": 231
+      },
+      {
+        "job_id": "J004",
+        "start": 233,
+        "end": 251
+      },
+      {
+        "job_id": "J025",
+        "start": 253,
+        "end": 272
+      },
+      {
+        "job_id": "J011",
+        "start": 274,
+        "end": 293
+      },
+      {
+        "job_id": "J012",
+        "start": 295,
+        "end": 315
+      },
+      {
+        "job_id": "J018",
+        "start": 317,
+        "end": 338
+      },
+      {
+        "job_id": "J026",
+        "start": 340,
+        "end": 363
+      },
+      {
+        "job_id": "J028",
+        "start": 365,
+        "end": 389
+      },
+      {
+        "job_id": "J002",
+        "start": 391,
+        "end": 415
+      },
+      {
+        "job_id": "J003",
+        "start": 417,
+        "end": 442
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-06",
+    "policy": "fcfs",
+    "slots": [
+      {
+        "job_id": "J003",
+        "start": 4,
+        "end": 6
+      },
+      {
+        "job_id": "J014",
+        "start": 12,
+        "end": 20
+      },
+      {
+        "job_id": "J025",
+        "start": 22,
+        "end": 30
+      },
+      {
+        "job_id": "J028",
+        "start": 32,
+        "end": 35
+      },
+      {
+        "job_id": "J004",
+        "start": 37,
+        "end": 60
+      },
+      {
+        "job_id": "J017",
+        "start": 62,
+        "end": 85
+      },
+      {
+        "job_id": "J009",
+        "start": 87,
+        "end": 104
+      },
+      {
+        "job_id": "J021",
+        "start": 106,
+        "end": 110
+      },
+      {
+        "job_id": "J022",
+        "start": 112,
+        "end": 127
+      },
+      {
+        "job_id": "J007",
+        "start": 129,
+        "end": 141
+      },
+      {
+        "job_id": "J024",
+        "start": 143,
+        "end": 167
+      },
+      {
+        "job_id": "J002",
+        "start": 169,
+        "end": 179
+      },
+      {
+        "job_id": "J013",
+        "start": 181,
+        "end": 204
+      },
+      {
+        "job_id": "J015",
+        "start": 206,
+        "end": 225
+      },
+      {
+        "job_id": "J005",
+        "start": 227,
+        "end": 244
+      },
+      {
+        "job_id": "J029",
+        "start": 246,
+        "end": 254
+      },
+      {
+        "job_id": "J019",
+        "start": 256,
+        "end": 260
+      },
+      {
+        "job_id": "J016",
+        "start": 262,
+        "end": 287
+      },
+      {
+        "job_id": "J026",
+        "start": 289,
+        "end": 311
+      },
+      {
+        "job_id": "J011",
+        "start": 313,
+        "end": 328
+      },
+      {
+        "job_id": "J006",
+        "start": 330,
+        "end": 355
+      },
+      {
+        "job_id": "J008",
+        "start": 357,
+        "end": 359
+      },
+      {
+        "job_id": "J000",
+        "start": 361,
+        "end": 381
+      },
+      {
+        "job_id": "J027",
+        "start": 383,
+        "end": 394
+      },
+      {
+        "job_id": "J010",
+        "start": 396,
+        "end": 404
+      },
+      {
+        "job_id": "J018",
+        "start": 406,
+        "end": 427
+      },
+      {
+        "job_id": "J023",
+        "start": 429,
+        "end": 439
+      },
+      {
+        "job_id": "J001",
+        "start": 441,
+        "end": 445
+      },
+      {
+        "job_id": "J020",
+        "start": 447,
+        "end": 462
+      },
+      {
+        "job_id": "J012",
+        "start": 464,
+        "end": 483
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-06",
+    "policy": "spt",
+    "slots": [
+      {
+        "job_id": "J003",
+        "start": 4,
+        "end": 6
+      },
+      {
+        "job_id": "J028",
+        "start": 12,
+        "end": 15
+      },
+      {
+        "job_id": "J014",
+        "start": 17,
+        "end": 25
+      },
+      {
+        "job_id": "J025",
+        "start": 27,
+        "end": 35
+      },
+      {
+        "job_id": "J009",
+        "start": 37,
+        "end": 54
+      },
+      {
+        "job_id": "J021",
+        "start": 56,
+        "end": 60
+      },
+      {
+        "job_id": "J002",
+        "start": 62,
+        "end": 72
+      },
+      {
+        "job_id": "J007",
+        "start": 74,
+        "end": 86
+      },
+      {
+        "job_id": "J019",
+        "start": 88,
+        "end": 92
+      },
+      {
+        "job_id": "J029",
+        "start": 94,
+        "end": 102
+      },
+      {
+        "job_id": "J008",
+        "start": 104,
+        "end": 106
+      },
+      {
+        "job_id": "J001",
+        "start": 108,
+        "end": 112
+      },
+      {
+        "job_id": "J010",
+        "start": 114,
+        "end": 122
+      },
+      {
+        "job_id": "J023",
+        "start": 124,
+        "end": 134
+      },
+      {
+        "job_id": "J027",
+        "start": 136,
+        "end": 147
+      },
+      {
+        "job_id": "J022",
+        "start": 149,
+        "end": 164
+      },
+      {
+        "job_id": "J011",
+        "start": 166,
+        "end": 181
+      },
+      {
+        "job_id": "J020",
+        "start": 183,
+        "end": 198
+      },
+      {
+        "job_id": "J005",
+        "start": 200,
+        "end": 217
+      },
+      {
+        "job_id": "J015",
+        "start": 219,
+        "end": 238
+      },
+      {
+        "job_id": "J012",
+        "start": 240,
+        "end": 259
+      },
+      {
+        "job_id": "J000",
+        "start": 261,
+        "end": 281
+      },
+      {
+        "job_id": "J018",
+        "start": 283,
+        "end": 304
+      },
+      {
+        "job_id": "J026",
+        "start": 306,
+        "end": 328
+      },
+      {
+        "job_id": "J004",
+        "start": 330,
+        "end": 353
+      },
+      {
+        "job_id": "J017",
+        "start": 355,
+        "end": 378
+      },
+      {
+        "job_id": "J013",
+        "start": 380,
+        "end": 403
+      },
+      {
+        "job_id": "J024",
+        "start": 405,
+        "end": 429
+      },
+      {
+        "job_id": "J016",
+        "start": 431,
+        "end": 456
+      },
+      {
+        "job_id": "J006",
+        "start": 458,
+        "end": 483
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-07",
+    "policy": "fcfs",
+    "slots": [
+      {
+        "job_id": "J002",
+        "start": 6,
+        "end": 10
+      },
+      {
+        "job_id": "J012",
+        "start": 12,
+        "end": 32
+      },
+      {
+        "job_id": "J008",
+        "start": 34,
+        "end": 49
+      },
+      {
+        "job_id": "J004",
+        "start": 51,
+        "end": 64
+      },
+      {
+        "job_id": "J013",
+        "start": 66,
+        "end": 75
+      },
+      {
+        "job_id": "J022",
+        "start": 77,
+        "end": 97
+      },
+      {
+        "job_id": "J021",
+        "start": 99,
+        "end": 118
+      },
+      {
+        "job_id": "J025",
+        "start": 120,
+        "end": 125
+      },
+      {
+        "job_id": "J007",
+        "start": 127,
+        "end": 130
+      },
+      {
+        "job_id": "J018",
+        "start": 132,
+        "end": 135
+      },
+      {
+        "job_id": "J010",
+        "start": 137,
+        "end": 141
+      },
+      {
+        "job_id": "J020",
+        "start": 143,
+        "end": 158
+      },
+      {
+        "job_id": "J023",
+        "start": 160,
+        "end": 179
+      },
+      {
+        "job_id": "J000",
+        "start": 181,
+        "end": 187
+      },
+      {
+        "job_id": "J028",
+        "start": 189,
+        "end": 194
+      },
+      {
+        "job_id": "J001",
+        "start": 196,
+        "end": 218
+      },
+      {
+        "job_id": "J017",
+        "start": 220,
+        "end": 223
+      },
+      {
+        "job_id": "J009",
+        "start": 225,
+        "end": 229
+      },
+      {
+        "job_id": "J011",
+        "start": 231,
+        "end": 246
+      },
+      {
+        "job_id": "J029",
+        "start": 248,
+        "end": 272
+      },
+      {
+        "job_id": "J019",
+        "start": 274,
+        "end": 280
+      },
+      {
+        "job_id": "J016",
+        "start": 282,
+        "end": 302
+      },
+      {
+        "job_id": "J005",
+        "start": 304,
+        "end": 307
+      },
+      {
+        "job_id": "J015",
+        "start": 309,
+        "end": 312
+      },
+      {
+        "job_id": "J026",
+        "start": 314,
+        "end": 334
+      },
+      {
+        "job_id": "J014",
+        "start": 336,
+        "end": 358
+      },
+      {
+        "job_id": "J027",
+        "start": 360,
+        "end": 368
+      },
+      {
+        "job_id": "J024",
+        "start": 370,
+        "end": 393
+      },
+      {
+        "job_id": "J003",
+        "start": 395,
+        "end": 414
+      },
+      {
+        "job_id": "J006",
+        "start": 416,
+        "end": 434
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-07",
+    "policy": "spt",
+    "slots": [
+      {
+        "job_id": "J002",
+        "start": 6,
+        "end": 10
+      },
+      {
+        "job_id": "J004",
+        "start": 12,
+        "end": 25
+      },
+      {
+        "job_id": "J007",
+        "start": 27,
+        "end": 30
+      },
+      {
+        "job_id": "J018",
+        "start": 32,
+        "end": 35
+      },
+      {
+        "job_id": "J010",
+        "start": 37,
+        "end": 41
+      },
+      {
+        "job_id": "J025",
+        "start": 43,
+        "end": 48
+      },
+      {
+        "job_id": "J017",
+        "start": 50,
+        "end": 53
+      },
+      {
+        "job_id": "J009",
+        "start": 55,
+        "end": 59
+      },
+      {
+        "job_id": "J028",
+        "start": 61,
+        "end": 66
+      },
+      {
+        "job_id": "J000",
+        "start": 68,
+        "end": 74
+      },
+      {
+        "job_id": "J005",
+        "start": 76,
+        "end": 79
+      },
+      {
+        "job_id": "J015",
+        "start": 81,
+        "end": 84
+      },
+      {
+        "job_id": "J019",
+        "start": 86,
+        "end": 92
+      },
+      {
+        "job_id": "J027",
+        "start": 94,
+        "end": 102
+      },
+      {
+        "job_id": "J013",
+        "start": 104,
+        "end": 113
+      },
+      {
+        "job_id": "J008",
+        "start": 115,
+        "end": 130
+      },
+      {
+        "job_id": "J020",
+        "start": 132,
+        "end": 147
+      },
+      {
+        "job_id": "J011",
+        "start": 149,
+        "end": 164
+      },
+      {
+        "job_id": "J006",
+        "start": 166,
+        "end": 184
+      },
+      {
+        "job_id": "J021",
+        "start": 186,
+        "end": 205
+      },
+      {
+        "job_id": "J023",
+        "start": 207,
+        "end": 226
+      },
+      {
+        "job_id": "J003",
+        "start": 228,
+        "end": 247
+      },
+      {
+        "job_id": "J012",
+        "start": 249,
+        "end": 269
+      },
+      {
+        "job_id": "J022",
+        "start": 271,
+        "end": 291
+      },
+      {
+        "job_id": "J016",
+        "start": 293,
+        "end": 313
+      },
+      {
+        "job_id": "J026",
+        "start": 315,
+        "end": 335
+      },
+      {
+        "job_id": "J001",
+        "start": 337,
+        "end": 359
+      },
+      {
+        "job_id": "J014",
+        "start": 361,
+        "end": 383
+      },
+      {
+        "job_id": "J024",
+        "start": 385,
+        "end": 408
+      },
+      {
+        "job_id": "J029",
+        "start": 410,
+        "end": 434
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-08",
+    "policy": "fcfs",
+    "slots": [
+      {
+        "job_id": "J003",
+        "start": 5,
+        "end": 9
+      },
+      {
+        "job_id": "J023",
+        "start": 11,
+        "end": 23
+      },
+      {
+        "job_id": "J012",
+        "start": 25,
+        "end": 42
+      },
+      {
+        "job_id": "J025",
+        "start": 44,
+        "end": 61
+      },
+      {
+        "job_id": "J019",
+        "start": 63,
+        "end": 67
+      },
+      {
+        "job_id": "J022",
+        "start": 69,
+        "end": 92
+      },
+      {
+        "job_id": "J004",
+        "start": 94,
+        "end": 103
+      },
+      {
+        "job_id": "J002",
+        "start": 105,
+        "end": 129
+      },
+      {
+        "job_id": "J011",
+        "start": 131,
+        "end": 145
+      },
+      {
+        "job_id": "J006",
+        "start": 147,
+        "end": 161
+      },
+      {
+        "job_id": "J000",
+        "start": 163,
+        "end": 176
+      },
+      {
+        "job_id": "J013",
+        "start": 178,
+        "end": 180
+      },
+      {
+        "job_id": "J024",
+        "start": 182,
+        "end": 206
+      },
+      {
+        "job_id": "J001",
+        "start": 208,
+        "end": 214
+      },
+      {
+        "job_id": "J020",
+        "start": 216,
+        "end": 237
+      },
+      {
+        "job_id": "J008",
+        "start": 239,
+        "end": 256
+      },
+      {
+        "job_id": "J009",
+        "start": 258,
+        "end": 272
+      },
+      {
+        "job_id": "J016",
+        "start": 274,
+        "end": 288
+      },
+      {
+        "job_id": "J010",
+        "start": 290,
+        "end": 310
+      },
+      {
+        "job_id": "J015",
+        "start": 312,
+        "end": 327
+      },
+      {
+        "job_id": "J027",
+        "start": 329,
+        "end": 337
+      },
+      {
+        "job_id": "J028",
+        "start": 339,
+        "end": 345
+      },
+      {
+        "job_id": "J029",
+        "start": 347,
+        "end": 351
+      },
+      {
+        "job_id": "J007",
+        "start": 353,
+        "end": 355
+      },
+      {
+        "job_id": "J018",
+        "start": 357,
+        "end": 367
+      },
+      {
+        "job_id": "J014",
+        "start": 369,
+        "end": 379
+      },
+      {
+        "job_id": "J017",
+        "start": 381,
+        "end": 386
+      },
+      {
+        "job_id": "J005",
+        "start": 388,
+        "end": 406
+      },
+      {
+        "job_id": "J021",
+        "start": 408,
+        "end": 422
+      },
+      {
+        "job_id": "J026",
+        "start": 424,
+        "end": 446
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-08",
+    "policy": "spt",
+    "slots": [
+      {
+        "job_id": "J003",
+        "start": 5,
+        "end": 9
+      },
+      {
+        "job_id": "J023",
+        "start": 11,
+        "end": 23
+      },
+      {
+        "job_id": "J019",
+        "start": 25,
+        "end": 29
+      },
+      {
+        "job_id": "J013",
+        "start": 31,
+        "end": 33
+      },
+      {
+        "job_id": "J004",
+        "start": 35,
+        "end": 44
+      },
+      {
+        "job_id": "J000",
+        "start": 46,
+        "end": 59
+      },
+      {
+        "job_id": "J001",
+        "start": 61,
+        "end": 67
+      },
+      {
+        "job_id": "J027",
+        "start": 69,
+        "end": 77
+      },
+      {
+        "job_id": "J029",
+        "start": 79,
+        "end": 83
+      },
+      {
+        "job_id": "J007",
+        "start": 85,
+        "end": 87
+      },
+      {
+        "job_id": "J028",
+        "start": 89,
+        "end": 95
+      },
+      {
+        "job_id": "J017",
+        "start": 97,
+        "end": 102
+      },
+      {
+        "job_id": "J018",
+        "start": 104,
+        "end": 114
+      },
+      {
+        "job_id": "J014",
+        "start": 116,
+        "end": 126
+      },
+      {
+        "job_id": "J011",
+        "start": 128,
+        "end": 142
+      },
+      {
+        "job_id": "J006",
+        "start": 144,
+        "end": 158
+      },
+      {
+        "job_id": "J009",
+        "start": 160,
+        "end": 174
+      },
+      {
+        "job_id": "J016",
+        "start": 176,
+        "end": 190
+      },
+      {
+        "job_id": "J021",
+        "start": 192,
+        "end": 206
+      },
+      {
+        "job_id": "J015",
+        "start": 208,
+        "end": 223
+      },
+      {
+        "job_id": "J012",
+        "start": 225,
+        "end": 242
+      },
+      {
+        "job_id": "J025",
+        "start": 244,
+        "end": 261
+      },
+      {
+        "job_id": "J008",
+        "start": 263,
+        "end": 280
+      },
+      {
+        "job_id": "J005",
+        "start": 282,
+        "end": 300
+      },
+      {
+        "job_id": "J010",
+        "start": 302,
+        "end": 322
+      },
+      {
+        "job_id": "J020",
+        "start": 324,
+        "end": 345
+      },
+      {
+        "job_id": "J026",
+        "start": 347,
+        "end": 369
+      },
+      {
+        "job_id": "J022",
+        "start": 371,
+        "end": 394
+      },
+      {
+        "job_id": "J002",
+        "start": 396,
+        "end": 420
+      },
+      {
+        "job_id": "J024",
+        "start": 422,
+        "end": 446
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-09",
+    "policy": "fcfs",
+    "slots": [
+      {
+        "job_id": "J004",
+        "start": 0,
+        "end": 12
+      },
+      {
+        "job_id": "J015",
+        "start": 14,
+        "end": 19
+      },
+      {
+        "job_id": "J018",
+        "start": 21,
+        "end": 45
+      },
+      {
+        "job_id": "J007",
+        "start": 47,
+        "end": 59
+      },
+      {
+        "job_id": "J016",
+        "start": 61,
+        "end": 79
+      },
+      {
+        "job_id": "J002",
+        "start": 81,
+        "end": 88
+      },
+      {
+        "job_id": "J011",
+        "start": 90,
+        "end": 114
+      },
+      {
+        "job_id": "J014",
+        "start": 116,
+        "end": 125
+      },
+      {
+        "job_id": "J022",
+        "start": 127,
+        "end": 150
+      },
+      {
+        "job_id": "J023",
+        "start": 152,
+        "end": 177
+      },
+      {
+        "job_id": "J029",
+        "start": 179,
+        "end": 182
+      },
+      {
+        "job_id": "J001",
+        "start": 184,
+        "end": 194
+      },
+      {
+        "job_id": "J019",
+        "start": 196,
+        "end": 221
+      },
+      {
+        "job_id": "J028",
+        "start": 223,
+        "end": 233
+      },
+      {
+        "job_id": "J013",
+        "start": 235,
+        "end": 242
+      },
+      {
+        "job_id": "J012",
+        "start": 244,
+        "end": 269
+      },
+      {
+        "job_id": "J000",
+        "start": 271,
+        "end": 292
+      },
+      {
+        "job_id": "J005",
+        "start": 294,
+        "end": 310
+      },
+      {
+        "job_id": "J008",
+        "start": 312,
+        "end": 333
+      },
+      {
+        "job_id": "J009",
+        "start": 335,
+        "end": 338
+      },
+      {
+        "job_id": "J010",
+        "start": 340,
+        "end": 354
+      },
+      {
+        "job_id": "J026",
+        "start": 356,
+        "end": 366
+      },
+      {
+        "job_id": "J024",
+        "start": 368,
+        "end": 383
+      },
+      {
+        "job_id": "J003",
+        "start": 385,
+        "end": 408
+      },
+      {
+        "job_id": "J017",
+        "start": 410,
+        "end": 430
+      },
+      {
+        "job_id": "J020",
+        "start": 432,
+        "end": 437
+      },
+      {
+        "job_id": "J025",
+        "start": 439,
+        "end": 443
+      },
+      {
+        "job_id": "J006",
+        "start": 445,
+        "end": 466
+      },
+      {
+        "job_id": "J027",
+        "start": 468,
+        "end": 476
+      },
+      {
+        "job_id": "J021",
+        "start": 478,
+        "end": 489
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-09",
+    "policy": "spt",
+    "slots": [
+      {
+        "job_id": "J004",
+        "start": 0,
+        "end": 12
+      },
+      {
+        "job_id": "J015",
+        "start": 14,
+        "end": 19
+      },
+      {
+        "job_id": "J002",
+        "start": 21,
+        "end": 28
+      },
+      {
+        "job_id": "J014",
+        "start": 30,
+        "end": 39
+      },
+      {
+        "job_id": "J007",
+        "start": 41,
+        "end": 53
+      },
+      {
+        "job_id": "J029",
+        "start": 55,
+        "end": 58
+      },
+      {
+        "job_id": "J013",
+        "start": 60,
+        "end": 67
+      },
+      {
+        "job_id": "J001",
+        "start": 69,
+        "end": 79
+      },
+      {
+        "job_id": "J028",
+        "start": 81,
+        "end": 91
+      },
+      {
+        "job_id": "J009",
+        "start": 93,
+        "end": 96
+      },
+      {
+        "job_id": "J026",
+        "start": 98,
+        "end": 108
+      },
+      {
+        "job_id": "J010",
+        "start": 110,
+        "end": 124
+      },
+      {
+        "job_id": "J025",
+        "start": 126,
+        "end": 130
+      },
+      {
+        "job_id": "J020",
+        "start": 132,
+        "end": 137
+      },
+      {
+        "job_id": "J027",
+        "start": 139,
+        "end": 147
+      },
+      {
+        "job_id": "J021",
+        "start": 149,
+        "end": 160
+      },
+      {
+        "job_id": "J024",
+        "start": 162,
+        "end": 177
+      },
+      {
+        "job_id": "J005",
+        "start": 179,
+        "end": 195
+      },
+      {
+        "job_id": "J016",
+        "start": 197,
+        "end": 215
+      },
+      {
+        "job_id": "J017",
+        "start": 217,
+        "end": 237
+      },
+      {
+        "job_id": "J000",
+        "start": 239,
+        "end": 260
+      },
+      {
+        "job_id": "J008",
+        "start": 262,
+        "end": 283
+      },
+      {
+        "job_id": "J006",
+        "start": 285,
+        "end": 306
+      },
+      {
+        "job_id": "J022",
+        "start": 308,
+        "end": 331
+      },
+      {
+        "job_id": "J003",
+        "start": 333,
+        "end": 356
+      },
+      {
+        "job_id": "J018",
+        "start": 358,
+        "end": 382
+      },
+      {
+        "job_id": "J011",
+        "start": 384,
+        "end": 408
+      },
+      {
+        "job_id": "J023",
+        "start": 410,
+        "end": 435
+      },
+      {
+        "job_id": "J019",
+        "start": 437,
+        "end": 462
+      },
+      {
+        "job_id": "J012",
+        "start": 464,
+        "end": 489
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-10",
+    "policy": "fcfs",
+    "slots": [
+      {
+        "job_id": "J007",
+        "start": 4,
+        "end": 22
+      },
+      {
+        "job_id": "J011",
+        "start": 24,
+        "end": 39
+      },
+      {
+        "job_id": "J009",
+        "start": 41,
+        "end": 50
+      },
+      {
+        "job_id": "J017",
+        "start": 52,
+        "end": 75
+      },
+      {
+        "job_id": "J025",
+        "start": 77,
+        "end": 88
+      },
+      {
+        "job_id": "J003",
+        "start": 90,
+        "end": 106
+      },
+      {
+        "job_id": "J024",
+        "start": 108,
+        "end": 114
+      },
+      {
+        "job_id": "J016",
+        "start": 116,
+        "end": 132
+      },
+      {
+        "job_id": "J015",
+        "start": 134,
+        "end": 157
+      },
+      {
+        "job_id": "J018",
+        "start": 159,
+        "end": 182
+      },
+      {
+        "job_id": "J028",
+        "start": 184,
+        "end": 207
+      },
+      {
+        "job_id": "J019",
+        "start": 209,
+        "end": 215
+      },
+      {
+        "job_id": "J014",
+        "start": 217,
+        "end": 232
+      },
+      {
+        "job_id": "J022",
+        "start": 234,
+        "end": 237
+      },
+      {
+        "job_id": "J001",
+        "start": 239,
+        "end": 256
+      },
+      {
+        "job_id": "J021",
+        "start": 258,
+        "end": 279
+      },
+      {
+        "job_id": "J020",
+        "start": 281,
+        "end": 290
+      },
+      {
+        "job_id": "J008",
+        "start": 292,
+        "end": 304
+      },
+      {
+        "job_id": "J026",
+        "start": 306,
+        "end": 319
+      },
+      {
+        "job_id": "J029",
+        "start": 321,
+        "end": 337
+      },
+      {
+        "job_id": "J000",
+        "start": 339,
+        "end": 342
+      },
+      {
+        "job_id": "J002",
+        "start": 344,
+        "end": 346
+      },
+      {
+        "job_id": "J023",
+        "start": 348,
+        "end": 350
+      },
+      {
+        "job_id": "J013",
+        "start": 352,
+        "end": 365
+      },
+      {
+        "job_id": "J006",
+        "start": 367,
+        "end": 374
+      },
+      {
+        "job_id": "J010",
+        "start": 376,
+        "end": 389
+      },
+      {
+        "job_id": "J027",
+        "start": 391,
+        "end": 400
+      },
+      {
+        "job_id": "J004",
+        "start": 402,
+        "end": 419
+      },
+      {
+        "job_id": "J005",
+        "start": 421,
+        "end": 431
+      },
+      {
+        "job_id": "J012",
+        "start": 433,
+        "end": 439
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-10",
+    "policy": "spt",
+    "slots": [
+      {
+        "job_id": "J007",
+        "start": 4,
+        "end": 22
+      },
+      {
+        "job_id": "J009",
+        "start": 24,
+        "end": 33
+      },
+      {
+        "job_id": "J024",
+        "start": 35,
+        "end": 41
+      },
+      {
+        "job_id": "J025",
+        "start": 43,
+        "end": 54
+      },
+      {
+        "job_id": "J022",
+        "start": 56,
+        "end": 59
+      },
+      {
+        "job_id": "J019",
+        "start": 61,
+        "end": 67
+      },
+      {
+        "job_id": "J020",
+        "start": 69,
+        "end": 78
+      },
+      {
+        "job_id": "J002",
+        "start": 80,
+        "end": 82
+      },
+      {
+        "job_id": "J023",
+        "start": 84,
+        "end": 86
+      },
+      {
+        "job_id": "J000",
+        "start": 88,
+        "end": 91
+      },
+      {
+        "job_id": "J006",
+        "start": 93,
+        "end": 100
+      },
+      {
+        "job_id": "J027",
+        "start": 102,
+        "end": 111
+      },
+      {
+        "job_id": "J012",
+        "start": 113,
+        "end": 119
+      },
+      {
+        "job_id": "J005",
+        "start": 121,
+        "end": 131
+      },
+      {
+        "job_id": "J008",
+        "start": 133,
+        "end": 145
+      },
+      {
+        "job_id": "J026",
+        "start": 147,
+        "end": 160
+      },
+      {
+        "job_id": "J013",
+        "start": 162,
+        "end": 175
+      },
+      {
+        "job_id": "J010",
+        "start": 177,
+        "end": 190
+      },
+      {
+        "job_id": "J011",
+        "start": 192,
+        "end": 207
+      },
+      {
+        "job_id": "J014",
+        "start": 209,
+        "end": 224
+      },
+      {
+        "job_id": "J003",
+        "start": 226,
+        "end": 242
+      },
+      {
+        "job_id": "J016",
+        "start": 244,
+        "end": 260
+      },
+      {
+        "job_id": "J029",
+        "start": 262,
+        "end": 278
+      },
+      {
+        "job_id": "J001",
+        "start": 280,
+        "end": 297
+      },
+      {
+        "job_id": "J004",
+        "start": 299,
+        "end": 316
+      },
+      {
+        "job_id": "J021",
+        "start": 318,
+        "end": 339
+      },
+      {
+        "job_id": "J017",
+        "start": 341,
+        "end": 364
+      },
+      {
+        "job_id": "J015",
+        "start": 366,
+        "end": 389
+      },
+      {
+        "job_id": "J018",
+        "start": 391,
+        "end": 414
+      },
+      {
+        "job_id": "J028",
+        "start": 416,
+        "end": 439
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-11",
+    "policy": "fcfs",
+    "slots": [
+      {
+        "job_id": "J020",
+        "start": 4,
+        "end": 12
+      },
+      {
+        "job_id": "J019",
+        "start": 14,
+        "end": 17
+      },
+      {
+        "job_id": "J010",
+        "start": 19,
+        "end": 38
+      },
+      {
+        "job_id": "J008",
+        "start": 40,
+        "end": 56
+      },
+      {
+        "job_id": "J004",
+        "start": 58,
+        "end": 65
+      },
+      {
+        "job_id": "J009",
+        "start": 67,
+        "end": 73
+      },
+      {
+        "job_id": "J024",
+        "start": 75,
+        "end": 91
+      },
+      {
+        "job_id": "J000",
+        "start": 93,
+        "end": 112
+      },
+      {
+        "job_id": "J002",
+        "start": 114,
+        "end": 132
+      },
+      {
+        "job_id": "J014",
+        "start": 134,
+        "end": 156
+      },
+      {
+        "job_id": "J006",
+        "start": 158,
+        "end": 180
+      },
+      {
+        "job_id": "J028",
+        "start": 182,
+        "end": 184
+      },
+      {
+        "job_id": "J026",
+        "start": 186,
+        "end": 195
+      },
+      {
+        "job_id": "J025",
+        "start": 197,
+        "end": 205
+      },
+      {
+        "job_id": "J013",
+        "start": 207,
+        "end": 221
+      },
+      {
+        "job_id": "J022",
+        "start": 223,
+        "end": 225
+      },
+      {
+        "job_id": "J007",
+        "start": 227,
+        "end": 234
+      },
+      {
+        "job_id": "J017",
+        "start": 236,
+        "end": 238
+      },
+      {
+        "job_id": "J012",
+        "start": 240,
+        "end": 243
+      },
+      {
+        "job_id": "J027",
+        "start": 245,
+        "end": 256
+      },
+      {
+        "job_id": "J016",
+        "start": 258,
+        "end": 265
+      },
+      {
+        "job_id": "J029",
+        "start": 267,
+        "end": 271
+      },
+      {
+        "job_id": "J015",
+        "start": 273,
+        "end": 294
+      },
+      {
+        "job_id": "J023",
+        "start": 296,
+        "end": 312
+      },
+      {
+        "job_id": "J005",
+        "start": 314,
+        "end": 332
+      },
+      {
+        "job_id": "J011",
+        "start": 334,
+        "end": 358
+      },
+      {
+        "job_id": "J018",
+        "start": 360,
+        "end": 378
+      },
+      {
+        "job_id": "J001",
+        "start": 380,
+        "end": 396
+      },
+      {
+        "job_id": "J003",
+        "start": 398,
+        "end": 418
+      },
+      {
+        "job_id": "J021",
+        "start": 420,
+        "end": 429
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-11",
+    "policy": "spt",
+    "slots": [
+      {
+        "job_id": "J020",
+        "start": 4,
+        "end": 12
+      },
+      {
+        "job_id": "J019",
+        "start": 14,
+        "end": 17
+      },
+      {
+        "job_id": "J008",
+        "start": 19,
+        "end": 35
+      },
+      {
+        "job_id": "J004",
+        "start": 37,
+        "end": 44
+      },
+      {
+        "job_id": "J009",
+        "start": 46,
+        "end": 52
+      },
+      {
+        "job_id": "J024",
+        "start": 54,
+        "end": 70
+      },
+      {
+        "job_id": "J028",
+        "start": 72,
+        "end": 74
+      },
+      {
+        "job_id": "J022",
+        "start": 76,
+        "end": 78
+      },
+      {
+        "job_id": "J017",
+        "start": 80,
+        "end": 82
+      },
+      {
+        "job_id": "J012",
+        "start": 84,
+        "end": 87
+      },
+      {
+        "job_id": "J029",
+        "start": 89,
+        "end": 93
+      },
+      {
+        "job_id": "J007",
+        "start": 95,
+        "end": 102
+      },
+      {
+        "job_id": "J016",
+        "start": 104,
+        "end": 111
+      },
+      {
+        "job_id": "J025",
+        "start": 113,
+        "end": 121
+      },
+      {
+        "job_id": "J026",
+        "start": 123,
+        "end": 132
+      },
+      {
+        "job_id": "J021",
+        "start": 134,
+        "end": 143
+      },
+      {
+        "job_id": "J027",
+        "start": 145,
+        "end": 156
+      },
+      {
+        "job_id": "J013",
+        "start": 158,
+        "end": 172
+      },
+      {
+        "job_id": "J023",
+        "start": 174,
+        "end": 190
+      },
+      {
+        "job_id": "J001",
+        "start": 192,
+        "end": 208
+      },
+      {
+        "job_id": "J002",
+        "start": 210,
+        "end": 228
+      },
+      {
+        "job_id": "J005",
+        "start": 230,
+        "end": 248
+      },
+      {
+        "job_id": "J018",
+        "start": 250,
+        "end": 268
+      },
+      {
+        "job_id": "J010",
+        "start": 270,
+        "end": 289
+      },
+      {
+        "job_id": "J000",
+        "start": 291,
+        "end": 310
+      },
+      {
+        "job_id": "J003",
+        "start": 312,
+        "end": 332
+      },
+      {
+        "job_id": "J015",
+        "start": 334,
+        "end": 355
+      },
+      {
+        "job_id": "J014",
+        "start": 357,
+        "end": 379
+      },
+      {
+        "job_id": "J006",
+        "start": 381,
+        "end": 403
+      },
+      {
+        "job_id": "J011",
+        "start": 405,
+        "end": 429
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-12",
+    "policy": "fcfs",
+    "slots": [
+      {
+        "job_id": "J009",
+        "start": 0,
+        "end": 23
+      },
+      {
+        "job_id": "J004",
+        "start": 25,
+        "end": 38
+      },
+      {
+        "job_id": "J020",
+        "start": 40,
+        "end": 43
+      },
+      {
+        "job_id": "J014",
+        "start": 45,
+        "end": 65
+      },
+      {
+        "job_id": "J016",
+        "start": 67,
+        "end": 85
+      },
+      {
+        "job_id": "J023",
+        "start": 87,
+        "end": 102
+      },
+      {
+        "job_id": "J026",
+        "start": 104,
+        "end": 123
+      },
+      {
+        "job_id": "J003",
+        "start": 125,
+        "end": 139
+      },
+      {
+        "job_id": "J012",
+        "start": 141,
+        "end": 153
+      },
+      {
+        "job_id": "J008",
+        "start": 155,
+        "end": 174
+      },
+      {
+        "job_id": "J027",
+        "start": 176,
+        "end": 197
+      },
+      {
+        "job_id": "J011",
+        "start": 199,
+        "end": 212
+      },
+      {
+        "job_id": "J024",
+        "start": 214,
+        "end": 219
+      },
+      {
+        "job_id": "J000",
+        "start": 221,
+        "end": 231
+      },
+      {
+        "job_id": "J005",
+        "start": 233,
+        "end": 243
+      },
+      {
+        "job_id": "J022",
+        "start": 245,
+        "end": 254
+      },
+      {
+        "job_id": "J028",
+        "start": 256,
+        "end": 263
+      },
+      {
+        "job_id": "J010",
+        "start": 265,
+        "end": 271
+      },
+      {
+        "job_id": "J006",
+        "start": 273,
+        "end": 289
+      },
+      {
+        "job_id": "J001",
+        "start": 291,
+        "end": 309
+      },
+      {
+        "job_id": "J025",
+        "start": 311,
+        "end": 326
+      },
+      {
+        "job_id": "J002",
+        "start": 328,
+        "end": 341
+      },
+      {
+        "job_id": "J017",
+        "start": 343,
+        "end": 355
+      },
+      {
+        "job_id": "J018",
+        "start": 357,
+        "end": 371
+      },
+      {
+        "job_id": "J007",
+        "start": 373,
+        "end": 394
+      },
+      {
+        "job_id": "J029",
+        "start": 396,
+        "end": 399
+      },
+      {
+        "job_id": "J019",
+        "start": 401,
+        "end": 405
+      },
+      {
+        "job_id": "J015",
+        "start": 407,
+        "end": 415
+      },
+      {
+        "job_id": "J021",
+        "start": 417,
+        "end": 440
+      },
+      {
+        "job_id": "J013",
+        "start": 442,
+        "end": 450
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-12",
+    "policy": "spt",
+    "slots": [
+      {
+        "job_id": "J009",
+        "start": 0,
+        "end": 23
+      },
+      {
+        "job_id": "J020",
+        "start": 25,
+        "end": 28
+      },
+      {
+        "job_id": "J012",
+        "start": 30,
+        "end": 42
+      },
+      {
+        "job_id": "J004",
+        "start": 44,
+        "end": 57
+      },
+      {
+        "job_id": "J024",
+        "start": 59,
+        "end": 64
+      },
+      {
+        "job_id": "J022",
+        "start": 66,
+        "end": 75
+      },
+      {
+        "job_id": "J028",
+        "start": 77,
+        "end": 84
+      },
+      {
+        "job_id": "J010",
+        "start": 86,
+        "end": 92
+      },
+      {
+        "job_id": "J029",
+        "start": 94,
+        "end": 97
+      },
+      {
+        "job_id": "J000",
+        "start": 99,
+        "end": 109
+      },
+      {
+        "job_id": "J019",
+        "start": 111,
+        "end": 115
+      },
+      {
+        "job_id": "J015",
+        "start": 117,
+        "end": 125
+      },
+      {
+        "job_id": "J013",
+        "start": 127,
+        "end": 135
+      },
+      {
+        "job_id": "J005",
+        "start": 137,
+        "end": 147
+      },
+      {
+        "job_id": "J017",
+        "start": 149,
+        "end": 161
+      },
+      {
+        "job_id": "J011",
+        "start": 163,
+        "end": 176
+      },
+      {
+        "job_id": "J002",
+        "start": 178,
+        "end": 191
+      },
+      {
+        "job_id": "J003",
+        "start": 193,
+        "end": 207
+      },
+      {
+        "job_id": "J018",
+        "start": 209,
+        "end": 223
+      },
+      {
+        "job_id": "J023",
+        "start": 225,
+        "end": 240
+      },
+      {
+        "job_id": "J025",
+        "start": 242,
+        "end": 257
+      },
+      {
+        "job_id": "J006",
+        "start": 259,
+        "end": 275
+      },
+      {
+        "job_id": "J016",
+        "start": 277,
+        "end": 295
+      },
+      {
+        "job_id": "J001",
+        "start": 297,
+        "end": 315
+      },
+      {
+        "job_id": "J026",
+        "start": 317,
+        "end": 336
+      },
+      {
+        "job_id": "J008",
+        "start": 338,
+        "end": 357
+      },
+      {
+        "job_id": "J014",
+        "start": 359,
+        "end": 379
+      },
+      {
+        "job_id": "J027",
+        "start": 381,
+        "end": 402
+      },
+      {
+        "job_id": "J007",
+        "start": 404,
+        "end": 425
+      },
+      {
+        "job_id": "J021",
+        "start": 427,
+        "end": 450
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-13",
+    "policy": "fcfs",
+    "slots": [
+      {
+        "job_id": "J011",
+        "start": 3,
+        "end": 18
+      },
+      {
+        "job_id": "J008",
+        "start": 20,
+        "end": 39
+      },
+      {
+        "job_id": "J015",
+        "start": 41,
+        "end": 51
+      },
+      {
+        "job_id": "J012",
+        "start": 53,
+        "end": 76
+      },
+      {
+        "job_id": "J018",
+        "start": 78,
+        "end": 88
+      },
+      {
+        "job_id": "J007",
+        "start": 90,
+        "end": 96
+      },
+      {
+        "job_id": "J000",
+        "start": 98,
+        "end": 109
+      },
+      {
+        "job_id": "J028",
+        "start": 111,
+        "end": 135
+      },
+      {
+        "job_id": "J014",
+        "start": 137,
+        "end": 143
+      },
+      {
+        "job_id": "J026",
+        "start": 145,
+        "end": 166
+      },
+      {
+        "job_id": "J019",
+        "start": 168,
+        "end": 177
+      },
+      {
+        "job_id": "J029",
+        "start": 179,
+        "end": 198
+      },
+      {
+        "job_id": "J020",
+        "start": 200,
+        "end": 219
+      },
+      {
+        "job_id": "J021",
+        "start": 221,
+        "end": 236
+      },
+      {
+        "job_id": "J013",
+        "start": 238,
+        "end": 240
+      },
+      {
+        "job_id": "J024",
+        "start": 242,
+        "end": 254
+      },
+      {
+        "job_id": "J006",
+        "start": 256,
+        "end": 281
+      },
+      {
+        "job_id": "J003",
+        "start": 283,
+        "end": 292
+      },
+      {
+        "job_id": "J025",
+        "start": 294,
+        "end": 299
+      },
+      {
+        "job_id": "J004",
+        "start": 301,
+        "end": 307
+      },
+      {
+        "job_id": "J022",
+        "start": 309,
+        "end": 322
+      },
+      {
+        "job_id": "J001",
+        "start": 324,
+        "end": 347
+      },
+      {
+        "job_id": "J010",
+        "start": 349,
+        "end": 360
+      },
+      {
+        "job_id": "J017",
+        "start": 362,
+        "end": 377
+      },
+      {
+        "job_id": "J002",
+        "start": 379,
+        "end": 386
+      },
+      {
+        "job_id": "J027",
+        "start": 388,
+        "end": 410
+      },
+      {
+        "job_id": "J016",
+        "start": 412,
+        "end": 428
+      },
+      {
+        "job_id": "J009",
+        "start": 430,
+        "end": 438
+      },
+      {
+        "job_id": "J005",
+        "start": 440,
+        "end": 449
+      },
+      {
+        "job_id": "J023",
+        "start": 451,
+        "end": 466
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-13",
+    "policy": "spt",
+    "slots": [
+      {
+        "job_id": "J011",
+        "start": 3,
+        "end": 18
+      },
+      {
+        "job_id": "J015",
+        "start": 20,
+        "end": 30
+      },
+      {
+        "job_id": "J007",
+        "start": 32,
+        "end": 38
+      },
+      {
+        "job_id": "J014",
+        "start": 40,
+        "end": 46
+      },
+      {
+        "job_id": "J019",
+        "start": 48,
+        "end": 57
+      },
+      {
+        "job_id": "J018",
+        "start": 59,
+        "end": 69
+      },
+      {
+        "job_id": "J000",
+        "start": 71,
+        "end": 82
+      },
+      {
+        "job_id": "J013",
+        "start": 84,
+        "end": 86
+      },
+      {
+        "job_id": "J025",
+        "start": 88,
+        "end": 93
+      },
+      {
+        "job_id": "J004",
+        "start": 95,
+        "end": 101
+      },
+      {
+        "job_id": "J002",
+        "start": 103,
+        "end": 110
+      },
+      {
+        "job_id": "J009",
+        "start": 112,
+        "end": 120
+      },
+      {
+        "job_id": "J003",
+        "start": 122,
+        "end": 131
+      },
+      {
+        "job_id": "J005",
+        "start": 133,
+        "end": 142
+      },
+      {
+        "job_id": "J010",
+        "start": 144,
+        "end": 155
+      },
+      {
+        "job_id": "J024",
+        "start": 157,
+        "end": 169
+      },
+      {
+        "job_id": "J022",
+        "start": 171,
+        "end": 184
+      },
+      {
+        "job_id": "J021",
+        "start": 186,
+        "end": 201
+      },
+      {
+        "job_id": "J017",
+        "start": 203,
+        "end": 218
+      },
+      {
+        "job_id": "J023",
+        "start": 220,
+        "end": 235
+      },
+      {
+        "job_id": "J016",
+        "start": 237,
+        "end": 253
+      },
+      {
+        "job_id": "J008",
+        "start": 255,
+        "end": 274
+      },
+      {
+        "job_id": "J029",
+        "start": 276,
+        "end": 295
+      },
+      {
+        "job_id": "J020",
+        "start": 297,
+        "end": 316
+      },
+      {
+        "job_id": "J026",
+        "start": 318,
+        "end": 339
+      },
+      {
+        "job_id": "J027",
+        "start": 341,
+        "end": 363
+      },
+      {
+        "job_id": "J012",
+        "start": 365,
+        "end": 388
+      },
+      {
+        "job_id": "J001",
+        "start": 390,
+        "end": 413
+      },
+      {
+        "job_id": "J028",
+        "start": 415,
+        "end": 439
+      },
+      {
+        "job_id": "J006",
+        "start": 441,
+        "end": 466
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-14",
+    "policy": "fcfs",
+    "slots": [
+      {
+        "job_id": "J022",
+        "start": 10,
+        "end": 20
+      },
+      {
+        "job_id": "J027",
+        "start": 22,
+        "end": 44
+      },
+      {
+        "job_id": "J000",
+        "start": 46,
+        "end": 67
+      },
+      {
+        "job_id": "J020",
+        "start": 69,
+        "end": 90
+      },
+      {
+        "job_id": "J015",
+        "start": 92,
+        "end": 99
+      },
+      {
+        "job_id": "J018",
+        "start": 101,
+        "end": 103
+      },
+      {
+        "job_id": "J023",
+        "start": 105,
+        "end": 119
+      },
+      {
+        "job_id": "J004",
+        "start": 121,
+        "end": 132
+      },
+      {
+        "job_id": "J010",
+        "start": 134,
+        "end": 143
+      },
+      {
+        "job_id": "J003",
+        "start": 145,
+        "end": 170
+      },
+      {
+        "job_id": "J007",
+        "start": 172,
+        "end": 188
+      },
+      {
+        "job_id": "J021",
+        "start": 190,
+        "end": 192
+      },
+      {
+        "job_id": "J012",
+        "start": 194,
+        "end": 204
+      },
+      {
+        "job_id": "J013",
+        "start": 206,
+        "end": 228
+      },
+      {
+        "job_id": "J009",
+        "start": 230,
+        "end": 235
+      },
+      {
+        "job_id": "J024",
+        "start": 237,
+        "end": 257
+      },
+      {
+        "job_id": "J002",
+        "start": 259,
+        "end": 268
+      },
+      {
+        "job_id": "J016",
+        "start": 270,
+        "end": 293
+      },
+      {
+        "job_id": "J029",
+        "start": 295,
+        "end": 315
+      },
+      {
+        "job_id": "J014",
+        "start": 317,
+        "end": 335
+      },
+      {
+        "job_id": "J019",
+        "start": 337,
+        "end": 341
+      },
+      {
+        "job_id": "J006",
+        "start": 343,
+        "end": 359
+      },
+      {
+        "job_id": "J017",
+        "start": 361,
+        "end": 371
+      },
+      {
+        "job_id": "J008",
+        "start": 373,
+        "end": 387
+      },
+      {
+        "job_id": "J028",
+        "start": 389,
+        "end": 394
+      },
+      {
+        "job_id": "J001",
+        "start": 396,
+        "end": 418
+      },
+      {
+        "job_id": "J005",
+        "start": 420,
+        "end": 424
+      },
+      {
+        "job_id": "J011",
+        "start": 426,
+        "end": 438
+      },
+      {
+        "job_id": "J026",
+        "start": 440,
+        "end": 461
+      },
+      {
+        "job_id": "J025",
+        "start": 463,
+        "end": 479
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-14",
+    "policy": "spt",
+    "slots": [
+      {
+        "job_id": "J022",
+        "start": 10,
+        "end": 20
+      },
+      {
+        "job_id": "J018",
+        "start": 22,
+        "end": 24
+      },
+      {
+        "job_id": "J015",
+        "start": 26,
+        "end": 33
+      },
+      {
+        "job_id": "J010",
+        "start": 35,
+        "end": 44
+      },
+      {
+        "job_id": "J021",
+        "start": 46,
+        "end": 48
+      },
+      {
+        "job_id": "J009",
+        "start": 50,
+        "end": 55
+      },
+      {
+        "job_id": "J012",
+        "start": 57,
+        "end": 67
+      },
+      {
+        "job_id": "J002",
+        "start": 69,
+        "end": 78
+      },
+      {
+        "job_id": "J004",
+        "start": 80,
+        "end": 91
+      },
+      {
+        "job_id": "J019",
+        "start": 93,
+        "end": 97
+      },
+      {
+        "job_id": "J005",
+        "start": 99,
+        "end": 103
+      },
+      {
+        "job_id": "J028",
+        "start": 105,
+        "end": 110
+      },
+      {
+        "job_id": "J017",
+        "start": 112,
+        "end": 122
+      },
+      {
+        "job_id": "J011",
+        "start": 124,
+        "end": 136
+      },
+      {
+        "job_id": "J023",
+        "start": 138,
+        "end": 152
+      },
+      {
+        "job_id": "J008",
+        "start": 154,
+        "end": 168
+      },
+      {
+        "job_id": "J007",
+        "start": 170,
+        "end": 186
+      },
+      {
+        "job_id": "J006",
+        "start": 188,
+        "end": 204
+      },
+      {
+        "job_id": "J025",
+        "start": 206,
+        "end": 222
+      },
+      {
+        "job_id": "J014",
+        "start": 224,
+        "end": 242
+      },
+      {
+        "job_id": "J024",
+        "start": 244,
+        "end": 264
+      },
+      {
+        "job_id": "J029",
+        "start": 266,
+        "end": 286
+      },
+      {
+        "job_id": "J000",
+        "start": 288,
+        "end": 309
+      },
+      {
+        "job_id": "J020",
+        "start": 311,
+        "end": 332
+      },
+      {
+        "job_id": "J026",
+        "start": 334,
+        "end": 355
+      },
+      {
+        "job_id": "J027",
+        "start": 357,
+        "end": 379
+      },
+      {
+        "job_id": "J013",
+        "start": 381,
+        "end": 403
+      },
+      {
+        "job_id": "J001",
+        "start": 405,
+        "end": 427
+      },
+      {
+        "job_id": "J016",
+        "start": 429,
+        "end": 452
+      },
+      {
+        "job_id": "J003",
+        "start": 454,
+        "end": 479
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-15",
+    "policy": "fcfs",
+    "slots": [
+      {
+        "job_id": "J004",
+        "start": 2,
+        "end": 5
+      },
+      {
+        "job_id": "J002",
+        "start": 7,
+        "end": 14
+      },
+      {
+        "job_id": "J008",
+        "start": 16,
+        "end": 28
+      },
+      {
+        "job_id": "J006",
+        "start": 30,
+        "end": 54
+      },
+      {
+        "job_id": "J029",
+        "start": 56,
+        "end": 62
+      },
+      {
+        "job_id": "J000",
+        "start": 64,
+        "end": 66
+      },
+      {
+        "job_id": "J016",
+        "start": 68,
+        "end": 79
+      },
+      {
+        "job_id": "J019",
+        "start": 81,
+        "end": 101
+      },
+      {
+        "job_id": "J025",
+        "start": 103,
+        "end": 127
+      },
+      {
+        "job_id": "J012",
+        "start": 129,
+        "end": 138
+      },
+      {
+        "job_id": "J010",
+        "start": 140,
+        "end": 150
+      },
+      {
+        "job_id": "J007",
+        "start": 152,
+        "end": 161
+      },
+      {
+        "job_id": "J011",
+        "start": 163,
+        "end": 173
+      },
+      {
+        "job_id": "J027",
+        "start": 175,
+        "end": 179
+      },
+      {
+        "job_id": "J024",
+        "start": 181,
+        "end": 201
+      },
+      {
+        "job_id": "J020",
+        "start": 203,
+        "end": 218
+      },
+      {
+        "job_id": "J009",
+        "start": 220,
+        "end": 244
+      },
+      {
+        "job_id": "J022",
+        "start": 246,
+        "end": 266
+      },
+      {
+        "job_id": "J021",
+        "start": 268,
+        "end": 272
+      },
+      {
+        "job_id": "J028",
+        "start": 274,
+        "end": 276
+      },
+      {
+        "job_id": "J018",
+        "start": 278,
+        "end": 293
+      },
+      {
+        "job_id": "J001",
+        "start": 295,
+        "end": 320
+      },
+      {
+        "job_id": "J026",
+        "start": 322,
+        "end": 338
+      },
+      {
+        "job_id": "J015",
+        "start": 340,
+        "end": 352
+      },
+      {
+        "job_id": "J023",
+        "start": 354,
+        "end": 367
+      },
+      {
+        "job_id": "J014",
+        "start": 369,
+        "end": 382
+      },
+      {
+        "job_id": "J005",
+        "start": 384,
+        "end": 407
+      },
+      {
+        "job_id": "J003",
+        "start": 409,
+        "end": 418
+      },
+      {
+        "job_id": "J017",
+        "start": 420,
+        "end": 445
+      },
+      {
+        "job_id": "J013",
+        "start": 447,
+        "end": 455
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-15",
+    "policy": "spt",
+    "slots": [
+      {
+        "job_id": "J004",
+        "start": 2,
+        "end": 5
+      },
+      {
+        "job_id": "J002",
+        "start": 7,
+        "end": 14
+      },
+      {
+        "job_id": "J008",
+        "start": 16,
+        "end": 28
+      },
+      {
+        "job_id": "J000",
+        "start": 30,
+        "end": 32
+      },
+      {
+        "job_id": "J029",
+        "start": 34,
+        "end": 40
+      },
+      {
+        "job_id": "J016",
+        "start": 42,
+        "end": 53
+      },
+      {
+        "job_id": "J027",
+        "start": 55,
+        "end": 59
+      },
+      {
+        "job_id": "J012",
+        "start": 61,
+        "end": 70
+      },
+      {
+        "job_id": "J028",
+        "start": 72,
+        "end": 74
+      },
+      {
+        "job_id": "J021",
+        "start": 76,
+        "end": 80
+      },
+      {
+        "job_id": "J007",
+        "start": 82,
+        "end": 91
+      },
+      {
+        "job_id": "J010",
+        "start": 93,
+        "end": 103
+      },
+      {
+        "job_id": "J011",
+        "start": 105,
+        "end": 115
+      },
+      {
+        "job_id": "J003",
+        "start": 117,
+        "end": 126
+      },
+      {
+        "job_id": "J013",
+        "start": 128,
+        "end": 136
+      },
+      {
+        "job_id": "J015",
+        "start": 138,
+        "end": 150
+      },
+      {
+        "job_id": "J023",
+        "start": 152,
+        "end": 165
+      },
+      {
+        "job_id": "J014",
+        "start": 167,
+        "end": 180
+      },
+      {
+        "job_id": "J020",
+        "start": 182,
+        "end": 197
+      },
+      {
+        "job_id": "J018",
+        "start": 199,
+        "end": 214
+      },
+      {
+        "job_id": "J026",
+        "start": 216,
+        "end": 232
+      },
+      {
+        "job_id": "J019",
+        "start": 234,
+        "end": 254
+      },
+      {
+        "job_id": "J024",
+        "start": 256,
+        "end": 276
+      },
+      {
+        "job_id": "J022",
+        "start": 278,
+        "end": 298
+      },
+      {
+        "job_id": "J005",
+        "start": 300,
+        "end": 323
+      },
+      {
+        "job_id": "J006",
+        "start": 325,
+        "end": 349
+      },
+      {
+        "job_id": "J025",
+        "start": 351,
+        "end": 375
+      },
+      {
+        "job_id": "J009",
+        "start": 377,
+        "end": 401
+      },
+      {
+        "job_id": "J001",
+        "start": 403,
+        "end": 428
+      },
+      {
+        "job_id": "J017",
+        "start": 430,
+        "end": 455
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-16",
+    "policy": "fcfs",
+    "slots": [
+      {
+        "job_id": "J015",
+        "start": 2,
+        "end": 8
+      },
+      {
+        "job_id": "J018",
+        "start": 10,
+        "end": 26
+      },
+      {
+        "job_id": "J007",
+        "start": 28,
+        "end": 30
+      },
+      {
+        "job_id": "J006",
+        "start": 32,
+        "end": 54
+      },
+      {
+        "job_id": "J008",
+        "start": 56,
+        "end": 67
+      },
+      {
+        "job_id": "J021",
+        "start": 69,
+        "end": 78
+      },
+      {
+        "job_id": "J012",
+        "start": 80,
+        "end": 82
+      },
+      {
+        "job_id": "J025",
+        "start": 84,
+        "end": 101
+      },
+      {
+        "job_id": "J000",
+        "start": 103,
+        "end": 120
+      },
+      {
+        "job_id": "J023",
+        "start": 122,
+        "end": 132
+      },
+      {
+        "job_id": "J004",
+        "start": 134,
+        "end": 157
+      },
+      {
+        "job_id": "J002",
+        "start": 159,
+        "end": 168
+      },
+      {
+        "job_id": "J024",
+        "start": 170,
+        "end": 174
+      },
+      {
+        "job_id": "J026",
+        "start": 176,
+        "end": 194
+      },
+      {
+        "job_id": "J003",
+        "start": 196,
+        "end": 198
+      },
+      {
+        "job_id": "J019",
+        "start": 200,
+        "end": 221
+      },
+      {
+        "job_id": "J001",
+        "start": 223,
+        "end": 234
+      },
+      {
+        "job_id": "J028",
+        "start": 236,
+        "end": 247
+      },
+      {
+        "job_id": "J029",
+        "start": 249,
+        "end": 252
+      },
+      {
+        "job_id": "J014",
+        "start": 254,
+        "end": 264
+      },
+      {
+        "job_id": "J020",
+        "start": 266,
+        "end": 290
+      },
+      {
+        "job_id": "J027",
+        "start": 292,
+        "end": 299
+      },
+      {
+        "job_id": "J010",
+        "start": 301,
+        "end": 307
+      },
+      {
+        "job_id": "J017",
+        "start": 309,
+        "end": 331
+      },
+      {
+        "job_id": "J005",
+        "start": 333,
+        "end": 343
+      },
+      {
+        "job_id": "J011",
+        "start": 345,
+        "end": 366
+      },
+      {
+        "job_id": "J022",
+        "start": 368,
+        "end": 379
+      },
+      {
+        "job_id": "J013",
+        "start": 381,
+        "end": 390
+      },
+      {
+        "job_id": "J016",
+        "start": 392,
+        "end": 413
+      },
+      {
+        "job_id": "J009",
+        "start": 415,
+        "end": 427
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-16",
+    "policy": "spt",
+    "slots": [
+      {
+        "job_id": "J015",
+        "start": 2,
+        "end": 8
+      },
+      {
+        "job_id": "J018",
+        "start": 10,
+        "end": 26
+      },
+      {
+        "job_id": "J007",
+        "start": 28,
+        "end": 30
+      },
+      {
+        "job_id": "J006",
+        "start": 32,
+        "end": 54
+      },
+      {
+        "job_id": "J012",
+        "start": 56,
+        "end": 58
+      },
+      {
+        "job_id": "J003",
+        "start": 60,
+        "end": 62
+      },
+      {
+        "job_id": "J024",
+        "start": 64,
+        "end": 68
+      },
+      {
+        "job_id": "J021",
+        "start": 70,
+        "end": 79
+      },
+      {
+        "job_id": "J029",
+        "start": 81,
+        "end": 84
+      },
+      {
+        "job_id": "J010",
+        "start": 86,
+        "end": 92
+      },
+      {
+        "job_id": "J027",
+        "start": 94,
+        "end": 101
+      },
+      {
+        "job_id": "J002",
+        "start": 103,
+        "end": 112
+      },
+      {
+        "job_id": "J013",
+        "start": 114,
+        "end": 123
+      },
+      {
+        "job_id": "J023",
+        "start": 125,
+        "end": 135
+      },
+      {
+        "job_id": "J014",
+        "start": 137,
+        "end": 147
+      },
+      {
+        "job_id": "J005",
+        "start": 149,
+        "end": 159
+      },
+      {
+        "job_id": "J008",
+        "start": 161,
+        "end": 172
+      },
+      {
+        "job_id": "J001",
+        "start": 174,
+        "end": 185
+      },
+      {
+        "job_id": "J028",
+        "start": 187,
+        "end": 198
+      },
+      {
+        "job_id": "J022",
+        "start": 200,
+        "end": 211
+      },
+      {
+        "job_id": "J009",
+        "start": 213,
+        "end": 225
+      },
+      {
+        "job_id": "J025",
+        "start": 227,
+        "end": 244
+      },
+      {
+        "job_id": "J000",
+        "start": 246,
+        "end": 263
+      },
+      {
+        "job_id": "J026",
+        "start": 265,
+        "end": 283
+      },
+      {
+        "job_id": "J019",
+        "start": 285,
+        "end": 306
+      },
+      {
+        "job_id": "J011",
+        "start": 308,
+        "end": 329
+      },
+      {
+        "job_id": "J016",
+        "start": 331,
+        "end": 352
+      },
+      {
+        "job_id": "J017",
+        "start": 354,
+        "end": 376
+      },
+      {
+        "job_id": "J004",
+        "start": 378,
+        "end": 401
+      },
+      {
+        "job_id": "J020",
+        "start": 403,
+        "end": 427
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-17",
+    "policy": "fcfs",
+    "slots": [
+      {
+        "job_id": "J025",
+        "start": 10,
+        "end": 28
+      },
+      {
+        "job_id": "J006",
+        "start": 30,
+        "end": 32
+      },
+      {
+        "job_id": "J016",
+        "start": 34,
+        "end": 42
+      },
+      {
+        "job_id": "J028",
+        "start": 44,
+        "end": 67
+      },
+      {
+        "job_id": "J017",
+        "start": 69,
+        "end": 93
+      },
+      {
+        "job_id": "J003",
+        "start": 95,
+        "end": 119
+      },
+      {
+        "job_id": "J020",
+        "start": 121,
+        "end": 133
+      },
+      {
+        "job_id": "J007",
+        "start": 135,
+        "end": 149
+      },
+      {
+        "job_id": "J024",
+        "start": 151,
+        "end": 166
+      },
+      {
+        "job_id": "J002",
+        "start": 168,
+        "end": 179
+      },
+      {
+        "job_id": "J014",
+        "start": 181,
+        "end": 187
+      },
+      {
+        "job_id": "J009",
+        "start": 189,
+        "end": 199
+      },
+      {
+        "job_id": "J000",
+        "start": 201,
+        "end": 216
+      },
+      {
+        "job_id": "J018",
+        "start": 218,
+        "end": 237
+      },
+      {
+        "job_id": "J021",
+        "start": 239,
+        "end": 244
+      },
+      {
+        "job_id": "J015",
+        "start": 246,
+        "end": 249
+      },
+      {
+        "job_id": "J012",
+        "start": 251,
+        "end": 274
+      },
+      {
+        "job_id": "J023",
+        "start": 276,
+        "end": 280
+      },
+      {
+        "job_id": "J027",
+        "start": 282,
+        "end": 303
+      },
+      {
+        "job_id": "J005",
+        "start": 305,
+        "end": 315
+      },
+      {
+        "job_id": "J004",
+        "start": 317,
+        "end": 336
+      },
+      {
+        "job_id": "J011",
+        "start": 338,
+        "end": 350
+      },
+      {
+        "job_id": "J019",
+        "start": 352,
+        "end": 375
+      },
+      {
+        "job_id": "J001",
+        "start": 377,
+        "end": 388
+      },
+      {
+        "job_id": "J029",
+        "start": 390,
+        "end": 405
+      },
+      {
+        "job_id": "J008",
+        "start": 407,
+        "end": 432
+      },
+      {
+        "job_id": "J010",
+        "start": 434,
+        "end": 452
+      },
+      {
+        "job_id": "J022",
+        "start": 454,
+        "end": 478
+      },
+      {
+        "job_id": "J013",
+        "start": 480,
+        "end": 505
+      },
+      {
+        "job_id": "J026",
+        "start": 507,
+        "end": 524
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-17",
+    "policy": "spt",
+    "slots": [
+      {
+        "job_id": "J025",
+        "start": 10,
+        "end": 28
+      },
+      {
+        "job_id": "J006",
+        "start": 30,
+        "end": 32
+      },
+      {
+        "job_id": "J016",
+        "start": 34,
+        "end": 42
+      },
+      {
+        "job_id": "J020",
+        "start": 44,
+        "end": 56
+      },
+      {
+        "job_id": "J014",
+        "start": 58,
+        "end": 64
+      },
+      {
+        "job_id": "J009",
+        "start": 66,
+        "end": 76
+      },
+      {
+        "job_id": "J015",
+        "start": 78,
+        "end": 81
+      },
+      {
+        "job_id": "J023",
+        "start": 83,
+        "end": 87
+      },
+      {
+        "job_id": "J021",
+        "start": 89,
+        "end": 94
+      },
+      {
+        "job_id": "J005",
+        "start": 96,
+        "end": 106
+      },
+      {
+        "job_id": "J002",
+        "start": 108,
+        "end": 119
+      },
+      {
+        "job_id": "J001",
+        "start": 121,
+        "end": 132
+      },
+      {
+        "job_id": "J011",
+        "start": 134,
+        "end": 146
+      },
+      {
+        "job_id": "J007",
+        "start": 148,
+        "end": 162
+      },
+      {
+        "job_id": "J024",
+        "start": 164,
+        "end": 179
+      },
+      {
+        "job_id": "J000",
+        "start": 181,
+        "end": 196
+      },
+      {
+        "job_id": "J029",
+        "start": 198,
+        "end": 213
+      },
+      {
+        "job_id": "J026",
+        "start": 215,
+        "end": 232
+      },
+      {
+        "job_id": "J010",
+        "start": 234,
+        "end": 252
+      },
+      {
+        "job_id": "J018",
+        "start": 254,
+        "end": 273
+      },
+      {
+        "job_id": "J004",
+        "start": 275,
+        "end": 294
+      },
+      {
+        "job_id": "J027",
+        "start": 296,
+        "end": 317
+      },
+      {
+        "job_id": "J028",
+        "start": 319,
+        "end": 342
+      },
+      {
+        "job_id": "J012",
+        "start": 344,
+        "end": 367
+      },
+      {
+        "job_id": "J019",
+        "start": 369,
+        "end": 392
+      },
+      {
+        "job_id": "J017",
+        "start": 394,
+        "end": 418
+      },
+      {
+        "job_id": "J003",
+        "start": 420,
+        "end": 444
+      },
+      {
+        "job_id": "J022",
+        "start": 446,
+        "end": 470
+      },
+      {
+        "job_id": "J008",
+        "start": 472,
+        "end": 497
+      },
+      {
+        "job_id": "J013",
+        "start": 499,
+        "end": 524
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-18",
+    "policy": "fcfs",
+    "slots": [
+      {
+        "job_id": "J022",
+        "start": 0,
+        "end": 12
+      },
+      {
+        "job_id": "J010",
+        "start": 15,
+        "end": 27
+      },
+      {
+        "job_id": "J014",
+        "start": 29,
+        "end": 38
+      },
+      {
+        "job_id": "J000",
+        "start": 40,
+        "end": 45
+      },
+      {
+        "job_id": "J005",
+        "start": 47,
+        "end": 64
+      },
+      {
+        "job_id": "J003",
+        "start": 66,
+        "end": 83
+      },
+      {
+        "job_id": "J008",
+        "start": 85,
+        "end": 95
+      },
+      {
+        "job_id": "J015",
+        "start": 97,
+        "end": 122
+      },
+      {
+        "job_id": "J020",
+        "start": 124,
+        "end": 148
+      },
+      {
+        "job_id": "J028",
+        "start": 150,
+        "end": 160
+      },
+      {
+        "job_id": "J006",
+        "start": 162,
+        "end": 178
+      },
+      {
+        "job_id": "J021",
+        "start": 180,
+        "end": 190
+      },
+      {
+        "job_id": "J002",
+        "start": 192,
+        "end": 201
+      },
+      {
+        "job_id": "J026",
+        "start": 203,
+        "end": 223
+      },
+      {
+        "job_id": "J016",
+        "start": 225,
+        "end": 245
+      },
+      {
+        "job_id": "J023",
+        "start": 247,
+        "end": 256
+      },
+      {
+        "job_id": "J025",
+        "start": 258,
+        "end": 277
+      },
+      {
+        "job_id": "J017",
+        "start": 279,
+        "end": 287
+      },
+      {
+        "job_id": "J011",
+        "start": 289,
+        "end": 312
+      },
+      {
+        "job_id": "J027",
+        "start": 314,
+        "end": 332
+      },
+      {
+        "job_id": "J029",
+        "start": 334,
+        "end": 358
+      },
+      {
+        "job_id": "J004",
+        "start": 360,
+        "end": 377
+      },
+      {
+        "job_id": "J001",
+        "start": 379,
+        "end": 395
+      },
+      {
+        "job_id": "J012",
+        "start": 397,
+        "end": 404
+      },
+      {
+        "job_id": "J024",
+        "start": 406,
+        "end": 431
+      },
+      {
+        "job_id": "J018",
+        "start": 433,
+        "end": 456
+      },
+      {
+        "job_id": "J013",
+        "start": 458,
+        "end": 467
+      },
+      {
+        "job_id": "J007",
+        "start": 469,
+        "end": 479
+      },
+      {
+        "job_id": "J019",
+        "start": 481,
+        "end": 498
+      },
+      {
+        "job_id": "J009",
+        "start": 500,
+        "end": 524
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-18",
+    "policy": "spt",
+    "slots": [
+      {
+        "job_id": "J022",
+        "start": 0,
+        "end": 12
+      },
+      {
+        "job_id": "J010",
+        "start": 15,
+        "end": 27
+      },
+      {
+        "job_id": "J000",
+        "start": 29,
+        "end": 34
+      },
+      {
+        "job_id": "J014",
+        "start": 36,
+        "end": 45
+      },
+      {
+        "job_id": "J002",
+        "start": 47,
+        "end": 56
+      },
+      {
+        "job_id": "J023",
+        "start": 58,
+        "end": 67
+      },
+      {
+        "job_id": "J017",
+        "start": 69,
+        "end": 77
+      },
+      {
+        "job_id": "J008",
+        "start": 79,
+        "end": 89
+      },
+      {
+        "job_id": "J028",
+        "start": 91,
+        "end": 101
+      },
+      {
+        "job_id": "J012",
+        "start": 103,
+        "end": 110
+      },
+      {
+        "job_id": "J013",
+        "start": 112,
+        "end": 121
+      },
+      {
+        "job_id": "J021",
+        "start": 123,
+        "end": 133
+      },
+      {
+        "job_id": "J007",
+        "start": 135,
+        "end": 145
+      },
+      {
+        "job_id": "J006",
+        "start": 147,
+        "end": 163
+      },
+      {
+        "job_id": "J001",
+        "start": 165,
+        "end": 181
+      },
+      {
+        "job_id": "J005",
+        "start": 183,
+        "end": 200
+      },
+      {
+        "job_id": "J003",
+        "start": 202,
+        "end": 219
+      },
+      {
+        "job_id": "J004",
+        "start": 221,
+        "end": 238
+      },
+      {
+        "job_id": "J019",
+        "start": 240,
+        "end": 257
+      },
+      {
+        "job_id": "J027",
+        "start": 259,
+        "end": 277
+      },
+      {
+        "job_id": "J025",
+        "start": 279,
+        "end": 298
+      },
+      {
+        "job_id": "J026",
+        "start": 300,
+        "end": 320
+      },
+      {
+        "job_id": "J016",
+        "start": 322,
+        "end": 342
+      },
+      {
+        "job_id": "J011",
+        "start": 344,
+        "end": 367
+      },
+      {
+        "job_id": "J018",
+        "start": 369,
+        "end": 392
+      },
+      {
+        "job_id": "J020",
+        "start": 394,
+        "end": 418
+      },
+      {
+        "job_id": "J029",
+        "start": 420,
+        "end": 444
+      },
+      {
+        "job_id": "J009",
+        "start": 446,
+        "end": 470
+      },
+      {
+        "job_id": "J015",
+        "start": 472,
+        "end": 497
+      },
+      {
+        "job_id": "J024",
+        "start": 499,
+        "end": 524
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-19",
+    "policy": "fcfs",
+    "slots": [
+      {
+        "job_id": "J013",
+        "start": 2,
+        "end": 22
+      },
+      {
+        "job_id": "J020",
+        "start": 24,
+        "end": 29
+      },
+      {
+        "job_id": "J022",
+        "start": 31,
+        "end": 51
+      },
+      {
+        "job_id": "J017",
+        "start": 53,
+        "end": 72
+      },
+      {
+        "job_id": "J002",
+        "start": 74,
+        "end": 92
+      },
+      {
+        "job_id": "J006",
+        "start": 94,
+        "end": 115
+      },
+      {
+        "job_id": "J003",
+        "start": 117,
+        "end": 131
+      },
+      {
+        "job_id": "J007",
+        "start": 133,
+        "end": 138
+      },
+      {
+        "job_id": "J008",
+        "start": 140,
+        "end": 155
+      },
+      {
+        "job_id": "J005",
+        "start": 157,
+        "end": 177
+      },
+      {
+        "job_id": "J026",
+        "start": 179,
+        "end": 199
+      },
+      {
+        "job_id": "J009",
+        "start": 201,
+        "end": 211
+      },
+      {
+        "job_id": "J004",
+        "start": 213,
+        "end": 231
+      },
+      {
+        "job_id": "J021",
+        "start": 233,
+        "end": 235
+      },
+      {
+        "job_id": "J025",
+        "start": 237,
+        "end": 260
+      },
+      {
+        "job_id": "J018",
+        "start": 262,
+        "end": 276
+      },
+      {
+        "job_id": "J014",
+        "start": 278,
+        "end": 286
+      },
+      {
+        "job_id": "J000",
+        "start": 288,
+        "end": 291
+      },
+      {
+        "job_id": "J023",
+        "start": 293,
+        "end": 308
+      },
+      {
+        "job_id": "J024",
+        "start": 310,
+        "end": 324
+      },
+      {
+        "job_id": "J011",
+        "start": 326,
+        "end": 338
+      },
+      {
+        "job_id": "J001",
+        "start": 340,
+        "end": 358
+      },
+      {
+        "job_id": "J029",
+        "start": 360,
+        "end": 382
+      },
+      {
+        "job_id": "J010",
+        "start": 384,
+        "end": 389
+      },
+      {
+        "job_id": "J028",
+        "start": 391,
+        "end": 398
+      },
+      {
+        "job_id": "J019",
+        "start": 400,
+        "end": 425
+      },
+      {
+        "job_id": "J015",
+        "start": 427,
+        "end": 431
+      },
+      {
+        "job_id": "J012",
+        "start": 433,
+        "end": 444
+      },
+      {
+        "job_id": "J016",
+        "start": 446,
+        "end": 454
+      },
+      {
+        "job_id": "J027",
+        "start": 456,
+        "end": 474
+      }
+    ]
+  },
+  {
+    "scenario": "mixed-19",
+    "policy": "spt",
+    "slots": [
+      {
+        "job_id": "J013",
+        "start": 2,
+        "end": 22
+      },
+      {
+        "job_id": "J020",
+        "start": 24,
+        "end": 29
+      },
+      {
+        "job_id": "J003",
+        "start": 31,
+        "end": 45
+      },
+      {
+        "job_id": "J007",
+        "start": 47,
+        "end": 52
+      },
+      {
+        "job_id": "J021",
+        "start": 54,
+        "end": 56
+      },
+      {
+        "job_id": "J009",
+        "start": 58,
+        "end": 68
+      },
+      {
+        "job_id": "J018",
+        "start": 70,
+        "end": 84
+      },
+      {
+        "job_id": "J000",
+        "start": 86,
+        "end": 89
+      },
+      {
+        "job_id": "J014",
+        "start": 91,
+        "end": 99
+      },
+      {
+        "job_id": "J011",
+        "start": 101,
+        "end": 113
+      },
+      {
+        "job_id": "J015",
+        "start": 115,
+        "end": 119
+      },
+      {
+        "job_id": "J010",
+        "start": 121,
+        "end": 126
+      },
+      {
+        "job_id": "J028",
+        "start": 128,
+        "end": 135
+      },
+      {
+        "job_id": "J016",
+        "start": 137,
+        "end": 145
+      },
+      {
+        "job_id": "J012",
+        "start": 147,
+        "end": 158
+      },
+      {
+        "job_id": "J024",
+        "start": 160,
+        "end": 174
+      },
+      {
+        "job_id": "J008",
+        "start": 176,
+        "end": 191
+      },
+      {
+        "job_id": "J023",
+        "start": 193,
+        "end": 208
+      },
+      {
+        "job_id": "J002",
+        "start": 210,
+        "end": 228
+      },
+      {
+        "job_id": "J004",
+        "start": 230,
+        "end": 248
+      },
+      {
+        "job_id": "J001",
+        "start": 250,
+        "end": 268
+      },
+      {
+        "job_id": "J027",
+        "start": 270,
+        "end": 288
+      },
+      {
+        "job_id": "J017",
+        "start": 290,
+        "end": 309
+      },
+      {
+        "job_id": "J022",
+        "start": 311,
+        "end": 331
+      },
+      {
+        "job_id": "J005",
+        "start": 333,
+        "end": 353
+      },
+      {
+        "job_id": "J026",
+        "start": 355,
+        "end": 375
+      },
+      {
+        "job_id": "J006",
+        "start": 377,
+        "end": 398
+      },
+      {
+        "job_id": "J029",
+        "start": 400,
+        "end": 422
+      },
+      {
+        "job_id": "J025",
+        "start": 424,
+        "end": 447
+      },
+      {
+        "job_id": "J019",
+        "start": 449,
+        "end": 474
+      }
+    ]
+  },
+  {
+    "scenario": "steady-short-arrivals",
+    "policy": "fcfs",
+    "slots": [
+      {
+        "job_id": "long-job",
+        "start": 0,
+        "end": 25
+      },
+      {
+        "job_id": "short-00",
+        "start": 27,
+        "end": 28
+      },
+      {
+        "job_id": "short-01",
+        "start": 30,
+        "end": 31
+      },
+      {
+        "job_id": "short-02",
+        "start": 33,
+        "end": 34
+      },
+      {
+        "job_id": "short-03",
+        "start": 36,
+        "end": 37
+      },
+      {
+        "job_id": "short-04",
+        "start": 39,
+        "end": 40
+      },
+      {
+        "job_id": "short-05",
+        "start": 42,
+        "end": 43
+      },
+      {
+        "job_id": "short-06",
+        "start": 45,
+        "end": 46
+      },
+      {
+        "job_id": "short-07",
+        "start": 48,
+        "end": 49
+      },
+      {
+        "job_id": "short-08",
+        "start": 51,
+        "end": 52
+      },
+      {
+        "job_id": "short-09",
+        "start": 54,
+        "end": 55
+      },
+      {
+        "job_id": "short-10",
+        "start": 57,
+        "end": 58
+      },
+      {
+        "job_id": "short-11",
+        "start": 60,
+        "end": 61
+      },
+      {
+        "job_id": "short-12",
+        "start": 63,
+        "end": 64
+      },
+      {
+        "job_id": "short-13",
+        "start": 66,
+        "end": 67
+      },
+      {
+        "job_id": "short-14",
+        "start": 69,
+        "end": 70
+      },
+      {
+        "job_id": "short-15",
+        "start": 72,
+        "end": 73
+      },
+      {
+        "job_id": "short-16",
+        "start": 75,
+        "end": 76
+      },
+      {
+        "job_id": "short-17",
+        "start": 78,
+        "end": 79
+      },
+      {
+        "job_id": "short-18",
+        "start": 81,
+        "end": 82
+      },
+      {
+        "job_id": "short-19",
+        "start": 84,
+        "end": 85
+      },
+      {
+        "job_id": "short-20",
+        "start": 87,
+        "end": 88
+      },
+      {
+        "job_id": "short-21",
+        "start": 90,
+        "end": 91
+      },
+      {
+        "job_id": "short-22",
+        "start": 93,
+        "end": 94
+      },
+      {
+        "job_id": "short-23",
+        "start": 96,
+        "end": 97
+      },
+      {
+        "job_id": "short-24",
+        "start": 99,
+        "end": 100
+      },
+      {
+        "job_id": "short-25",
+        "start": 102,
+        "end": 103
+      },
+      {
+        "job_id": "short-26",
+        "start": 105,
+        "end": 106
+      },
+      {
+        "job_id": "short-27",
+        "start": 108,
+        "end": 109
+      },
+      {
+        "job_id": "short-28",
+        "start": 111,
+        "end": 112
+      },
+      {
+        "job_id": "short-29",
+        "start": 114,
+        "end": 115
+      },
+      {
+        "job_id": "short-30",
+        "start": 117,
+        "end": 118
+      }
+    ]
+  },
+  {
+    "scenario": "steady-short-arrivals",
+    "policy": "spt",
+    "slots": [
+      {
+        "job_id": "short-00",
+        "start": 0,
+        "end": 1
+      },
+      {
+        "job_id": "short-01",
+        "start": 3,
+        "end": 4
+      },
+      {
+        "job_id": "short-02",
+        "start": 6,
+        "end": 7
+      },
+      {
+        "job_id": "short-03",
+        "start": 9,
+        "end": 10
+      },
+      {
+        "job_id": "short-04",
+        "start": 12,
+        "end": 13
+      },
+      {
+        "job_id": "short-05",
+        "start": 15,
+        "end": 16
+      },
+      {
+        "job_id": "short-06",
+        "start": 18,
+        "end": 19
+      },
+      {
+        "job_id": "short-07",
+        "start": 21,
+        "end": 22
+      },
+      {
+        "job_id": "short-08",
+        "start": 24,
+        "end": 25
+      },
+      {
+        "job_id": "short-09",
+        "start": 27,
+        "end": 28
+      },
+      {
+        "job_id": "short-10",
+        "start": 30,
+        "end": 31
+      },
+      {
+        "job_id": "short-11",
+        "start": 33,
+        "end": 34
+      },
+      {
+        "job_id": "short-12",
+        "start": 36,
+        "end": 37
+      },
+      {
+        "job_id": "short-13",
+        "start": 39,
+        "end": 40
+      },
+      {
+        "job_id": "short-14",
+        "start": 42,
+        "end": 43
+      },
+      {
+        "job_id": "short-15",
+        "start": 45,
+        "end": 46
+      },
+      {
+        "job_id": "short-16",
+        "start": 48,
+        "end": 49
+      },
+      {
+        "job_id": "short-17",
+        "start": 51,
+        "end": 52
+      },
+      {
+        "job_id": "short-18",
+        "start": 54,
+        "end": 55
+      },
+      {
+        "job_id": "short-19",
+        "start": 57,
+        "end": 58
+      },
+      {
+        "job_id": "short-20",
+        "start": 60,
+        "end": 61
+      },
+      {
+        "job_id": "short-21",
+        "start": 63,
+        "end": 64
+      },
+      {
+        "job_id": "short-22",
+        "start": 66,
+        "end": 67
+      },
+      {
+        "job_id": "short-23",
+        "start": 69,
+        "end": 70
+      },
+      {
+        "job_id": "short-24",
+        "start": 72,
+        "end": 73
+      },
+      {
+        "job_id": "short-25",
+        "start": 75,
+        "end": 76
+      },
+      {
+        "job_id": "short-26",
+        "start": 78,
+        "end": 79
+      },
+      {
+        "job_id": "short-27",
+        "start": 81,
+        "end": 82
+      },
+      {
+        "job_id": "short-28",
+        "start": 84,
+        "end": 85
+      },
+      {
+        "job_id": "short-29",
+        "start": 87,
+        "end": 88
+      },
+      {
+        "job_id": "short-30",
+        "start": 90,
+        "end": 91
+      },
+      {
+        "job_id": "long-job",
+        "start": 93,
+        "end": 118
+      }
+    ]
+  },
+  {
+    "scenario": "sparse-arrivals",
+    "policy": "fcfs",
+    "slots": [
+      {
+        "job_id": "J000",
+        "start": 0,
+        "end": 10
+      },
+      {
+        "job_id": "J001",
+        "start": 40,
+        "end": 50
+      },
+      {
+        "job_id": "J002",
+        "start": 80,
+        "end": 90
+      },
+      {
+        "job_id": "J003",
+        "start": 120,
+        "end": 130
+      },
+      {
+        "job_id": "J004",
+        "start": 160,
+        "end": 170
+      },
+      {
+        "job_id": "J005",
+        "start": 200,
+        "end": 210
+      },
+      {
+        "job_id": "J006",
+        "start": 240,
+        "end": 250
+      },
+      {
+        "job_id": "J007",
+        "start": 280,
+        "end": 290
+      },
+      {
+        "job_id": "J008",
+        "start": 320,
+        "end": 330
+      },
+      {
+        "job_id": "J009",
+        "start": 360,
+        "end": 370
+      },
+      {
+        "job_id": "J010",
+        "start": 400,
+        "end": 410
+      },
+      {
+        "job_id": "J011",
+        "start": 440,
+        "end": 450
+      }
+    ]
+  },
+  {
+    "scenario": "sparse-arrivals",
+    "policy": "spt",
+    "slots": [
+      {
+        "job_id": "J000",
+        "start": 0,
+        "end": 10
+      },
+      {
+        "job_id": "J001",
+        "start": 40,
+        "end": 50
+      },
+      {
+        "job_id": "J002",
+        "start": 80,
+        "end": 90
+      },
+      {
+        "job_id": "J003",
+        "start": 120,
+        "end": 130
+      },
+      {
+        "job_id": "J004",
+        "start": 160,
+        "end": 170
+      },
+      {
+        "job_id": "J005",
+        "start": 200,
+        "end": 210
+      },
+      {
+        "job_id": "J006",
+        "start": 240,
+        "end": 250
+      },
+      {
+        "job_id": "J007",
+        "start": 280,
+        "end": 290
+      },
+      {
+        "job_id": "J008",
+        "start": 320,
+        "end": 330
+      },
+      {
+        "job_id": "J009",
+        "start": 360,
+        "end": 370
+      },
+      {
+        "job_id": "J010",
+        "start": 400,
+        "end": 410
+      },
+      {
+        "job_id": "J011",
+        "start": 440,
+        "end": 450
+      }
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+.delta-journey { grid-template-columns: 200px minmax(0, 1fr); gap: 48px; }
+.delta-nav-intro { display: flex; flex-direction: column; gap: 5px; padding-bottom: 14px; }
+.delta-nav-intro strong { font-size: .95rem; font-weight: 600; }
+.delta-nav-intro span { color: var(--muted); font-size: .8rem; }
+.delta-journey-nav a { display: flex; align-items: baseline; gap: 12px; min-height: 44px; padding: 9px 10px; border-radius: 4px; text-decoration: none; line-height: 1.4; }
+.delta-journey-nav a[aria-current="step"] { color: var(--blue); background: #eaf0ff; font-weight: 600; }
+.delta-journey-nav a:hover { text-decoration: underline; }
+.delta-stage-number { flex-shrink: 0; font-size: .76rem; font-variant-numeric: tabular-nums; }
+.delta-stage { border-bottom: 1px solid var(--line); padding-bottom: 54px; }
+.delta-stage:last-child { border-bottom: 0; padding-bottom: 0; }
+.delta-stage > .eyebrow { color: var(--blue); }
+.delta-brief { margin-block: 28px; }
+.delta-brief > div { display: grid; grid-template-columns: 130px minmax(0, 1fr); gap: 22px; padding-block: 17px; border-bottom: 1px solid var(--line); }
+.delta-brief dt { font-weight: 600; font-size: .88rem; }
+.delta-brief dd { color: var(--muted); font-size: .94rem; }
+.case-content .delta-handoff { margin-top: 28px; padding-left: 18px; border-left: 3px solid var(--line); font-size: .9rem; }
+.delta-failures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 32px; margin-block: 30px; }
+.delta-failures article { border-top: 1px solid var(--line); padding-top: 16px; }
+.delta-failures span { color: var(--blue); font-size: .78rem; }
+.delta-failures h3 { font-size: 1.1rem; margin-top: 10px; }
+.delta-failures p { font-size: .9rem; margin-bottom: 0; }
+.delta-disclosure { padding-block: 14px; border-block: 1px solid var(--line); }
+.delta-capture { margin-block: 30px; }
+.delta-capture img { height: auto; }
+.delta-files { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; padding-block: 22px; margin-block: 26px 40px; border-block: 1px solid var(--line); }
+.delta-files > a { display: flex; flex-direction: column; gap: 9px; font-size: .9rem; }
+.delta-files span { font-size: .8rem; color: var(--muted); }
+.delta-stage code { overflow-wrap: anywhere; }
+.delta-identity-example { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); align-items: center; gap: 28px; padding: 22px; border: 1px solid var(--line); border-radius: 4px; background: var(--surface); margin-block: 26px; }
+.delta-identity-example > div { display: flex; flex-direction: column; gap: 10px; }
+.delta-identity-example span { font-size: .76rem; color: var(--muted); }
+.delta-identity-example code { font-size: .8rem; }
+.case-content .delta-identity-example p { font-size: .85rem; margin: 0; }
+@media (max-width: 1000px) {
+  .delta-journey { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .delta-journey-nav { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px 14px; }
+  .delta-nav-intro { grid-column: 1 / -1; }
+}
+@media (max-width: 600px) {
+  .delta-journey-nav { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 5px; }
+  .delta-journey-nav a { font-size: .8rem; padding-inline: 6px; gap: 8px; }
+  .delta-brief > div { grid-template-columns: minmax(0, 1fr); gap: 5px; }
+  .delta-failures, .delta-files { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .delta-stage { padding-bottom: 38px; }
+  .delta-identity-example { grid-template-columns: minmax(0, 1fr); gap: 18px; padding: 18px; }
+}

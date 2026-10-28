@@ -1,0 +1,46 @@
+/* Development journey: reuse the portfolio's typography, colour and reading width. */
+.diagnostics-journey { grid-template-columns: 200px minmax(0, 1fr); gap: 48px; }
+.journey-nav-intro { display: flex; flex-direction: column; gap: 5px; padding-bottom: 14px; }
+.journey-nav-intro strong { font-size: .95rem; font-weight: 600; }
+.journey-nav-intro span { color: var(--muted); font-size: .8rem; }
+.journey-nav a { display: flex; align-items: baseline; gap: 12px; min-height: 44px; padding: 9px 10px; border-radius: 4px; text-decoration: none; line-height: 1.4; }
+.journey-nav a[aria-current="step"] { color: var(--blue); background: #eaf0ff; font-weight: 600; }
+.journey-nav a:hover { text-decoration: underline; }
+.journey-step-number { flex-shrink: 0; font-size: .76rem; font-variant-numeric: tabular-nums; }
+.journey-stage { border-bottom: 1px solid var(--line); padding-bottom: 54px; }
+.journey-stage:last-child { border-bottom: 0; padding-bottom: 0; }
+.journey-stage > .eyebrow { color: var(--blue); }
+.journey-brief { margin: 28px 0; }
+.journey-brief > div { display: grid; grid-template-columns: 130px minmax(0, 1fr); gap: 22px; padding-block: 17px; border-bottom: 1px solid var(--line); }
+.journey-brief dt { color: var(--ink); font-weight: 600; font-size: .88rem; }
+.journey-brief dd { color: var(--muted); font-size: .94rem; }
+.case-content .journey-handoff { margin-top: 28px; padding-left: 18px; border-left: 3px solid var(--line); font-size: .9rem; }
+.journey-contract { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin: 30px 0; }
+.journey-contract h3 { font-size: 1.05rem; }
+.journey-contract p { font-size: .88rem; }
+.journey-disclosure { padding-block: 14px; border-block: 1px solid var(--line); }
+.journey-modules { margin-block: 28px; border-top: 1px solid var(--line); }
+.journey-modules details { border-bottom: 1px solid var(--line); padding-block: 13px; }
+.journey-modules summary { color: var(--ink); }
+.journey-modules summary span { font-weight: 600; }
+.journey-modules summary code { color: var(--muted); margin-left: 12px; }
+.journey-modules p { margin: 14px 0 5px; font-size: .9rem; }
+.journey-evidence-library { border-top: 1px solid var(--line); padding-top: 36px; margin-top: 38px; scroll-margin-top: 25px; }
+.journey-files { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; padding: 23px 0; margin-bottom: 30px; border-block: 1px solid var(--line); }
+.journey-files div { display: flex; flex-direction: column; gap: 9px; min-width: 0; }
+.journey-files span { font-size: .82rem; color: var(--muted); }
+@media (max-width: 1000px) {
+  .diagnostics-journey { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .journey-nav { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px 14px; }
+  .journey-nav-intro { grid-column: 1 / -1; }
+}
+@media (max-width: 600px) {
+  .journey-nav { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 5px; }
+  .journey-nav a { font-size: .8rem; padding-inline: 6px; gap: 8px; }
+  .journey-brief > div { grid-template-columns: minmax(0, 1fr); gap: 5px; }
+  .journey-contract, .journey-files { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .journey-contract h3 { margin-bottom: 8px; }
+  .journey-contract p { margin-bottom: 0; }
+  .journey-stage { padding-bottom: 38px; }
+  .journey-modules summary code { display: block; margin: 4px 0 0 18px; }
+}

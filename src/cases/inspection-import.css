@@ -1,0 +1,49 @@
+.inspection-import { min-width: 0; margin-top: 28px; padding: 26px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
+.inspection-import-heading > p { margin: 0 0 9px; color: var(--blue); font-size: .78rem; }
+.inspection-import-heading h3 { margin-bottom: 14px; font-size: 1.3rem; }
+.inspection-import .inspection-import-intro { font-size: .86rem; }
+.inspection-import button { min-height: 44px; max-width: 100%; border: 1px solid #99acb9; border-radius: 4px; padding: 8px 12px; background: var(--surface); color: var(--blue); font-size: .79rem; font-weight: 600; }
+.inspection-import button:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+.inspection-import button:disabled { opacity: .42; cursor: not-allowed; }
+.inspection-import-scenarios { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 26px; }
+.inspection-import-scenarios button[aria-pressed="true"] { color: white; background: var(--blue); border-color: var(--blue); }
+.inspection-import-diagram { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; }
+.inspection-import .inspection-import-node { position: relative; display: flex; min-width: 0; flex-direction: column; align-items: center; padding: 12px 6px 15px; background: #f7f9fc; border-color: var(--line); }
+.inspection-import-node:not(:last-child)::after { position: absolute; content: ''; top: 57px; right: -11px; width: 10px; height: 2px; background: #b5c6e4; }
+.inspection-import-node-number { align-self: flex-start; padding-left: 5px; font-size: .68rem; color: var(--muted); }
+.inspection-import-node svg { width: 64px; max-width: 90%; height: 48px; margin: 7px 0 12px; fill: none; stroke: currentColor; stroke-width: 1.65; stroke-linecap: round; stroke-linejoin: round; }
+.inspection-import-node strong { font-size: .74rem; line-height: 1.4; }
+.inspection-import-node > span:last-child { margin-top: 5px; font-size: .66rem; color: var(--muted); font-weight: 400; line-height: 1.4; }
+.inspection-import .inspection-import-node.is-past { border-color: #b6c9ec; background: #f0f5ff; }
+.inspection-import .inspection-import-node.is-active { border-color: var(--blue); box-shadow: inset 0 0 0 1px var(--blue); background: #eaf1ff; }
+.inspection-import .inspection-import-node.is-failed { border-color: #a65b3f; box-shadow: inset 0 0 0 1px #a65b3f; color: #97492e; background: #fff6ef; }
+.inspection-import[data-animating="true"] .inspection-import-node.is-active svg { animation: inspection-import-arrive .65s ease-out both; }
+.inspection-import-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 22px 0; }
+.inspection-import-controls > span { margin-left: auto; padding: 6px; font-size: .75rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.inspection-import-detail { padding: 18px; border-left: 3px solid var(--blue); background: #f2f6ff; min-height: 154px; }
+.inspection-import .inspection-import-position { margin: 0 0 9px; color: var(--blue); font-size: .73rem; }
+.inspection-import-detail h4 { font-size: 1rem; margin: 0 0 10px; }
+.inspection-import .inspection-import-detail > p:not(.inspection-import-position) { margin-bottom: 0; font-size: .81rem; }
+.inspection-import-detail.has-error { border-color: #a65b3f; background: #fff6ef; }
+.inspection-import .inspection-import-error { color: #89452c; margin-top: 10px; }
+.inspection-import-storage { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 22px; }
+.inspection-import-store { min-width: 0; padding: 15px; border: 1px solid var(--line); border-radius: 4px; }
+.inspection-import-pending { border-style: dashed; background: #f8fafc; }
+.inspection-import-committed { background: #f1f6ff; border-color: #c8d7f3; }
+.inspection-import-store-title { display: flex; gap: 8px; align-items: center; margin-bottom: 14px; }
+.inspection-import-store-title svg { width: 24px; height: 24px; flex-shrink: 0; stroke: var(--blue); stroke-width: 1.5; fill: none; }
+.inspection-import-store-title h4 { margin: 0; font-size: .78rem; }
+.inspection-import-ids { display: flex; flex-direction: column; gap: 6px; min-height: 88px; }
+.inspection-import-ids span { display: block; border: 1px solid #d9e2ef; padding: 6px 8px; background: var(--surface); border-radius: 3px; font-size: .72rem; overflow-wrap: anywhere; color: var(--ink); }
+.inspection-import-pending .inspection-import-ids span { border-style: dashed; color: var(--muted); }
+.inspection-import-ids em { font-size: .73rem; padding: 6px 0; color: var(--muted); font-style: normal; }
+.inspection-import-ids .is-conflict { border-color: #d7ad98; background: #fff4ec; color: #89452c; }
+.inspection-import-ids .is-new { border-color: var(--blue); color: var(--blue); background: #e8f0ff; }
+.inspection-import[data-animating="true"] .inspection-import-ids .is-new, .inspection-import[data-animating="true"] .inspection-import-pending .inspection-import-ids span { animation: inspection-import-arrive .65s ease-out both; }
+.inspection-import .inspection-import-store > p { margin: 13px 0 0; font-size: .7rem; overflow-wrap: anywhere; }
+.inspection-import .inspection-import-result { padding-block: 15px; margin: 0; font-size: .82rem; color: var(--ink); }
+.inspection-import .inspection-import-note { margin: 0; padding-top: 14px; border-top: 1px solid var(--line); font-size: .74rem; }
+@keyframes inspection-import-arrive { from { opacity: .3; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 700px) { .inspection-import-diagram { grid-template-columns: repeat(3, minmax(0, 1fr)); } .inspection-import-node:nth-child(3)::after { display: none; } .inspection-import-storage { grid-template-columns: minmax(0, 1fr); } .inspection-import-ids { min-height: 0; flex-direction: row; flex-wrap: wrap; } .inspection-import-store-title { margin-bottom: 10px; } }
+@media (max-width: 460px) { .inspection-import { padding: 18px; } .inspection-import-diagram { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; } .inspection-import-node:nth-child(3)::after { display: block; } .inspection-import-node:nth-child(2n)::after { display: none; } .inspection-import-detail { padding: 15px; } .inspection-import-controls > span { margin-left: 0; } }
+@media (prefers-reduced-motion: reduce) { .inspection-import[data-animating="true"] .inspection-import-node.is-active svg, .inspection-import-ids .is-new, .inspection-import-pending .inspection-import-ids span { animation: none; } }

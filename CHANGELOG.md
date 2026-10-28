@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.3.0 — 2026-10-28
+
+All six featured projects now show their development as six-stage journeys with clickable diagrams, source-backed decisions and interactive examples. Existing case URLs and the blue-and-white presentation are preserved.
+
+- Explore diagnostic recovery, work-order transactions, schedule validation, offline record storage, report comparison and lexical retrieval using the projects' actual contracts and recorded evidence.
+- Shared playback controls provide explicit replay, pause, bounded click feedback and cancellation when a page is hidden or reduced motion is enabled. Changing a scenario resets the sequence without starting it.
+- Mobile forms use readable text, disclosure and diagram controls have comfortable touch targets, and keyboard selection keeps focus visible.
+- CI runs all six journey regressions and the shared desktop/mobile interaction audit before Pages deployment.
+
+Historical project verification stays separately dated. Current portfolio checks cover Chromium desktop, narrow-screen and touch emulation; they do not represent physical iOS device testing. See [the journey review](docs/superpowers/plans/2026-10-28-journey-consistency.md) for verification scope.
+
 ## 1.2.0 — 2026-10-13
 
 Refines the existing blue-and-white portfolio while preserving its homepage structure, project cards, six categories and permanent case URLs.

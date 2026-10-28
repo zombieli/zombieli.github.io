@@ -1,0 +1,28 @@
+.scheduling-comparison { margin-block: 28px; padding: 26px; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; min-width: 0; }
+.comparison-heading h3 { font-size: 1.3rem; line-height: 1.35; }
+.comparison-heading .eyebrow { font-size: .78rem; color: var(--blue); }
+.comparison-heading > p:last-child { font-size: .9rem; }
+.scheduling-comparison > label { display: block; font-size: .8rem; font-weight: 600; margin-bottom: 8px; }
+.scheduling-comparison > select { font-size: .86rem; }
+.comparison-controls { display: flex; flex-wrap: wrap; gap: 10px; margin-block: 20px 26px; }
+.comparison-controls button { min-height: 44px; border: 1px solid #99acb9; background: var(--surface); color: var(--muted); padding: 8px 13px; border-radius: 4px; font-size: .85rem; }
+.comparison-controls button[aria-pressed="true"] { background: #eaf0ff; border-color: var(--blue); color: var(--blue); font-weight: 600; }
+.comparison-controls button:focus-visible, .scheduling-comparison > select:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+.comparison-bars { padding-block: 20px; border-block: 1px solid var(--line); }
+.scheduling-comparison .comparison-axis { font-size: .78rem; margin-bottom: 22px; }
+.comparison-row + .comparison-row { margin-top: 25px; }
+.comparison-bar-label { display: flex; justify-content: space-between; gap: 12px; font-size: .9rem; margin-bottom: 10px; }
+.comparison-bar-label > span { color: var(--muted); font-size: .8rem; }
+.comparison-bar-label b { color: var(--ink); font-variant-numeric: tabular-nums; font-size: 1.1rem; }
+.comparison-track { height: 26px; background: #edf1f6; border-left: 1px solid #99acb9; }
+.comparison-track > span { display: block; height: 100%; background: #536078; transition: width .45s ease-out, background-color .2s; }
+.comparison-row.is-spt .comparison-track > span { background: var(--blue); }
+.comparison-row.is-tradeoff .comparison-track > span { background: #b75532; }
+.comparison-row.is-tradeoff .comparison-bar-label b { color: #a14524; }
+.scheduling-comparison .comparison-scale { font-size: .72rem; margin: 18px 0 0; }
+.comparison-reading { padding: 17px 18px; background: #f2f6ff; border-left: 3px solid var(--blue); margin-top: 24px; }
+.comparison-reading strong { font-size: .94rem; }
+.comparison-reading p { font-size: .86rem; margin: 9px 0 0; }
+.scheduling-comparison .comparison-note { font-size: .73rem; margin: 20px 0 0; }
+@media (max-width: 600px) { .scheduling-comparison { padding: 18px; } }
+@media (prefers-reduced-motion: reduce) { .comparison-track > span { transition: none; } }

@@ -26,12 +26,15 @@ const caseLoading = {
 const DiagnosticsCase = defineAsyncComponent({ ...caseLoading, loader: () => import('./cases/DiagnosticsCase.vue') })
 const WorkflowCase = defineAsyncComponent({ ...caseLoading, loader: () => import('./WorkflowCase.vue') })
 const SchedulingCase = defineAsyncComponent({ ...caseLoading, loader: () => import('./SchedulingCase.vue') })
+const InspectionCase = defineAsyncComponent({ ...caseLoading, loader: () => import('./cases/InspectionCase.vue') })
+const DeltaCase = defineAsyncComponent({ ...caseLoading, loader: () => import('./cases/DeltaCase.vue') })
+const ManualCase = defineAsyncComponent({ ...caseLoading, loader: () => import('./cases/ManualCase.vue') })
 const StandardCase = defineAsyncComponent({ ...caseLoading, loader: () => import('./components/StandardCase.vue') })
 
 const menuOpen = ref(false)
 const menuButton = ref<HTMLButtonElement | null>(null)
 let desktop: MediaQueryList | undefined
-let initialFragment = props.page === 'diagnostics' ? window.location.hash : ''
+let initialFragment = (['diagnostics', 'workflow', 'scheduling'].includes(props.page) || (props.page === 'standard' && ['inspection-notebook', 'test-report-delta', 'technical-manual-search'].includes(props.projectId ?? ''))) ? window.location.hash : ''
 const initialScrollY = window.scrollY
 let fragmentFrame: number | undefined
 const fragmentInterruptions = ['pointerdown', 'wheel', 'touchstart', 'keydown', 'hashchange'] as const
@@ -101,10 +104,13 @@ onUnmounted(() => {
   <main id="main" tabindex="-1">
     <HomePage v-if="page === 'home'" />
     <ProjectLibrary v-else-if="page === 'projects'" />
+    <InspectionCase v-else-if="page === 'standard' && project?.id === 'inspection-notebook'" @ready="restoreInitialFragment" />
+    <DeltaCase v-else-if="page === 'standard' && project?.id === 'test-report-delta'" @ready="restoreInitialFragment" />
+    <ManualCase v-else-if="page === 'standard' && project?.id === 'technical-manual-search'" @ready="restoreInitialFragment" />
     <StandardCase v-else-if="page === 'standard' && project && category" :project="project" :category="category" />
     <DiagnosticsCase v-else-if="page === 'diagnostics'" @ready="restoreInitialFragment" />
-    <WorkflowCase v-else-if="page === 'workflow'" />
-    <SchedulingCase v-else-if="page === 'scheduling'" />
+    <WorkflowCase v-else-if="page === 'workflow'" @ready="restoreInitialFragment" />
+    <SchedulingCase v-else-if="page === 'scheduling'" @ready="restoreInitialFragment" />
     <section v-else class="wrap section page-status">
       <h1>Project unavailable.</h1>
       <p>This project is not part of the published collection.</p>
